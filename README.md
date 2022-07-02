@@ -11,6 +11,6 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan)
 ## 参考
 
 - [siyuan-gitbook-azure](https://github.com/yuuuxt/siyuan-gitbook-azure)
-- [Tsundoku Light](https://github.com/Achuan-2/siyuan-themes-tsundoku-light)
+- [siyuan-themes-tsundoku-light](https://github.com/Achuan-2/siyuan-themes-tsundoku-light)
 
 

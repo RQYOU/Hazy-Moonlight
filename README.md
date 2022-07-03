@@ -1,4 +1,6 @@
 # Hazy Moonlight：A Theme for SiYuan
+![add image](https://github.com/RQYOU/siyuan-theme-hazy-moonlight
+/raw/master/assets/*.png)
 
 ## 介绍
 

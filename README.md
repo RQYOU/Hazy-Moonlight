@@ -9,16 +9,16 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan)
 整体采用融为一体的、朦胧、清爽的风格。
 
 ### 整体预览
-![add image](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/preview.png)
+![](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/preview.png)
 
 ### 标题样式
-![add image](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/title.png)
+![](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/title.png)
 
 ### 代码块样式
-![add image](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/codeblock.png)
+![](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/codeblock.png)
 
 ### 超链接样式
-![add image](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/links.png)
+![](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/links.png)
 
 
 ## 说明

@@ -1,6 +1,5 @@
 # Hazy Moonlight：A Theme for SiYuan
-![add image](https://github.com/RQYOU/siyuan-theme-hazy-moonlight
-/raw/master/assets/*.png)
+
 
 ## 介绍
 
@@ -10,16 +9,16 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan)
 整体采用融为一体的、朦胧、清爽的风格。
 
 ### 整体预览
-![](assets/preview.png)
+![add image](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/preivew.png)
 
 ### 标题样式
-![](assets/title.png)
+![add image](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/title.png)
 
 ### 代码块样式
-![](assets/codeblock.png)
+![add image](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/codeblock.png)
 
 ### 超链接样式
-![](assets/links.png)
+![add image](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/links.png)
 
 
 ## 说明

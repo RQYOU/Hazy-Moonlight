@@ -882,7 +882,7 @@ em{
 /* ------------------------------- 正文中的表格 -------------------------------------- */
 /* 调整表格字体： */
 .protyle-wysiwyg table {
-   font-size: 14px;
+   font-size: 15px;
 }
 /* 调整表头字体 */
 .b3-typography table th, .protyle-wysiwyg table th {

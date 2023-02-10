@@ -400,13 +400,13 @@ ul.layout-tab-bar {
 
 /* 编辑区后侧的滑块 */
 .protyle-scroll__bar{
-    right: calc(0px - var(--b3-dynamicscroll-width)/2);
+    right: calc(-8px - var(--b3-dynamicscroll-width)/2);
 }
 
 /* 真正编辑的区域 */
 .protyle-wysiwyg{
-    padding-left: 16px;
-    padding-right:16px; 
+    padding-left: 16px !important;
+    padding-right:16px !important; 
 }
 
 /* 整个编辑区 */

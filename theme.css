@@ -131,9 +131,9 @@
 
     /* 表格 */
     --b3-table-border-color: #cfdcec; /* e4e6e8 cfdcec  dee6ec  DBE4EB */
-    --b3-table-th-color: #e6ecf0; /* e9ecee   EAEFF3  EBF0F4  e6ecf0 DCE8F0 E3EBF1 */
-    --b3-table-trn-color: #f0f4f7; /* e9ecee   eff3f5  F0F2F5 E9EFF3 #EBF0F3 */
-    --b3-table-tr2n-color: #e6ecf0; /* f0f4f5   EAEFF3  EBF0F4 e6ecf0 DCE8F0 E3EBF1 */
+    --b3-table-th-color: #edf1f5; /* e6ecf0   e9ecee   EAEFF3  EBF0F4  e6ecf0 DCE8F0 E3EBF1 */
+    --b3-table-tr2n-color: #f0f4f7; /* f0f4f5   EAEFF3  EBF0F4 e6ecf0 DCE8F0 E3EBF1 */
+    --b3-table-trn-color: #edf1f5; /* e9ecee   eff3f5  F0F2F5 E9EFF3 #EBF0F3 */
 
     /* -------- 所见即所得行内元素颜色 --------- */
     /* 粗体、着重、斜体颜色 */
@@ -399,8 +399,20 @@ ul.layout-tab-bar {
 /* ------------------------------- 编辑区 -------------------------------------- */
 
 /* 编辑区后侧的滑块 */
-.protyle-scroll__bar{
-    right: calc(-8px - var(--b3-dynamicscroll-width)/2);
+.protyle-scroll{
+  right:-8px !important;
+  width: 14px; /* 调整上下2个箭头的左右位置 */
+}
+
+.protyle-scroll svg{
+  /* 调整上下2个箭头的大小 */
+  height:14px;
+  width:14px;
+}
+
+.protyle-scroll__down, .protyle-scroll__up{
+  color: #1567e9;
+  opacity: 1;
 }
 
 /* 真正编辑的区域 */
@@ -586,6 +598,7 @@ span[data-type='tag']:not(.dock__item) {
     line-height: 1.7em;
     margin: 1px 0;
     padding: 3px;
+    text-align: justify;
 }
 
 .protyle-content .protyle-background {
@@ -988,36 +1001,25 @@ em {
     font-size: 15px;
 }
 /* 调整表头字体 */
-.b3-typography table th,
-.protyle-wysiwyg table th {
+.b3-typography table tr th,
+.protyle-wysiwyg table tr th {
     font-weight: normal !important;
+    background-color: var(--b3-table-th-color);
+    /* background-color: #edf2f5; */
     /* color: #50535c; */
 }
 
-/* 修改表格的边框： */
-.b3-typography table tr,
-.protyle-wysiwyg table tr {
-    border-color: var(--b3-table-border-color);
+.b3-typography table tbody tr:nth-child(2n+1) td, 
+.protyle-wysiwyg table tbody tr:nth-child(2n+1) td{
+  background-color: var(--b3-table-tr2n-color) !important;
 }
-.b3-typography table td,
-.b3-typography table th,
-.protyle-wysiwyg table td,
-.protyle-wysiwyg table th {
-    border-color: var(--b3-table-border-color);
+
+.b3-typography table tbody tr:nth-child(2n) td, 
+.protyle-wysiwyg table tbody tr:nth-child(2n) td{
+  background-color: var(--b3-table-trn-color) !important;   
 }
-/* 调整表格背景色 */
-.protyle-wysiwyg table thead tr,
-.b3-typography table thead tr {
-    background-color: var(--b3-table-th-color) !important;
-}
-.protyle-wysiwyg table tbody tr:nth-child(2n + 1),
-.b3-typography table tbody tr:nth-child(2n + 1) {
-    background-color: var(--b3-table-trn-color) !important;
-}
-.protyle-wysiwyg table tbody tr:nth-child(2n),
-.b3-typography table tbody tr:nth-child(2n) {
-    background-color: var(--b3-table-tr2n-color) !important;
-}
+
+
 
 /* ------------------------------- 流程图, 时序图, 甘特图 -------------------------------------- */
 .label,

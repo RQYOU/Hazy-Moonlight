@@ -911,11 +911,16 @@ em {
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
   font-size: 70%;
   color: rgba(13, 56, 50, 0.5);
-  margin-top: -29px;
+  margin-top: -23px;
   position: absolute;
   right: 47px;
   opacity: 1;
   border-radius: 4px;
+}
+/* 处于列表下面的代码库语言 */
+.b3-typography [data-node-id].li>[data-node-id].code-block .protyle-action .protyle-action__language,
+.protyle-wysiwyg [data-node-id].li>[data-node-id].code-block .protyle-action .protyle-action__language {
+  margin-top: -29px !important;
 }
 .b3-typography .code-block .protyle-action .protyle-action__language:hover,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language:hover {
@@ -1790,3 +1795,4 @@ span[data-type="block-ref"] {
   content: "";
   background-image: url("src/xinpianchang.png");
 }
+

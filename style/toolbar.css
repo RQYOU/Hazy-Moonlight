@@ -6,6 +6,8 @@
 
 .toolbar .toolbar__item {
   color: #5f6367;
+  margin: 4px;
+  padding: 3px;
 }
 
 .toolbar .toolbar__item svg {
@@ -14,7 +16,7 @@
   opacity: 0.7;
 }
 
-/* ----------------------- 左边 ----------------------- */
+/* ----------------------- 顶部左边的 ----------------------- */
 
 .toolbar__text {
   color: black;
@@ -47,7 +49,7 @@
   width: 12px;
 }
 
-/* ------------------------------ 右边 ------------------------------ */
+/* ------------------------------ 顶部右边的 ------------------------------ */
 /* 有思源会员时 */
 .toolbar #toolbarVIP .toolbar__item svg {
   /* opacity: 0.6; */
@@ -65,24 +67,25 @@
   background-repeat: round;
 }
 
-.toolbar .toolbar__item#barDailyNote svg {
+/* .toolbar .toolbar__item#barDailyNote svg {
   stroke-width: 0.2px;
   stroke: #6c7075;
-}
+} */
 .toolbar .toolbar__item#barSearch svg {
   stroke-width: 0.2px;
   stroke: #6c7075;
 }
+.toolbar .toolbar__item#barReadonly svg {
+  fill: #6c7075;
+}
+.toolbar .toolbar__item#barMode svg {
+  fill: black;
+}
+
+/* ------------------------------ 底部状态栏上的 ------------------------------ */
 .toolbar .toolbar__item#barDock svg {
   stroke-width: 1px;
   stroke: #6c7075;
-}
-.toolbar .toolbar__item#barThemeMode svg {
-  fill: #6c7075;
-}
-
-.toolbar .toolbar__item#barMore svg {
-  fill: #6c7075;
 }
 
 /* ------------------------------ 效果 ------------------------------ */
@@ -93,7 +96,8 @@
 
 .toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover,
 .toolbar__item--active {
-  background-color: #ddf0fd;
+  /* ddf0fd */
+  background-color: #d0e9fa;
 }
 
 .toolbar .toolbar__item--action {
@@ -103,4 +107,9 @@
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
+}
+
+.toolbar__item--disabled {
+  /* 不加的话按钮不可点击时仍会显示出一个不完整的灰色框 */
+  pointer-events: none;
 }

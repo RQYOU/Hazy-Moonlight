@@ -1,20 +1,5 @@
 /* ------------------------------- 标题样式 -------------------------------------- */
 
-/* ------------------- 所有标题 ------------------- */
-.protyle-wysiwyg [data-type="NodeHeading"] strong {
-  color: inherit;
-  text-shadow: 1px 1px 1px #002636b8;
-}
-.b3-typography h1 strong,
-.b3-typography h2 strong,
-.b3-typography h3 strong,
-.b3-typography h4 strong,
-.b3-typography h5 strong,
-.b3-typography h6 strong {
-  /* 预览样式 */
-  color: inherit;
-}
-
 /* ------------------- 标题1 ------------------- */
 
 .protyle-wysiwyg [data-node-id].h1,
@@ -52,6 +37,8 @@
   margin: 33px 0px 20px 0px;
   line-height: 1.55;
   border-bottom: 1px solid #626366;
+  /* 调整高度：在没输入文字时仍然保持一定的高度 */
+  min-height: 38px;
 }
 
 /* ------------------- 标题3 ------------------- */

@@ -12,7 +12,7 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 ### Titles (标题样式)
 
-![](https://github.com/RQYOU/siyuan-theme-hazy-moonlight/raw/master/assets/title.png)
+![1676833979967](image/README/1676833979967.png)
 
 ### Code Block (代码块样式)
 

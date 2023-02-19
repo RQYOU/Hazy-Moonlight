@@ -1,4 +1,22 @@
 /* ------------------------------- 标题样式 -------------------------------------- */
+
+/* ------------------- 所有标题 ------------------- */
+.protyle-wysiwyg [data-type="NodeHeading"] strong {
+  color: inherit;
+  text-shadow: 1px 1px 1px #002636b8;
+}
+.b3-typography h1 strong,
+.b3-typography h2 strong,
+.b3-typography h3 strong,
+.b3-typography h4 strong,
+.b3-typography h5 strong,
+.b3-typography h6 strong {
+  /* 预览样式 */
+  color: inherit;
+}
+
+/* ------------------- 标题1 ------------------- */
+
 .protyle-wysiwyg [data-node-id].h1,
 .b3-typography h1 {
   font-size: 1.7em !important;
@@ -22,18 +40,21 @@
   left: 0.3%; /* 用这个参数调整右竖线的位置，以看起来两条竖线之间的距离比较好 */
   transform: translateY(-50%);
 }
-/* 标题2：*/
+
+/* ------------------- 标题2 ------------------- */
 .protyle-wysiwyg [data-node-id].h2,
 .b3-typography h2 {
   font-size: 1.5em !important;
   color: #202124;
   border-left: 4px solid #202124;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   padding: 0px 0px 0px 15px;
   margin: 33px 0px 20px 0px;
   line-height: 1.55;
+  border-bottom: 1px solid #626366;
 }
-/* 标题3：*/
+
+/* ------------------- 标题3 ------------------- */
 .protyle-wysiwyg [data-node-id].h3,
 .b3-typography h3 {
   font-size: 1.35em !important; /* 1.35em */
@@ -45,13 +66,15 @@
 .b3-typography h3:before {
   content: "";
   display: inline-block;
-  border-left: 4px dashed #202124;
+  border-left: 4px solid #202124;
   height: 30px;
   position: absolute;
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
 }
+
+/* ------------------- 标题4 ------------------- */
 .protyle-wysiwyg [data-node-id].h4,
 .b3-typography h4 {
   font-size: 1.2em !important;
@@ -71,6 +94,8 @@
   left: 0.2%;
   transform: translateY(-50%);
 }
+
+/* ------------------- 标题5 ------------------- */
 .protyle-wysiwyg [data-node-id].h5,
 .b3-typography h5 {
   font-size: 1.1em !important;
@@ -90,6 +115,8 @@
   left: 0.2%;
   transform: translateY(-50%);
 }
+
+/* ------------------- 标题6 ------------------- */
 .protyle-wysiwyg [data-node-id].h6,
 .b3-typography h6 {
   font-size: 1em !important;
@@ -110,6 +137,8 @@
   left: 0.2%;
   transform: translateY(-50%);
 }
+
+/* ------------------- 标题4/5/6 ------------------- */
 .protyle-wysiwyg [data-node-id].h4 > div:first-child,
 .protyle-wysiwyg [data-node-id].h5 > div:first-child,
 .protyle-wysiwyg [data-node-id].h6 > div:first-child {
@@ -126,19 +155,4 @@
 .protyle-wysiwyg .h5 > [spellcheck="false"]:focus:empty,
 .protyle-wysiwyg .h6 > [spellcheck="false"]:focus:empty {
   padding-left: 1rem;
-}
-
-/* -------- 标题加粗样式 -------- */
-.protyle-wysiwyg [data-type="NodeHeading"] strong {
-  color: inherit;
-  text-shadow: 1px 1px 1px #002636b8;
-}
-.b3-typography h1 strong,
-.b3-typography h2 strong,
-.b3-typography h3 strong,
-.b3-typography h4 strong,
-.b3-typography h5 strong,
-.b3-typography h6 strong {
-  /* 预览样式 */
-  color: inherit;
 }

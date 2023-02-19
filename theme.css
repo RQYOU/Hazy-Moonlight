@@ -1,46 +1,9 @@
 @import url("style/fonts.css");
 @import url("style/globalAttr.css");
 @import url("style/toolbar.css");
+@import url("style/docks.css");
 @import url("style/sidebar.css");
 @import url("style/editor.css");
 @import url("style/titles.css");
 @import url("style/paras.css");
 @import url("style/links.css");
-
-/* -------------------------------窗口美化-------------------------------------- */
-.dock,
-.dock__item,
-.toolbar,
-.fn__flex-column {
-  background-color: var(--b3-theme-surface);
-}
-
-.block__icons {
-  background-color: var(--b3-tab-background);
-  height: 30px;
-}
-
-.search__label .b3-form__icon-input {
-  background-color: var(--b3-tab-background);
-}
-
-/* block-ref */
-span[data-type="block-ref"] {
-  font-family: var(--b3-font-family-code);
-  color: var(--b3-protyle-inline-blockref-color);
-  background-color: var(--b3-theme-surface-light);
-  border-bottom: 2px dotted var(--b3-theme-primary-light);
-}
-
-/* codeblock language setting */
-.protyle-action__language {
-  font-family: var(--b3-font-family-code);
-}
-
-.protyle-util > .fn__flex-column {
-  font-family: var(--b3-font-family-code);
-}
-
-.protyle-util > .fn__flex-column > input {
-  font-family: var(--b3-font-family-code);
-}

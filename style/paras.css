@@ -143,6 +143,7 @@ em {
 /* 代码块语言： */
 .b3-typography .code-block .protyle-action .protyle-action__language,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
+  font-family: var(--b3-font-family-code);
   font-size: 70%;
   color: rgba(13, 56, 50, 0.5);
   margin-top: -23px;
@@ -151,6 +152,7 @@ em {
   opacity: 1;
   border-radius: 4px;
 }
+
 /* 处于列表下面的代码库语言 */
 .b3-typography [data-node-id].li > [data-node-id].code-block .protyle-action .protyle-action__language,
 .protyle-wysiwyg [data-node-id].li > [data-node-id].code-block .protyle-action .protyle-action__language {
@@ -268,4 +270,12 @@ foreignObject,
 text,
 canvas {
   font-family: var(--b3-font-family) !important;
+}
+
+/* ------------------------------- block-ref -------------------------------------- */
+span[data-type="block-ref"] {
+  font-family: var(--b3-font-family-code);
+  color: var(--b3-protyle-inline-blockref-color);
+  background-color: var(--b3-theme-surface-light);
+  border-bottom: 2px dotted var(--b3-theme-primary-light);
 }

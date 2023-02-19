@@ -1,0 +1,16 @@
+/* -------------------------------窗口美化-------------------------------------- */
+.fn__flex-column {
+  background-color: var(--b3-theme-surface);
+}
+
+.search__label .b3-form__icon-input {
+  background-color: var(--b3-tab-background);
+}
+
+.protyle-util > .fn__flex-column {
+  font-family: var(--b3-font-family-code);
+}
+
+.protyle-util > .fn__flex-column > input {
+  font-family: var(--b3-font-family-code);
+}

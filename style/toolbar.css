@@ -4,30 +4,8 @@
   background-color: var(--b3-theme-surface);
 }
 
-.toolbar__text {
-  color: #8c9298;
-  font-family: Courier New;
-  font-weight: bold;
-  font-size: 12.8px;
-  margin-top: 2.8px;
-}
-
 .toolbar .toolbar__item {
   color: #5f6367;
-}
-
-.toolbar .toolbar__item:hover {
-  /* 覆盖base.css中的var(--b3-list-hover) */
-  background-color: #e0e5ea !important; /* EBF0F7 E2EFF9 */
-}
-
-.toolbar .toolbar__item--action {
-  background-color: #c6e4ee;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
 }
 
 .toolbar .toolbar__item svg {
@@ -36,20 +14,41 @@
   opacity: 0.7;
 }
 
+/* ----------------------- 左边 ----------------------- */
+
+.toolbar__text {
+  color: black;
+  font-family: Courier New;
+  font-size: 12px;
+  margin-top: 2.1px;
+}
+
 .toolbar #barWorkspace svg {
-  margin-top: 2.5px;
+  margin-top: 3px;
   stroke-width: 0;
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  height: 12px;
+  width: 9px;
+}
+
+.toolbar .toolbar__item#barSync svg {
+  stroke-width: 0;
+  stroke: #6c7075;
+  height: 13px;
+  width: 17px;
+  opacity: 0.8;
 }
 
 .toolbar .toolbar__item#barBack svg,
 .toolbar .toolbar__item#barForward svg {
   /* stroke-width:0.3px; */
   fill: #4f5255;
+  height: 12px;
+  width: 12px;
 }
 
 /* ------------------------------ 右边 ------------------------------ */
-
+/* 有思源会员时 */
 .toolbar #toolbarVIP .toolbar__item svg {
   /* opacity: 0.6; */
   width: 15px;
@@ -65,6 +64,7 @@
   background-image: url("src/siyuan.svg");
   background-repeat: round;
 }
+
 .toolbar .toolbar__item#barDailyNote svg {
   stroke-width: 0.2px;
   stroke: #6c7075;
@@ -81,16 +81,26 @@
   fill: #6c7075;
 }
 
-.toolbar .toolbar__item#barSync svg {
-  stroke-width: 1px;
-  stroke: #6c7075;
-}
-
 .toolbar .toolbar__item#barMore svg {
   fill: #6c7075;
+}
+
+/* ------------------------------ 效果 ------------------------------ */
+.toolbar .toolbar__item:hover {
+  /* 覆盖base.css中的var(--b3-list-hover) */
+  background-color: #e0e5ea !important; /* EBF0F7 E2EFF9 */
 }
 
 .toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover,
 .toolbar__item--active {
   background-color: #ddf0fd;
+}
+
+.toolbar .toolbar__item--action {
+  background-color: #c6e4ee;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }

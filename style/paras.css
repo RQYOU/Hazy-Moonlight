@@ -73,7 +73,7 @@ em {
   margin: 4px 0;
 }
 .protyle-wysiwyg [data-node-id].hr > div {
-  border-bottom: 2px solid var(--b3-border-color);
+  border-bottom: 1px solid var(--b3-border-color);
   margin: 8px 0;
 }
 

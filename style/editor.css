@@ -1,0 +1,222 @@
+/* ------------------------------- 编辑区 -------------------------------------- */
+
+/* 编辑区后侧的滑块 */
+.protyle-scroll {
+  right: -8px !important;
+  width: 14px; /* 调整上下2个箭头的左右位置 */
+  display: block !important; /* 配合让滑块始终显示 */
+}
+
+.protyle-scroll__bar {
+  display: inherit !important; /* 让滑块始终显示 */
+}
+
+.protyle-scroll svg {
+  /* 调整上下2个箭头的大小 */
+  height: 14px;
+  width: 14px;
+}
+
+.protyle-scroll__down,
+.protyle-scroll__up {
+  color: #88a7d9;
+  opacity: 1;
+}
+
+/* 真正编辑的区域 */
+.protyle-wysiwyg {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+/* 整个编辑区 */
+.layout-tab-container {
+  margin-top: 3px;
+}
+
+/* title font */
+
+.protyle-title__input {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* ---- 面包屑 ---- */
+.protyle-breadcrumb {
+  /* padding: 0 2px 2px; */
+  margin-top: 3px;
+}
+
+.protyle-preview {
+  padding-top: 24px;
+}
+
+.protyle-preview__action {
+  padding: 8px;
+}
+
+.protyle-breadcrumb .protyle-breadcrumb__item svg.ft__primary {
+  color: #5f6367;
+}
+
+/* kbd font */
+kbd {
+  font-family: var(--b3-font-family-code) !important;
+}
+
+/* 光标选中文本样式 */
+.protyle-wysiwyg ::selection {
+  background-color: rgba(7, 97, 214, 0.445);
+  color: white;
+}
+/* 选中块 */
+.protyle-wysiwyg--select,
+.protyle-wysiwyg--select .hljs {
+  background-color: #d4ebf4 !important;
+}
+/* 鼠标划选区域*/
+.protyle-select {
+  background-color: #cedef4;
+}
+
+/* -------------------- 弹出对话框 --------------------*/
+/* 弹出对话框时的背景： */
+.b3-dialog__scrim {
+  background-color: rgb(238 241 246 / 0.8);
+}
+/* 弹出对话框的关闭按钮： */
+.b3-dialog__close {
+  color: #5c636d;
+  font-size: 50%;
+  cursor: pointer;
+  background-color: #f3f5f9;
+  border-radius: 16px;
+  padding: 4px;
+  margin-left: 22px;
+  height: 18px;
+  width: 18px;
+  transition: all 0.3s linear;
+  top: 3px;
+  right: -36px;
+}
+/* 弹出对话框中的.b3-tab-container */
+.b3-tab-container {
+  background-color: var(--b3-theme-background);
+}
+/* 弹出对话框的滚动条：*/
+/* 定义滚动条的宽度： */
+.b3-tab-container:not(.fn__none)::-webkit-scrollbar {
+  width: 8px;
+}
+/* 定义滚动条滑动轨道：背景色 */
+.b3-tab-container:not(.fn__none)::-webkit-scrollbar-thumb {
+  background-color: #e7ecf6;
+}
+
+/* -------------------------------------- 滚动条美化 -------------------------------------- */
+/* ------ 侧边栏的滚动条：------ */
+/* 不滚动时不显示 */
+.fn__flex-1[data-type="navigation"] {
+  overflow: hidden;
+}
+/* 滚动时显示 */
+.fn__flex-1[data-type="navigation"]:hover {
+  overflow-y: scroll;
+}
+.fn__flex-1[data-type="navigation"]::-webkit-scrollbar {
+  width: 3px;
+}
+/* 定义滑动轨道：背景色、圆角、透明度 */
+.fn__flex-1[data-type="navigation"]::-webkit-scrollbar-thumb {
+  background-color: #c2cdd0;
+  border-radius: 5px;
+  opacity: 0.2;
+}
+/* 编辑区的滚动条：完全隐藏滚动条，但仍然可以滚动 */
+.protyle-content::-webkit-scrollbar {
+  display: none;
+}
+/* 弹出对话框： */
+.b3-dialog .b3-tab-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* -------------------------------------- 列表： --------------------------------------  */
+.b3-list-item {
+  margin: 0px;
+}
+/* 包含：左侧边栏文件列表、对话框左侧列表、选择代码语言的列表等 */
+/* 选中后的背景色 */
+.b3-list--background .b3-list-item--focus {
+  /* background-color: var(--b3-theme-background-light); */
+  background-color: #e6eef7 !important;
+}
+/* 选中之后item的文本颜色 */
+.b3-list--background .b3-list-item--focus > .b3-list-item__text {
+  opacity: 0.5;
+}
+/* 鼠标放在上面的背景色： */
+.b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
+  background-color: #e0edf9 !important;
+}
+/* ---- 单独设置”设置“中左侧列表： ---- */
+/* 选中后的背景色 */
+.b3-dialog .b3-list--background .b3-list-item--focus {
+  background-color: #e5edf5 !important;
+}
+/* 选中之后item的文本颜色 */
+.b3-dialog .b3-list--background .b3-list-item--focus > .b3-list-item__text {
+  opacity: 0.5;
+}
+/* 鼠标放在上面的背景色： */
+.b3-dialog .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
+  background-color: #e0ebf5 !important;
+}
+
+/* ------------------------------- tag -------------------------------------- */
+/* copying code style */
+span[data-type="tag"]:not(.dock__item) {
+  display: inline-block;
+  padding: 0.05em 0.7em;
+  margin: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  white-space: pre-wrap;
+  background-color: #808080;
+  color: #ffffff !important;
+  font-family: var(--b3-font-family-code);
+  font-size: 80%;
+  font-weight: normal;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+/* ------------------------------- 窗口其它元素 -------------------------------------- */
+
+.b3-list-item__action svg {
+  color: var(--b3-theme-on-background);
+}
+
+/*  正文  */
+.b3-typography p,
+.b3-typography [data-node-id],
+.protyle-wysiwyg [data-node-id].p,
+.protyle-wysiwyg p {
+  line-height: 1.7em;
+  margin: 1px 0;
+  padding: 3px;
+  text-align: justify;
+}
+
+.protyle-content .protyle-background {
+  padding-bottom: 10px;
+}
+.protyle-background__iconw {
+  height: 45px;
+}
+.protyle-background__icon img,
+.protyle-background__icon svg {
+  height: 45px;
+  width: 45px;
+}

@@ -1,0 +1,130 @@
+/* -------------------------------------- 侧边栏 -------------------------------------- */
+/* 设置当前活动的侧边栏项： */
+.block__icons .block__logo {
+  color: var(--b3-theme-on-surface);
+}
+/* 隐藏这里的图标： */
+.block__logo svg {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+}
+/* 修改右侧几个图标的大小： */
+.block__icon svg {
+  height: 13px;
+  width: 13px;
+}
+/* 图标的宽度和高度 */
+.dock--vertical div:first-child:not(:empty) span svg,
+.dock--vertical div:last-child:not(:empty) span svg {
+  width: 12.5px;
+  height: 12.5px;
+}
+.dock--vertical div:first-child:not(:empty) span.dock__item svg,
+.dock--vertical div:last-child:not(:empty) span.dock__item svg {
+  /* color:#202124; */
+  color: #82878d;
+}
+.dock--vertical div:first-child:not(:empty) span.dock__item--active svg,
+.dock--vertical div:last-child:not(:empty) span.dock__item--active svg {
+  /* color:#202124;  979799   */
+  color: #a5a5a7;
+}
+/* 垂直 dock：包括左dock和右dock */
+.dock--vertical {
+  width: 40px;
+  /* margin-left: 1px;  */
+  /* margin-right: 2px;  */
+  /* z-index: 43 */
+}
+/* 点击选中的按钮 */
+.dock__item--activefocus {
+  background-color: #e6eef7 !important;
+}
+
+/* ---------- 左边栏文件列表： ---------- */
+/* 修改文件列表左边距 */
+.b3-list-item {
+  margin: 0 !important;
+}
+
+/* 鼠标放在上面的背景色 */
+.b3-list--files .b3-list-item:hover {
+  /* 覆盖base.css中的var(--b3-list-hover) */
+  background-color: #e0edf9 !important; /* EBF0F7 E2EFF9 */
+}
+/* 选中之后的背景色 */
+.b3-list--files .b3-list-item--focus {
+  background-color: #e6eef7 !important;
+}
+.b3-list--files .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
+  background-color: #e6eef7 !important;
+}
+/* 左边栏文件列表的箭头： */
+.b3-list-item__toggle--hl:hover {
+  color: var(--b3-theme-on-background);
+  /* background-color: var(--b3-theme-primary-lightest); */
+  background-color: #cde5fc; /* daecfd */
+  border-radius: 0px;
+  /* border-radius: 4px */
+}
+
+/* 中间部分 */
+.layout__resize--lr:after {
+  background-color: #f0f2f6;
+}
+
+/* 消除2个中间的竖线 */
+.dock#dockLeft {
+  border-right-color: var(--b3-theme-surface);
+}
+.dock#dockRight {
+  border-left-color: var(--b3-theme-surface);
+}
+
+/* -------------------------------------- 左边的文件区/大纲区 -------------------------------------- */
+
+/* -------------------------------------- 标签页 -------------------------------------- */
+/* tab color */
+ul.layout-tab-bar {
+  background-color: var(--b3-theme-surface);
+  /* opacity:0.5; */
+  color: #979799;
+  height: 33px;
+}
+
+/* tab adjustments */
+/* tab */
+.layout-tab-bar .item {
+  padding: 2px 4px;
+  font-size: 12.5px;
+}
+/*  */
+.layout-tab-bar .item__graphic {
+  margin-right: 6px;
+}
+/* tag旁边的关闭按钮 */
+.layout-tab-bar .item__close {
+  margin-left: 4px;
+}
+/* 获得了焦点的tab */
+.layout-tab-bar .item--focus {
+  background-color: #f8f9fc !important;
+  color: #202124;
+}
+/* 消除焦点tab的shadow */
+.layout__wnd--active .layout-tab-bar .item--focus {
+  box-shadow: none !important;
+}
+/* 消除其它tab的shadow */
+.layout-tab-bar .item:not(:last-child) {
+  box-shadow: none !important;
+}
+.layout-tab-bar .item--focus:after {
+  bottom: 6px;
+  background-color: #5a8ad8;
+}
+
+.layout__wnd--active .layout-tab-bar .item--focus:after {
+  background-color: #79a6ee;
+}

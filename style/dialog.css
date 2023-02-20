@@ -1,4 +1,38 @@
-/* ------------------------------ 彈窗 ------------------------------  */
+/* -------------------- 弹出对话框 --------------------*/
+/* 弹出对话框时的背景： */
+.b3-dialog__scrim {
+  background-color: rgb(238 241 246 / 0.8);
+}
+/* 弹出对话框的关闭按钮： */
+.b3-dialog__close {
+  color: #5c636d;
+  font-size: 50%;
+  cursor: pointer;
+  background-color: #f3f5f9;
+  border-radius: 16px;
+  padding: 4px;
+  margin-left: 22px;
+  height: 18px;
+  width: 18px;
+  transition: all 0.3s linear;
+  top: 3px;
+  right: -36px;
+}
+/* 弹出对话框中的.b3-tab-container */
+.b3-tab-container {
+  background-color: var(--b3-theme-background);
+}
+/* 弹出对话框的滚动条：*/
+/* 定义滚动条的宽度： */
+.b3-tab-container:not(.fn__none)::-webkit-scrollbar {
+  width: 8px;
+}
+/* 定义滚动条滑动轨道：背景色 */
+.b3-tab-container:not(.fn__none)::-webkit-scrollbar-thumb {
+  background-color: #e7ecf6;
+}
+
+/* ----- 弹出确定对话框 ----- */
 .b3-dialog__action {
   border-top: none;
 }

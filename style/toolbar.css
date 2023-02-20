@@ -2,6 +2,7 @@
 .toolbar {
   height: 27px;
   background-color: var(--b3-theme-surface);
+  border-bottom: 0.5px solid #e0e5ea;
 }
 
 .toolbar .toolbar__item {

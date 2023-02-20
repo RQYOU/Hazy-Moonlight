@@ -1,6 +1,11 @@
 /* ------------------------------- 编辑区 -------------------------------------- */
 
-/* 编辑区后侧的滑块 */
+/* --------------- tab标签页 -------------- */
+.layout-tab-bar {
+  border-bottom: 1px solid #e0e5ea;
+}
+
+/* --------------- 编辑区后侧的滑块 --------------- */
 .protyle-scroll {
   right: -8px !important;
   width: 14px; /* 调整上下2个箭头的左右位置 */
@@ -23,26 +28,25 @@
   opacity: 1;
 }
 
-/* 真正编辑的区域 */
+/* --------------- 真正编辑的区域 --------------- */
 .protyle-wysiwyg {
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
 
-/* 整个编辑区 */
+/* --------------- 整个编辑区 --------------- */
 .layout-tab-container {
   margin-top: 3px;
 }
 
-/* title font */
-
+/* --------------- title font --------------- */
 .protyle-title__input {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
 }
 
-/* ---- 面包屑 ---- */
+/* --------------- 面包屑 --------------- */
 .protyle-breadcrumb {
   /* padding: 0 2px 2px; */
   margin-top: 3px;
@@ -60,58 +64,24 @@
   color: #5f6367;
 }
 
-/* kbd font */
+/* --------------- kbd font --------------- */
 kbd {
   font-family: var(--b3-font-family-code) !important;
 }
 
-/* 光标选中文本样式 */
+/* --------------- 光标选中文本样式 *--------------- /
 .protyle-wysiwyg ::selection {
   background-color: rgba(7, 97, 214, 0.445);
   color: white;
 }
-/* 选中块 */
+/* --------------- 选中块 ---------------*/
 .protyle-wysiwyg--select,
 .protyle-wysiwyg--select .hljs {
   background-color: #d4ebf4 !important;
 }
-/* 鼠标划选区域*/
+/* --------------- 鼠标划选区域 --------------- */
 .protyle-select {
   background-color: #cedef4;
-}
-
-/* -------------------- 弹出对话框 --------------------*/
-/* 弹出对话框时的背景： */
-.b3-dialog__scrim {
-  background-color: rgb(238 241 246 / 0.8);
-}
-/* 弹出对话框的关闭按钮： */
-.b3-dialog__close {
-  color: #5c636d;
-  font-size: 50%;
-  cursor: pointer;
-  background-color: #f3f5f9;
-  border-radius: 16px;
-  padding: 4px;
-  margin-left: 22px;
-  height: 18px;
-  width: 18px;
-  transition: all 0.3s linear;
-  top: 3px;
-  right: -36px;
-}
-/* 弹出对话框中的.b3-tab-container */
-.b3-tab-container {
-  background-color: var(--b3-theme-background);
-}
-/* 弹出对话框的滚动条：*/
-/* 定义滚动条的宽度： */
-.b3-tab-container:not(.fn__none)::-webkit-scrollbar {
-  width: 8px;
-}
-/* 定义滚动条滑动轨道：背景色 */
-.b3-tab-container:not(.fn__none)::-webkit-scrollbar-thumb {
-  background-color: #e7ecf6;
 }
 
 /* -------------------------------------- 滚动条美化 -------------------------------------- */

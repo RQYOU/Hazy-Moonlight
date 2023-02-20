@@ -206,7 +206,7 @@ span[data-type="tag"]:not(.dock__item) {
   line-height: 1.7em;
   margin: 1px 0;
   padding: 3px;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .protyle-content .protyle-background {

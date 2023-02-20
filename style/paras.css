@@ -264,6 +264,7 @@ em {
   background-color: var(--b3-table-th-color);
   /* background-color: #edf2f5; */
   /* color: #50535c; */
+  text-align: left;
 }
 
 .b3-typography table tbody tr:nth-child(2n + 1) td,

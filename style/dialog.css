@@ -1,0 +1,8 @@
+/* ------------------------------ 彈窗 ------------------------------  */
+.b3-dialog__action {
+  border-top: none;
+}
+
+.b3-dialog__header {
+  border-bottom: none;
+}

@@ -34,7 +34,7 @@
   border-left: 4px solid #202124;
   /* border-radius: 4px; */
   padding: 0px 0px 0px 15px;
-  margin: 33px 0px 20px 0px;
+  margin: 33px 0px 28px 0px;
   line-height: 1.55;
   border-bottom: 1px solid #626366;
   /* 调整高度：在没输入文字时仍然保持一定的高度 */
@@ -47,7 +47,7 @@
   font-size: 1.35em !important; /* 1.35em */
   color: #202124; /* #CC00FF; #34495e; */
   padding: 0px 0px 0px 15px;
-  margin: 30px 0px 15px 0px;
+  margin: 45px 0px 24px 0px;
 }
 .protyle-wysiwyg [data-node-id].h3:before,
 .b3-typography h3:before {

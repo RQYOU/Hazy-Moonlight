@@ -112,6 +112,12 @@ em {
   border-radius: 20px;
 }
 
+/* ------------------ 图片 ------------------- */
+.b3-typography img,
+.protyle-wysiwyg img {
+  margin: 4px auto; /* 增加上下边距 */
+}
+
 /* ------------------------------- 引用块 block quote -------------------------------------- */
 .protyle-wysiwyg .bq {
   background-color: #e9edf3 !important; /* e6ecf1 */

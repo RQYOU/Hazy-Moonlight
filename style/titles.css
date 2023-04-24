@@ -33,13 +33,17 @@
   font-size: 1.5em !important;
   color: #202124;
   border-left: 4px solid #202124;
-  /* border-radius: 4px; */
+  border-radius: 0;
   padding: 0px 0px 0px 15px;
   margin: 60px 0px 28px 0px;
   line-height: 1.55;
   border-bottom: 1px solid #626366;
-  /* 调整高度：在没输入文字时仍然保持一定的高度 */
+  /*调整高度：在没输入文字时仍然保持一定的高度*/
   min-height: 38px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 .protyle-wysiwyg [data-node-id].h2:first-child,
 .b3-typography h2:first-child {

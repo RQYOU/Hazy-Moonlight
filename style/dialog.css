@@ -3,29 +3,47 @@
 .b3-dialog__scrim {
   background-color: rgb(238 241 246 / 0.8);
 }
+
+/* 弹出对话框左侧选项列表 */
+.config__panel > .b3-tab-bar {
+  margin-left: 10px;
+}
+
 /* 弹出对话框的关闭按钮： */
 .b3-dialog__close {
-  color: #5c636d;
+  color: #84b0dc;
   font-size: 50%;
   cursor: pointer;
-  background-color: #f3f5f9;
+  /* background-color: #f3f5f9; */
   border-radius: 16px;
   padding: 4px;
   margin-left: 22px;
-  height: 18px;
-  width: 18px;
+  height: 24px;
+  width: 24px;
   transition: all 0.3s linear;
-  top: 3px;
+  /* top: 3px; */
   right: -36px;
 }
 /* 弹出对话框中的.b3-tab-container */
 .b3-tab-container {
   background-color: var(--b3-theme-background);
 }
+
+/* 弹出对话框左侧搜索框 */
+.config__panel > .b3-tab-bar .b3-form__icon {
+  margin: 15px 8px 15px;
+}
+
+/* 弹出对话框右侧区域 */
+.config__tab-container {
+  padding: 6px 0;
+}
+
 /* 弹出对话框的滚动条：*/
 /* 定义滚动条的宽度： */
 .b3-tab-container:not(.fn__none)::-webkit-scrollbar {
   width: 8px;
+  padding: 18px 0;
 }
 /* 定义滚动条滑动轨道：背景色 */
 .b3-tab-container:not(.fn__none)::-webkit-scrollbar-thumb {

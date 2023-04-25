@@ -2,8 +2,6 @@
   "name": "Hazy Moonlight",
   "author": "RQYOU",
   "url": "https://github.com/RQYOU/siyuan-theme-hazy-moonlight",
-  "version": "1.0",
-  "modes": [
-    "light"
-  ]
+  "version": "0.3.0",
+  "modes": ["light"]
 }

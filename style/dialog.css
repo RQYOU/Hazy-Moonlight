@@ -11,18 +11,19 @@
 
 /* 弹出对话框的关闭按钮： */
 .b3-dialog__close {
-  color: #84b0dc;
+  color: #205d99;
   font-size: 50%;
   cursor: pointer;
-  /* background-color: #f3f5f9; */
+  /* background-color: #c5e4ff; */
+  /* border: 1px solid #5187be; */
   border-radius: 16px;
-  padding: 4px;
+  padding: 3px;
   margin-left: 22px;
-  height: 24px;
-  width: 24px;
+  height: 23px;
+  width: 23px;
   transition: all 0.3s linear;
-  /* top: 3px; */
-  right: -36px;
+  /* top: 1px; */
+  right: -39px;
 }
 /* 弹出对话框中的.b3-tab-container */
 .b3-tab-container {

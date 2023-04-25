@@ -6,11 +6,11 @@
 }
 
 /* --------------- 编辑区后侧的滑块 --------------- */
-.protyle-scroll {
-  right: -8px !important;
-  width: 14px; /* 调整上下2个箭头的左右位置 */
-  display: block !important; /* 配合让滑块始终显示 */
-}
+/* .protyle-scroll { */
+/* right: -8px !important; */
+/*width: 14px; */ /* 调整上下2个箭头的左右位置 */
+/* display: block !important; */ /* 配合让滑块始终显示 */
+/* } */
 
 .protyle-scroll__bar {
   display: inherit !important; /* 让滑块始终显示 */

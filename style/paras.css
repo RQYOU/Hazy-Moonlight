@@ -11,6 +11,13 @@ strong:not([style]) {
   color: inherit !important;
 }
 
+.b3-typography p,
+.b3-typography [data-node-id],
+.protyle-wysiwyg p,
+.protyle-wysiwyg [data-node-id] {
+  margin: 25px 0;
+}
+
 /* ------------------------------- 行内块字体样式 -------------------------------------- */
 /* 文字背景色： */
 strong[style|="background"] {

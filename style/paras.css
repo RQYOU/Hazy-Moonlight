@@ -1,10 +1,11 @@
 /* ------------------------------- 段落 -------------------------------------- */
 /* 更改空行提示 */
-.protyle-wysiwyg [data-node-id]:not(.code-block) > [spellcheck="false"]:focus:empty:after {
-  /* 避免代码块也出现空行提示  */
-  content: "Do it now";
-  color: #9b9b9b9a;
-}
+/* .protyle-wysiwyg [data-node-id]:not(.code-block) > [spellcheck="false"]:focus:empty:after { */
+/* 避免代码块也出现空行提示  */
+/* content: "Do it now"; */
+/* color: var(--b3-protyle-codeblock-empty-hint); */
+/* } */
+
 /* 设置粗体： */
 strong:not([style]) {
   font-weight: bold;
@@ -94,7 +95,7 @@ em {
 }
 
 /* .protyle-wysiwyg [data-node-id].hr > div {
-  border-bottom: 1px dashed #202124;
+  border-bottom: 1px dashed var(--b3-theme-on-background);
   margin: 8px 0;
 } */
 
@@ -103,7 +104,7 @@ em {
   overflow: visible;
   height: 25px;
   border-style: solid;
-  border-color: #202124;
+  border-color: var(--b3-theme-on-background);
   border-width: 1px 0 0 0;
   border-radius: 20px;
 }
@@ -114,7 +115,7 @@ em {
   height: 25px;
   margin-top: -26px;
   border-style: solid;
-  border-color: #202124;
+  border-color: var(--b3-theme-on-background);
   border-width: 0 0 1px 0;
   border-radius: 20px;
 }
@@ -127,14 +128,14 @@ em {
 
 /* ------------------------------- 引用块 block quote -------------------------------------- */
 .protyle-wysiwyg .bq {
-  background-color: #e9edf3 !important; /* e6ecf1 */
+  background-color: var(--b3-protyle-blockquote-background) !important; /* e6ecf1 */
   /* border: 1px solid #e9edf3; */
-  border-left: 4px solid #0e68c1 !important;
+  border-left: 4px solid var(--b3-protyle-blockquote-border) !important;
   margin: 15px 0px !important;
 }
 .protyle-wysiwyg .bq .p {
   font-size: 15px !important;
-  color: #828d97;
+  color: var(--b3-protyle-blockquote-para);
   margin: 0px 0px !important;
 }
 
@@ -148,7 +149,7 @@ em {
   background: var(--b3-protyle-code-background);
   margin: 18px 0;
   padding: 7px 0 6px 0 !important;
-  box-shadow: 0px 0px 2px 0px #041b1538;
+  box-shadow: 0px 0px 2px 0px var(--b3-protyle-codeblock-shadow);
 }
 /* ---------- 代码块区域（不包含代码块行数区域） ---------- */
 .protyle-wysiwyg .hljs,
@@ -161,9 +162,8 @@ em {
   /* background-size: 20px 20px;
   background-image: none !important; */
   background: transparent;
-  background-color: #e6ecf0 !important;
+  background-color: var(--b3-protyle-codeblock-edit-background) !important;
 }
-
 /* ---------- 代码块行数区域 ---------- */
 .protyle-linenumber__rows {
   font-size: 13px;
@@ -183,7 +183,7 @@ em {
   width: 1px;
   height: calc(100% - 10px);
   margin: 5px 0px 2px 33px;
-  background-color: #b1c3c491;
+  background-color: var(--b3-protyle-codeblock-linenumber-background);
 }
 
 /* ---------- 代码块语言：---------- */
@@ -191,7 +191,7 @@ em {
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
   font-family: var(--b3-font-family-code);
   font-size: 70%;
-  color: rgba(13, 56, 50, 0.5);
+  color: var(--b3-protyle-codeblock-lang);
   margin-top: -23px;
   position: absolute;
   right: 47px;
@@ -205,14 +205,14 @@ em {
 }
 .b3-typography .code-block .protyle-action .protyle-action__language:hover,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language:hover {
-  background-color: #b7d5e4; /* CEDCE6*/
-  color: rgba(13, 56, 50, 0.5) !important;
+  background-color: var(--b3-protyle-codeblock-lang-background-hover); /* CEDCE6*/
+  color: var(--b3-protyle-codeblock-lang-hover) !important;
 }
 
 /* ---------- 代码块复制图标和设置图标：---------- */
 .b3-typography .code-block .protyle-action .protyle-icon,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon {
-  color: rgba(13, 56, 50, 0.5);
+  color: var(--b3-protyle-codeblock-icon);
   background-color: transparent;
   opacity: 1;
   margin-top: -23px;
@@ -226,7 +226,7 @@ em {
 }
 .b3-typography .code-block .protyle-action .protyle-icon:hover,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon:hover {
-  background-color: #b7d5e4;
+  background-color: var(--b3-protyle-codeblock-icon-hover-background);
 }
 .b3-typography .code-block .protyle-action .protyle-action__copy,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__copy {
@@ -273,7 +273,7 @@ em {
   left: 17px;
   width: 25px;
   font-size: 18px;
-  color: #ffffff;
+  color: var(--b3-protyle-codeblock-after);
   z-index: 1;
 }
 

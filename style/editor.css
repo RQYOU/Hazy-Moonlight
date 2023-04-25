@@ -1,10 +1,5 @@
 /* ------------------------------- 编辑区 -------------------------------------- */
 
-/* --------------- tab标签页 -------------- */
-.layout-tab-bar {
-  border-bottom: 1px solid #e0e5ea;
-}
-
 /* --------------- 编辑区后侧的滑块 --------------- */
 /* .protyle-scroll { */
 /* right: -8px !important; */
@@ -24,7 +19,7 @@
 
 .protyle-scroll__down,
 .protyle-scroll__up {
-  color: #88a7d9;
+  color: var(--b3-nav-scroll);
   opacity: 1;
 }
 
@@ -60,9 +55,9 @@
   padding: 8px;
 }
 
-.protyle-breadcrumb .protyle-breadcrumb__item svg.ft__primary {
-  color: #5f6367;
-}
+/* .protyle-breadcrumb .protyle-breadcrumb__item svg.ft__primary {
+  color: #3574b3;
+} */
 
 /* --------------- kbd font --------------- */
 kbd {
@@ -77,50 +72,23 @@ kbd {
 /* --------------- 选中块 ---------------*/
 .protyle-wysiwyg--select,
 .protyle-wysiwyg--select .hljs {
-  background-color: #d4ebf4 !important;
+  background-color: var(--b3-text-select-background) !important;
 }
 /* --------------- 鼠标划选区域 --------------- */
 .protyle-select {
-  background-color: #cedef4;
-}
-
-/* -------------------------------------- 滚动条美化 -------------------------------------- */
-/* ------ 侧边栏的滚动条：------ */
-/* 不滚动时不显示 */
-.fn__flex-1[data-type="navigation"] {
-  overflow: hidden;
-}
-/* 滚动时显示 */
-.fn__flex-1[data-type="navigation"]:hover {
-  overflow-y: scroll;
-}
-.fn__flex-1[data-type="navigation"]::-webkit-scrollbar {
-  width: 3px;
-}
-/* 定义滑动轨道：背景色、圆角、透明度 */
-.fn__flex-1[data-type="navigation"]::-webkit-scrollbar-thumb {
-  background-color: #c2cdd0;
-  border-radius: 5px;
-  opacity: 0.2;
-}
-/* 编辑区的滚动条：完全隐藏滚动条，但仍然可以滚动 */
-.protyle-content::-webkit-scrollbar {
-  display: none;
-}
-/* 弹出对话框： */
-.b3-dialog .b3-tab-bar::-webkit-scrollbar {
-  display: none;
+  /* cedef4 */
+  background-color: var(--b3-text-drag-select-background);
 }
 
 /* -------------------------------------- 列表： --------------------------------------  */
+/* 包含：左侧边栏文件列表、对话框左侧列表、选择代码语言的列表等 */
 .b3-list-item {
   margin: 0px;
 }
-/* 包含：左侧边栏文件列表、对话框左侧列表、选择代码语言的列表等 */
 /* 选中后的背景色 */
 .b3-list--background .b3-list-item--focus {
   /* background-color: var(--b3-theme-background-light); */
-  background-color: #e6eef7 !important;
+  background-color: var(--b3-list-item-focus) !important;
 }
 /* 选中之后item的文本颜色 */
 .b3-list--background .b3-list-item--focus > .b3-list-item__text {
@@ -128,12 +96,12 @@ kbd {
 }
 /* 鼠标放在上面的背景色： */
 .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
-  background-color: #e0edf9 !important;
+  background-color: var(--b3-list-item-hover) !important;
 }
 /* ---- 单独设置”设置“中左侧列表： ---- */
 /* 选中后的背景色 */
 .b3-dialog .b3-list--background .b3-list-item--focus {
-  background-color: #e5edf5 !important;
+  background-color: var(--b3-dialog-list-item-hover) !important;
 }
 /* 选中之后item的文本颜色 */
 .b3-dialog .b3-list--background .b3-list-item--focus > .b3-list-item__text {
@@ -141,12 +109,12 @@ kbd {
 }
 /* 鼠标放在上面的背景色： */
 .b3-dialog .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
-  background-color: #e0ebf5 !important;
+  background-color: var(--b3-list-item-hover) !important;
 }
 
 /* ------------------------------- tag -------------------------------------- */
 /* copying code style */
-span[data-type="tag"]:not(.dock__item) {
+/* span[data-type="tag"]:not(.dock__item) {
   display: inline-block;
   padding: 0.05em 0.7em;
   margin: 0;
@@ -160,7 +128,7 @@ span[data-type="tag"]:not(.dock__item) {
   font-weight: normal;
   text-decoration: none !important;
   text-align: center;
-}
+} */
 
 /* ------------------------------- 窗口其它元素 -------------------------------------- */
 

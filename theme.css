@@ -1,5 +1,5 @@
 @import url("style/fonts.css");
-@import url("style/globalAttr.css");
+@import url("style/attr.css");
 @import url("style/toolbar.css");
 @import url("style/docks.css");
 @import url("style/sidebar.css");
@@ -8,3 +8,4 @@
 @import url("style/paras.css");
 @import url("style/links.css");
 @import url("style/dialog.css");
+@import url("style/components.css");

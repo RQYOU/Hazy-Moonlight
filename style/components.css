@@ -1,0 +1,116 @@
+/* -------------------------------------- 滚动条美化 -------------------------------------- */
+/* ------------------- 弹框右侧的滚动条：------------------- */
+/* 定义滚动条的宽度： */
+.config__tab-container:not(.fn__none) {
+  /* display: none; */ /* 设置为完全不显示 */
+  overflow: hidden;
+}
+.config__tab-container:not(.fn__none):hover {
+  overflow-y: scroll;
+}
+/* .config__tab-container:not(.fn__none)::-webkit-scrollbar {
+  width: 8px;
+  padding: 18px 0;
+} */
+/* 定义滑动轨道：背景色、圆角、透明度 */
+.config__tab-container:not(.fn__none)::-webkit-scrollbar-thumb {
+  background-color: var(--b3-scrollbar);
+  border: 6px solid var(--b3-scrollbar);
+  border-radius: 0px;
+  opacity: 0.2;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+/* 滑动轨道放上去的效果 */
+.config__tab-container:not(.fn__none)::-webkit-scrollbar-thumb:hover {
+  background-color: var(--b3-scrollbar);
+  border: 6px solid var(--b3-scrollbar);
+  /* width: 6px; */
+}
+
+/* ------------------- 弹框左侧的滚动条：------------------- */
+.b3-dialog .b3-tab-bar {
+  /* display: none; */ /* 设置为完全不显示 */
+  overflow: hidden;
+}
+.b3-dialog .b3-tab-bar:hover {
+  overflow-y: scroll;
+}
+/* 定义滑动轨道：背景色、圆角、透明度 */
+.b3-dialog .b3-tab-bar::-webkit-scrollbar-thumb {
+  background-color: var(--b3-scrollbar);
+  border: 6px solid var(--b3-scrollbar);
+  border-radius: 0px;
+  opacity: 0.2;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+/* 滑动轨道放上去的效果 */
+.b3-dialog .b3-tab-bar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--b3-scrollbar);
+  border: 6px solid var(--b3-scrollbar);
+  /* width: 6px; */
+}
+
+/* ------------------- 侧边栏的滚动条：------------------- */
+/* 不滚动时不显示 */
+/* .fn__flex-1[data-type="navigation"] { */
+.layout__dockl .file-tree .fn__flex-1 {
+  overflow: hidden;
+}
+/* 滚动时显示 */
+.layout__dockl .file-tree .fn__flex-1:hover {
+  overflow-y: scroll;
+}
+/* .file-tree .fn__flex-1::-webkit-scrollbar {
+  width: 6px;
+} */
+/* 定义滑动轨道：背景色、圆角、透明度 */
+.layout__dockl .file-tree .fn__flex-1::-webkit-scrollbar-thumb {
+  background-color: var(--b3-scrollbar);
+  border: 6px solid var(--b3-scrollbar);
+  border-radius: 0px;
+  opacity: 0.2;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+/* 滑动轨道放上去的效果 */
+.layout__dockl .file-tree .fn__flex-1::-webkit-scrollbar-thumb:hover {
+  background-color: var(--b3-scrollbar);
+  border: 6px solid var(--b3-scrollbar);
+  /* width: 6px; */
+}
+
+/*  */
+.layout__dockr .file-tree .fn__flex-1::-webkit-scrollbar {
+  display: none; /* 设置为完全不显示 */
+}
+
+/* ------------------- 编辑区的滚动条：------------------- */
+.protyle-content::-webkit-scrollbar {
+  display: none; /* 设置为完全不显示 */
+}
+
+/* -------------------------------窗口美化-------------------------------------- */
+/* 会导致顶部toolbar的SiYuan字样不显示 */
+/* .fn__flex-column {
+  background-color: var(--b3-theme-surface);
+} */
+
+.search__label .b3-form__icon-input {
+  background-color: var(--b3-tab-background);
+}
+
+.protyle-util > .fn__flex-column {
+  font-family: var(--b3-font-family-code);
+}
+
+.protyle-util > .fn__flex-column > input {
+  font-family: var(--b3-font-family-code);
+}

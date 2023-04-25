@@ -5,9 +5,9 @@
 .protyle-wysiwyg [data-node-id].h1,
 .b3-typography h1 {
   font-size: 1.7em !important;
-  color: #202124; /* #04393f; */
+  color: var(--b3-theme-on-background); /* #04393f; */
   page-break-before: always;
-  border-left: 4px solid #202124;
+  border-left: 4px solid var(--b3-theme-on-background);
   border-radius: 4px;
   padding: 0px 0px 0px 20px;
   margin: 30px 0px 26px 0px;
@@ -18,7 +18,7 @@
 .b3-typography h1:before {
   content: "";
   display: inline-block;
-  border-left: 3.8px solid #202124;
+  border-left: 3.8px solid var(--b3-theme-on-background);
   border-radius: 5px;
   height: 48px;
   position: absolute;
@@ -31,8 +31,8 @@
 .protyle-wysiwyg [data-node-id].h2,
 .b3-typography h2 {
   font-size: 1.5em !important;
-  color: #202124;
-  border-left: 4px solid #202124;
+  color: var(--b3-theme-on-background);
+  border-left: 4px solid var(--b3-theme-on-background);
   border-radius: 0;
   padding: 0px 0px 0px 15px;
   margin: 60px 0px 28px 0px;
@@ -54,7 +54,7 @@
 .protyle-wysiwyg [data-node-id].h3,
 .b3-typography h3 {
   font-size: 1.35em !important; /* 1.35em */
-  color: #202124; /* #CC00FF; #34495e; */
+  color: var(--b3-theme-on-background); /* #CC00FF; #34495e; */
   padding: 0px 0px 0px 15px;
   margin: 45px 0px 24px 0px;
 }
@@ -62,7 +62,7 @@
 .b3-typography h3:before {
   content: "";
   display: inline-block;
-  border-left: 4px solid #202124;
+  border-left: 4px solid var(--b3-theme-on-background);
   height: 30px;
   position: absolute;
   top: 50%;
@@ -74,7 +74,7 @@
 .protyle-wysiwyg [data-node-id].h4,
 .b3-typography h4 {
   font-size: 1.2em !important;
-  color: #202124; /* #03a1b9cc;  #34495e; */
+  color: var(--b3-theme-on-background); /* #03a1b9cc;  #34495e; */
   padding: 0px 0px 0px 26px;
   margin: 20px 0px 15px 0px;
   line-height: 1.5em;
@@ -83,7 +83,7 @@
 .b3-typography h4:before {
   content: "\27BD";
   display: inline-block;
-  color: #202124;
+  color: var(--b3-theme-on-background);
   height: 29px;
   position: absolute;
   top: 50%;
@@ -95,7 +95,7 @@
 .protyle-wysiwyg [data-node-id].h5,
 .b3-typography h5 {
   font-size: 1.1em !important;
-  color: #202124; /* #58c6d6; #34495e; */
+  color: var(--b3-theme-on-background); /* #58c6d6; #34495e; */
   padding: 0px 0px 0px 24px;
   margin: 15px 0px 12px 0px;
   line-height: 1.5em;
@@ -104,7 +104,7 @@
 .b3-typography h5:before {
   content: "\27BC";
   display: inline-block;
-  color: #202124;
+  color: var(--b3-theme-on-background);
   height: 25px;
   position: absolute;
   top: 50%;
@@ -116,7 +116,7 @@
 .protyle-wysiwyg [data-node-id].h6,
 .b3-typography h6 {
   font-size: 1em !important;
-  color: #202124;
+  color: var(--b3-theme-on-background);
   padding: 0px 0px 0px 22px;
   margin: 10px 0px 8px 0px;
   line-height: 1.75em;
@@ -125,7 +125,7 @@
 .b3-typography h6:before {
   content: "\21AC";
   display: inline-block;
-  color: #202124;
+  color: var(--b3-theme-on-background);
   height: 31px;
   font-size: 23px;
   position: absolute;

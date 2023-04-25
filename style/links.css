@@ -1,7 +1,8 @@
 /* ---------------------------- a链接/超链接 ---------------------------------- */
 .protyle-wysiwyg [data-node-id] span[data-type="a"] {
   color: inherit;
-  border-bottom: 1px solid rgba(25, 25, 28, 0.2);
+  /* rgba(25, 25, 28, 0.2) */
+  border-bottom: 1px solid var(--b3-link-bottom);
 }
 
 /* ---- 超链接的图标： ---- */
@@ -181,7 +182,7 @@
 .b3-typography a[href*="aliyun.com"]::before {
   content: "";
   background-image: url("../src/aliyun.png");
-  /* background-size: 1.5em; 
+  /* background-size: 1.5em;
     height:0.95em; */
 }
 .protyle-wysiwyg [data-node-id] span[data-type="a"][data-href*="cloud.189.cn"]:not(:empty)::before,

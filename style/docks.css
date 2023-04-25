@@ -1,0 +1,5 @@
+.status {
+  height: 25px;
+  line-height: 25px;
+  border-top: 0.5px solid var(--b3-border-color);
+}

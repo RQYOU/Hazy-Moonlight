@@ -11,6 +11,26 @@
   --b3-theme-surface-light: #f5f7f9;
   --b3-theme-error: #ff4642;
 
+  /* ------------------------- ⬇️自定义⬇️ ------------------------- */
+  /* 对话框的背景 */
+  --b3-dialog-close: #205d99;
+  --b3-dialog-scrim: rgb(238 241 246 / 0.8);
+  /* toolbar */
+  --b3-toolbar-item-1: black;
+  --b3-toolbar-item-2: #6c7075;
+  --b3-toolbar-item-3: #5f6367;
+  --b3-toolbar-item-4: #4f5255;
+  --b3-toolbar-item-background: #c6e4ee;
+  --b3-toolbar-item-hover-background: #c6e4ee;
+  /* 滚动条 */
+  --b3-scrollbar: #ddecfd;
+  /* a标签下面的线条 */
+  --b3-link-bottom: rgba(78, 78, 86, 0.2);
+  /* 编辑器导航滑块：上下箭头 */
+  --b3-nav-scroll: #88a7d9;
+
+  /* ------------------------- ⬆️自定义⬆️ ------------------------- */
+
   /* 文字颜色 */
   --b3-theme-on-primary: #fff;
   --b3-theme-on-secondary: #fff;
@@ -18,18 +38,8 @@
   --b3-theme-on-surface: #5f6368;
   --b3-theme-on-error: #fff;
 
-  /* 字体 */
-  --b3-font-family: "Noto Sans", "Noto Sans SC", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB",
-    "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol",
-    "Android Emoji", "EmojiSymbols";
-  --b3-font-family-code: "JetBrains Mono", "Noto Sans SC", mononoki, Consolas, "Liberation Mono", Menlo, Courier,
-    monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
-    "EmojiSymbols";
-  /* todo */
-  --b3-font-family-graph: mononoki;
-
   /* 线条 */
-  --b3-border-color: rgba(0, 0, 0, 0.3); /*rgba(0, 0, 0, .1)*/
+  --b3-border-color: #e0e5ea; /*rgba(0, 0, 0, .1) , rgba(0, 0, 0, 0.3)*/
 
   /* 滚动条 */
   --b3-scroll-color: rgba(0, 0, 0, 0.2);
@@ -53,6 +63,37 @@
   --b3-card-info-background: rgb(232, 244, 253);
   --b3-card-success-color: rgb(30, 70, 32);
   --b3-card-success-background: rgb(237, 247, 237);
+
+  /* diff */
+  --b3-diff-add: #dfd;
+  --b3-diff-add-surface: #97f295;
+  --b3-diff-del: #fee8e9;
+  --b3-diff-del-surface: #ffb6ba;
+
+  /* 编辑器工具栏高度 */
+  --b3-protyle-toolbar-height-space: 3px;
+
+  /* 编辑器搜索颜色 */
+  --b3-protyle-search-background: #ffe955;
+  --b3-protyle-search-border-color: #f2e680;
+  --b3-protyle-search-current-background: #a5d3fe;
+
+  /* 代码片段背景 */
+  --b3-protyle-code-background: rgba(230, 236, 241, 1);
+
+  /* -------- 所见即所得行内元素颜色 --------- */
+  /* 粗体、着重、斜体颜色 */
+  --b3-protyle-inline-strong-color: #202124;
+  --b3-protyle-inline-em-color: #202124;
+  --b3-protyle-inline-s-color: #202124;
+  /* a链接/超链接颜色 */
+  --b3-protyle-inline-link-color: #191c27; /* 以前是#4285f4  #164a9e #1b1c1f  */
+  /* 高亮颜色 */
+  --b3-protyle-inline-mark-background: #ffe955;
+  --b3-protyle-inline-mark-color: #202124;
+  /* 标签 */
+  --b3-protyle-inline-tag-color: #5f6368;
+  --b3-protyle-inline-blockref-color: var(--b3-protyle-inline-tag-color);
 
   /* 自定义文字颜色 */
   --b3-font-color1: #1446a3;
@@ -83,6 +124,16 @@
   --b3-font-background12: rgba(253, 198, 200, 0.5); /* f8d7da */
   --b3-font-background13: var(--b3-theme-on-background);
 
+  /* 字体 */
+  --b3-font-family: "Noto Sans", "Noto Sans SC", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB",
+    "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol",
+    "Android Emoji", "EmojiSymbols";
+  --b3-font-family-code: "JetBrains Mono", "Noto Sans SC", mononoki, Consolas, "Liberation Mono", Menlo, Courier,
+    monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    "EmojiSymbols";
+  /* todo */
+  --b3-font-family-graph: mononoki;
+
   /* 动画效果 */
   --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
 
@@ -92,42 +143,11 @@
   --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
     0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 
-  /* diff */
-  --b3-diff-add: #dfd;
-  --b3-diff-add-surface: #97f295;
-  --b3-diff-del: #fee8e9;
-  --b3-diff-del-surface: #ffb6ba;
-
-  /* 编辑器工具栏高度 */
-  --b3-protyle-toolbar-height-space: 3px;
-
-  /* 编辑器搜索颜色 */
-  --b3-protyle-search-background: #ffe955;
-  --b3-protyle-search-border-color: #f2e680;
-  --b3-protyle-search-current-background: #a5d3fe;
-
-  /* 代码片段背景 */
-  --b3-protyle-code-background: rgba(230, 236, 241, 1);
-
   /* 表格 */
   --b3-table-border-color: #cfdcec; /* e4e6e8 cfdcec  dee6ec  DBE4EB */
   --b3-table-th-color: #edf1f5; /* e6ecf0   e9ecee   EAEFF3  EBF0F4  e6ecf0 DCE8F0 E3EBF1 */
   --b3-table-tr2n-color: #f0f4f7; /* f0f4f5   EAEFF3  EBF0F4 e6ecf0 DCE8F0 E3EBF1 */
   --b3-table-trn-color: #edf1f5; /* e9ecee   eff3f5  F0F2F5 E9EFF3 #EBF0F3 */
-
-  /* -------- 所见即所得行内元素颜色 --------- */
-  /* 粗体、着重、斜体颜色 */
-  --b3-protyle-inline-strong-color: #202124;
-  --b3-protyle-inline-em-color: #202124;
-  --b3-protyle-inline-s-color: #202124;
-  /* a链接/超链接颜色 */
-  --b3-protyle-inline-link-color: #191c27; /* 以前是#4285f4  #164a9e #1b1c1f  */
-  /* 高亮颜色 */
-  --b3-protyle-inline-mark-background: #ffe955;
-  --b3-protyle-inline-mark-color: #202124;
-  /* 标签 */
-  --b3-protyle-inline-tag-color: #5f6368;
-  --b3-protyle-inline-blockref-color: var(--b3-protyle-inline-tag-color);
 
   /* 图表颜色 */
   --b3-graph-p-point: #076f7e;

@@ -1,17 +1,17 @@
-/* -------------------- 弹出对话框 --------------------*/
+/* ------------------------------ 弹出对话框 ------------------------------ */
 /* 弹出对话框时的背景： */
 .b3-dialog__scrim {
-  background-color: rgb(238 241 246 / 0.8);
+  background-color: var(--b3-dialog-scrim);
 }
 
 /* 弹出对话框左侧选项列表 */
 .config__panel > .b3-tab-bar {
-  margin-left: 10px;
+  margin: 0 10px;
 }
 
 /* 弹出对话框的关闭按钮： */
 .b3-dialog__close {
-  color: #205d99;
+  color: var(--b3-dialog-close);
   font-size: 50%;
   cursor: pointer;
   /* background-color: #c5e4ff; */
@@ -40,22 +40,15 @@
   padding: 6px 0;
 }
 
-/* 弹出对话框的滚动条：*/
-/* 定义滚动条的宽度： */
-.b3-tab-container:not(.fn__none)::-webkit-scrollbar {
-  width: 8px;
-  padding: 18px 0;
-}
-/* 定义滚动条滑动轨道：背景色 */
-.b3-tab-container:not(.fn__none)::-webkit-scrollbar-thumb {
-  background-color: #e7ecf6;
-}
-
-/* ----- 弹出确定对话框 ----- */
+/* ------------------------------ 弹出确定对话框 ------------------------------ */
 .b3-dialog__action {
   border-top: none;
 }
 
 .b3-dialog__header {
   border-bottom: none;
+}
+
+/*  */
+.b3-select:hover {
 }

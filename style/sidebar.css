@@ -8,6 +8,7 @@
 .block__icons {
   height: 30px;
   background-color: var(--b3-tab-background);
+  min-height: 32px;
 }
 
 /* 设置当前活动的侧边栏项： */
@@ -33,12 +34,12 @@
 }
 .dock--vertical div:first-child:not(:empty) span.dock__item svg,
 .dock--vertical div:last-child:not(:empty) span.dock__item svg {
-  /* color:#202124; */
+  /* color:var(--b3-theme-on-background); */
   color: #82878d;
 }
 .dock--vertical div:first-child:not(:empty) span.dock__item--active svg,
 .dock--vertical div:last-child:not(:empty) span.dock__item--active svg {
-  /* color:#202124;  979799   */
+  /* color:var(--b3-theme-on-background);  979799   */
   color: #a5a5a7;
 }
 /* 垂直 dock：包括左dock和右dock */
@@ -50,7 +51,7 @@
 }
 /* 点击选中的按钮 */
 .dock__item--activefocus {
-  background-color: #e6eef7 !important;
+  background-color: var(--dock-item-activefocus-background) !important;
 }
 
 /* -------------------------------------- 左边的文件区/大纲区 -------------------------------------- */
@@ -64,27 +65,28 @@
 /* 鼠标放在上面的背景色 */
 .b3-list--files .b3-list-item:hover {
   /* 覆盖base.css中的var(--b3-list-hover) */
-  background-color: #e0edf9 !important; /* EBF0F7 E2EFF9 */
+  background-color: var(--b3-list-item-hover) !important; /* EBF0F7 E2EFF9 */
 }
 /* 选中之后的背景色 */
 .b3-list--files .b3-list-item--focus {
-  background-color: #e6eef7 !important;
+  background-color: var(--b3-list-item-focus) !important;
 }
 .b3-list--files .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
-  background-color: #e6eef7 !important;
+  background-color: var(--b3-list-item-focus) !important;
 }
+
 /* 左边栏文件列表的箭头： */
 .b3-list-item__toggle--hl:hover {
   color: var(--b3-theme-on-background);
   /* background-color: var(--b3-theme-primary-lightest); */
-  background-color: #cde5fc; /* daecfd */
+  background-color: var(--b3-list-item-toggle-hl-hover); /* daecfd */
   border-radius: 0px;
   /* border-radius: 4px */
 }
 
 /* 中间部分 */
 .layout__resize--lr:after {
-  background-color: #f0f2f6;
+  background-color: var(--b3-layout-resize-lr-after-bg);
 }
 
 /* 消除2个中间的竖线 */
@@ -101,10 +103,10 @@ ul.layout-tab-bar {
   background-color: var(--b3-theme-surface);
   /* opacity:0.5; */
   color: #979799;
-  height: 33px;
+  height: 35px;
+  /* border-bottom: 0.8px solid var(--b3-border-color); */
+  border-bottom: 0;
 }
-
-/* tab adjustments */
 /* tab */
 .layout-tab-bar .item {
   padding: 2px 4px;
@@ -116,26 +118,36 @@ ul.layout-tab-bar {
 }
 /* tag旁边的关闭按钮 */
 .layout-tab-bar .item__close {
-  margin-left: 4px;
-}
-/* 获得了焦点的tab */
-.layout-tab-bar .item--focus {
-  background-color: #f8f9fc !important;
-  color: #202124;
-}
-/* 消除焦点tab的shadow */
-.layout__wnd--active .layout-tab-bar .item--focus {
-  box-shadow: none !important;
+  padding: 0;
 }
 /* 消除其它tab的shadow */
 .layout-tab-bar .item:not(:last-child) {
   box-shadow: none !important;
 }
+
+/* 获得了焦点的tab */
+.layout-tab-bar .item--focus {
+  background-color: var(--b3-layout-tab-bar-item-focus) !important;
+  color: var(--b3-theme-on-background);
+}
+/*  */
 .layout-tab-bar .item--focus:after {
-  bottom: 6px;
-  background-color: #5a8ad8;
+  height: 1.5px;
+  bottom: 8px;
+  background-color: var(--b3-layout-tab-bar-item-focus-after);
+}
+/* 消除焦点tab的shadow */
+.layout__wnd--active .layout-tab-bar .item--focus {
+  box-shadow: none !important;
+}
+.layout__wnd--active .layout-tab-bar .item--focus:after {
+  background-color: var(--b3-wnd-active-tab-bar-item-focus-after-bg);
 }
 
-.layout__wnd--active .layout-tab-bar .item--focus:after {
-  background-color: #79a6ee;
+/* 新增加 */
+.layout__center .layout-tab-bar .item--focus,
+.layout__center .layout-tab-bar .item--focus:hover,
+.layout__center .layout-tab-bar .item--focus:focus,
+.layout__center .layout-tab-bar .item--focus:active {
+  background-color: var(--b3-theme-background);
 }

@@ -1,8 +1,29 @@
 /* -------------------------------------- 顶部工具栏 -------------------------------------- */
+#toolbar {
+  margin-bottom: -30px;
+}
+#layouts > .fn__flex > .fn__flex-column:not(.layout__center) {
+  margin-top: 26px;
+}
+.dock--vertical {
+  padding-top: 25px;
+}
+
+/* .fn__flex-1 {
+  overflow-y: hidden;
+} */
+
+.fn__flex-column,
+.card__main {
+  min-height: unset;
+}
+
+/* --------- */
+
 .toolbar {
   height: 27px;
   background-color: var(--b3-theme-surface);
-  border-bottom: 0.5px solid #e0e5ea;
+  border-bottom: 0.5px solid var(--b3-border-color);
 }
 
 body.body--blur .toolbar {
@@ -10,7 +31,7 @@ body.body--blur .toolbar {
 }
 
 .toolbar .toolbar__item {
-  color: #5f6367;
+  color: var(--b3-toolbar-item-3);
   margin: 4px;
   padding: 3px;
 }
@@ -22,14 +43,14 @@ body.body--blur .toolbar {
 }
 
 /* ----------------------- 顶部左边的 ----------------------- */
-
+/* SiYuan字样 */
 .toolbar__text {
-  color: black;
+  color: var(--b3-toolbar-item-1);
   font-family: Courier New;
   font-size: 12px;
   margin-top: 2.1px;
 }
-
+/* 思源笔记字样后的箭头 */
 .toolbar #barWorkspace svg {
   margin-top: 3px;
   stroke-width: 0;
@@ -37,24 +58,23 @@ body.body--blur .toolbar {
   height: 12px;
   width: 9px;
 }
-
+/* 同步按钮 */
 .toolbar .toolbar__item#barSync svg {
   stroke-width: 0;
-  stroke: #6c7075;
+  stroke: var(--b3-toolbar-item-barSync);
   height: 13px;
   width: 17px;
   opacity: 0.8;
 }
-
+/* 前进后退按钮 */
 .toolbar .toolbar__item#barBack svg,
 .toolbar .toolbar__item#barForward svg {
   /* stroke-width:0.3px; */
-  fill: #4f5255;
+  fill: var(--b3-toolbar-item-4);
   height: 12px;
   width: 12px;
 }
-
-/* ------------------------------ 顶部右边的 ------------------------------ */
+/* 思源笔记会员图标 */
 /* 有思源会员时 */
 .toolbar #toolbarVIP .toolbar__item svg {
   /* opacity: 0.6; */
@@ -71,18 +91,20 @@ body.body--blur .toolbar {
   background-image: url("src/siyuan.svg");
   background-repeat: round;
 }
-
 /* .toolbar .toolbar__item#barDailyNote svg {
   stroke-width: 0.2px;
   stroke: #6c7075;
 } */
+/* 搜索按钮 */
 .toolbar .toolbar__item#barSearch svg {
   stroke-width: 0.2px;
-  stroke: #6c7075;
+  stroke: var(--b3-toolbar-item-2);
 }
+/* 只读编辑模式 */
 .toolbar .toolbar__item#barReadonly svg {
-  fill: #6c7075;
+  fill: var(--b3-toolbar-item-2);
 }
+/* 外观模式：明亮暗黑 */
 .toolbar .toolbar__item#barMode svg {
   fill: black;
 }
@@ -93,20 +115,20 @@ body.body--blur .toolbar {
   stroke: #6c7075;
 }
 
-/* ------------------------------ 效果 ------------------------------ */
+/* ------------------------------ toolbar上的item ------------------------------ */
 .toolbar .toolbar__item:hover {
   /* 覆盖base.css中的var(--b3-list-hover) */
-  background-color: #e0e5ea !important; /* EBF0F7 E2EFF9 */
+  background-color: var(--b3-border-color) !important; /* EBF0F7 E2EFF9 */
 }
 
 .toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover,
 .toolbar__item--active {
   /* ddf0fd */
-  background-color: #d0e9fa;
+  background-color: var(--b3-toolbar-item-hover-background);
 }
 
 .toolbar .toolbar__item--action {
-  background-color: #c6e4ee;
+  background-color: var(--b3-toolbar-item-background);
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;

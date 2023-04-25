@@ -4,8 +4,6 @@
 
 A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
-[思源笔记](http://github.com/siyuan-note/siyuan)的浅色主题。
-
 ### Preview
 
 整体采用融为一体的、朦胧、清爽的风格。

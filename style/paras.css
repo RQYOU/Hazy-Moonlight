@@ -21,21 +21,15 @@ strong:not([style]) {
 
 /* ------------------------------- 行内块字体样式 -------------------------------------- */
 /* 文字背景色： */
-strong[style|="background"] {
+/* strong[style|="background"] {
   padding: 2px 4px;
   border-radius: 3px;
-}
-/* 斜体 */
-em {
-  font-style: italic;
-  color: inherit;
-  font-weight: inherit;
-}
-
-.b3-typography strong,
+} */
+/* 文字背景色text和高亮mark */
 .b3-typography span[data-type~="text"],
-.protyle-wysiwyg strong,
-.protyle-wysiwyg span[data-type~="text"] {
+.b3-typography span[data-type~="mark"],
+.protyle-wysiwyg span[data-type~="text"],
+.protyle-wysiwyg span[data-type~="mark"] {
   padding: 4.5px 2px 3.5px 2px;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -56,6 +50,13 @@ em {
 .b3-typography h6 strong {
   color: inherit;
 } */
+
+/* 斜体 */
+em {
+  font-style: italic;
+  color: inherit;
+  font-weight: inherit;
+}
 
 /* -------- 行内代码：--------- */
 /* .b3-typography code:not(.hljs),
@@ -154,6 +155,14 @@ em {
   font-size: 15px !important;
   color: var(--b3-protyle-blockquote-para);
   margin: 0px 0px !important;
+}
+
+/* ------------------------------- block-ref -------------------------------------- */
+span[data-type="block-ref"] {
+  font-family: var(--b3-font-family-code);
+  color: var(--b3-protyle-inline-blockref-color);
+  background-color: var(--b3-theme-surface-light);
+  border-bottom: 2px dotted var(--b3-theme-primary-light);
 }
 
 /* ------------------------------- 代码块样式 -------------------------------------- */
@@ -335,12 +344,4 @@ foreignObject,
 text,
 canvas {
   font-family: var(--b3-font-family) !important;
-}
-
-/* ------------------------------- block-ref -------------------------------------- */
-span[data-type="block-ref"] {
-  font-family: var(--b3-font-family-code);
-  color: var(--b3-protyle-inline-blockref-color);
-  background-color: var(--b3-theme-surface-light);
-  border-bottom: 2px dotted var(--b3-theme-primary-light);
 }

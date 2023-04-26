@@ -28,34 +28,23 @@
   --b3-layout-tab-bar-item-focus-after: #5a8ad8;
   --b3-wnd-active-tab-bar-item-focus-after-bg: #79a6ee;
 
-  /* ------------------------- ⬇️自定义⬇️ ------------------------- */
-  /* 编辑区文字选中背景 */
-  --b3-text-select-background: #d4ebf4; /* #d4ebf4鼠标划选区域 */
-  --b3-text-drag-select-background: #d1e9fb; /* #d4ebf4鼠标划选区域 */
-  /* a标签下面的线条 */
-  --b3-link-bottom: rgba(78, 78, 86, 0.2);
-  /* 编辑器导航滑块：上下箭头 */
-  --b3-nav-scroll: #88a7d9;
-
-  /* ----- 列表 ----- */
-  /* 列表：选中后的背景色 */
+  /* ----- 列表：自定义 ----- */
+  /* 列表：选中后的背景色： */
   --b3-list-item-focus: #e6eef7;
   --b3-list-item-hover: #e0edf9;
   --b3-list-item-toggle-hl-hover: #cde5fc;
   /* 对话框中的列表 */
   --b3-dialog-list-item-hover: #e5edf5;
 
-  /* 对话框的背景 */
+  /* 对话框的背景：自定义 */
   --b3-dialog-close: #205d99;
   --b3-dialog-scrim: rgb(238 241 246 / 0.8);
 
-  /* 滚动条 */
+  /* 滚动条：自定义 */
   --b3-scrollbar: #ddecfd;
 
-  /* dock */
+  /* dock：自定义 */
   --dock-item-activefocus-background: #e6eef7;
-
-  /* ------------------------- ⬆️自定义⬆️ ------------------------- */
 
   /* toolbar */
   --b3-toolbar-background: #2b2d30;
@@ -70,6 +59,9 @@
   --b3-toolbar-item-4: #4f5255;
   --b3-toolbar-item-background: #c6e4ee;
   --b3-toolbar-item-hover-background: #c6e4ee;
+
+  /* 标签页 */
+  --b3-tab-bar-block-icon-more: #aaacaf;
 
   /* 线条 */
   --b3-border-color: #e0e5ea; /*rgba(0, 0, 0, .1) , rgba(0, 0, 0, 0.3)*/
@@ -116,7 +108,28 @@
   --b3-select-background: url("data:image/svg+xml;utf8,<svg fill='rgba(95, 99, 104, .68)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
     no-repeat right 2px center var(--b3-theme-background);
 
+  /* 动画效果 */
+  --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
+  --b3-width-transition: width 0.2s cubic-bezier(0, 0, 0.2, 1) 0ms;
+
+  /* 阴影 */
+  /* --b3-point-shadow: 0 3px 6px rgba(140, 149, 159, 0.15); */
+  --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  /* --b3-dialog-shadow: 0 8px 24px rgba(140, 149, 159, 0.2); */
+  --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+
   /* -------------------------------------  ------------------------------------- */
+
+  /* 编辑区文字选中背景：自定义 */
+  --b3-text-select-background: #d4ebf4; /* #d4ebf4鼠标划选区域 */
+  --b3-text-drag-select-background: #d1e9fb; /* #d4ebf4鼠标划选区域 */
+  /* a标签下面的线条：自定义 */
+  --b3-link-bottom: rgba(78, 78, 86, 0.2);
+  /* 编辑器导航滑块：上下箭头：自定义 */
+  --b3-nav-scroll: #88a7d9;
+
   /* 粗体、着重、斜体颜色 */
   --b3-protyle-inline-strong-color: #202124;
   --b3-protyle-inline-em-color: #202124;
@@ -160,24 +173,6 @@
   --b3-protyle-codeblock-after: #ffffff; /* 自定义 */
   --b3-protyle-codeblock-empty-hint: #9b9b9b9a; /* 自定义 */
 
-  /* 动画效果 */
-  --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
-  --b3-width-transition: width 0.2s cubic-bezier(0, 0, 0.2, 1) 0ms;
-
-  /* 阴影 */
-  /* --b3-point-shadow: 0 3px 6px rgba(140, 149, 159, 0.15); */
-  --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  /* --b3-dialog-shadow: 0 8px 24px rgba(140, 149, 159, 0.2); */
-  --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
-    0px 9px 46px 8px rgba(0, 0, 0, 0.12);
-
-  /* 表格 */
-  --b3-table-border-color: #cfdcec; /* e4e6e8 cfdcec  dee6ec  DBE4EB */
-  --b3-table-th-color: #edf1f5; /* e6ecf0   e9ecee   EAEFF3  EBF0F4  e6ecf0 DCE8F0 E3EBF1 */
-  --b3-table-tr2n-color: #f0f4f7; /* f0f4f5   EAEFF3  EBF0F4 e6ecf0 DCE8F0 E3EBF1 */
-  --b3-table-trn-color: #edf1f5; /* e9ecee   eff3f5  F0F2F5 E9EFF3 #EBF0F3 */
-
   /* 自定义文字颜色 */
   --b3-font-color1: #1446a3;
   --b3-font-color2: #005ed7;
@@ -207,6 +202,12 @@
   --b3-font-background11: rgba(234, 202, 220, 0.5);
   --b3-font-background12: rgba(253, 198, 200, 0.5); /* f8d7da */
   --b3-font-background13: var(--b3-theme-on-background);
+
+  /* 表格 */
+  --b3-table-border-color: #cfdcec; /* e4e6e8 cfdcec  dee6ec  DBE4EB */
+  --b3-table-th-color: #edf1f5; /* e6ecf0   e9ecee   EAEFF3  EBF0F4  e6ecf0 DCE8F0 E3EBF1 */
+  --b3-table-tr2n-color: #f0f4f7; /* f0f4f5   EAEFF3  EBF0F4 e6ecf0 DCE8F0 E3EBF1 */
+  --b3-table-trn-color: #edf1f5; /* e9ecee   eff3f5  F0F2F5 E9EFF3 #EBF0F3 */
 
   /* 字体 */
   --b3-font-family: "Noto Sans", "Noto Sans SC", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB",

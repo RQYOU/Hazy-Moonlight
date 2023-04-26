@@ -23,17 +23,17 @@
   --b3-theme-on-surface-light: rgba(95, 99, 104, 0.68);
 
   /* 文字颜色 */
-  --b3-font-color1: #017ade;
-  --b3-font-color2: #004af8;
+  --b3-font-color1: #089dca; /* 017ade */
+  --b3-font-color2: #017ade; /* 004af8 */
   --b3-font-color3: #001aff; /*  */
   --b3-font-color4: #612cff;
-  --b3-font-color5: #b93fff; /* 5e1ca8 */
+  --b3-font-color5: #bf52ff; /* 5e1ca8 */
   --b3-font-color6: #f5539e;
-  --b3-font-color7: #05c299;
+  --b3-font-color7: #05c2a9;
   --b3-font-color8: #039f34;
-  --b3-font-color9: #f5822e;
-  --b3-font-color10: #e09a03;
-  --b3-font-color11: #ea5b02;
+  --b3-font-color9: #e09a03;
+  --b3-font-color10: #f5822e;
+  --b3-font-color11: #d9085f;
   --b3-font-color12: #ff0000;
   --b3-font-color13: #47495a; /*var(--b3-theme-background)*/
 

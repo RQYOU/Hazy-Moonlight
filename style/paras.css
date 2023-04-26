@@ -16,7 +16,7 @@ strong:not([style]) {
 .b3-typography [data-node-id],
 .protyle-wysiwyg p,
 .protyle-wysiwyg [data-node-id] {
-  margin: 25px 0;
+  margin: 4px 0;
 }
 
 /* ------------------------------- 行内块字体样式 -------------------------------------- */
@@ -136,6 +136,11 @@ em {
 .b3-typography img,
 .protyle-wysiwyg img {
   margin: 4px auto; /* 增加上下边距 */
+}
+
+/* 超级块 */
+.protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"] {
+  margin: 25px 0;
 }
 
 /* ------------------------------- 引用块 block quote -------------------------------------- */

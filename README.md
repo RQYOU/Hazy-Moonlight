@@ -8,7 +8,7 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 整体采用融为一体的、朦胧、清爽的风格。
 
-顶部的工具栏、左右 dock、底部状态栏均收窄，并将编辑区标签页提到顶部工具栏位置，尽量增加中间区域空间。
+布局紧凑，顶部的工具栏、左右 dock、底部状态栏均收窄，并将编辑区标签页提到顶部工具栏位置，尽量增加中间区域空间。
 
 ![1682427206132](image/README/preview.png)
 

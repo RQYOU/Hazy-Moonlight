@@ -23,7 +23,7 @@
   --b3-theme-on-surface-light: rgba(95, 99, 104, 0.68);
 
   /* 文字颜色 */
-  --b3-font-color1: #0784e9;
+  --b3-font-color1: #017ade;
   --b3-font-color2: #004af8;
   --b3-font-color3: #001aff; /*  */
   --b3-font-color4: #612cff;
@@ -153,7 +153,7 @@
   /* -------------------------------------  ------------------------------------- */
 
   /* 编辑区文字选中背景：自定义 */
-  --b3-text-select-background: #d4ebf4; /* #d4ebf4鼠标划选区域 */
+  --b3-text-select-background: #d7eaffb6; /* #d4ebf4鼠标划选区域 */
   --b3-text-drag-select-background: #d1e9fb; /* #d4ebf4鼠标划选区域 */
   /* a标签下面的线条：自定义 */
   --b3-link-bottom: rgba(78, 78, 86, 0.2);

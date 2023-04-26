@@ -38,7 +38,7 @@
   --b3-font-color13: #47495a; /*var(--b3-theme-background)*/
 
   /* 背景颜色 */
-  --b3-font-background1: #a9eaffcb; /* a9eaffcb */
+  --b3-font-background1: #b7edffcb; /* a9eaffcb */
   --b3-font-background2: #67bafe93;
   --b3-font-background3: #177afb6e; /* 437bff6b */
   --b3-font-background4: #6e4eff69; /*  6769ff74  */
@@ -84,7 +84,7 @@
   --b3-dialog-list-item-hover: #e5edf5;
 
   /* 对话框的背景：自定义 */
-  --b3-dialog-close: #205d99;
+  --b3-dialog-close: #3078c0c4; /* 205d99 */
   --b3-dialog-scrim: rgb(238 241 246 / 0.8);
 
   /* 滚动条：自定义 */

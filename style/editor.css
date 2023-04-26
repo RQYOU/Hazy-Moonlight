@@ -119,6 +119,16 @@ ul.layout-tab-bar {
   color: #3574b3;
 } */
 
+/* 菜单 */
+.b3-menu__item--show > .b3-menu__submenu--row {
+  width: 332px;
+  height: 149px;
+}
+.b3-menu__item--show > .b3-menu__submenu--row .b3-menu__item {
+  padding: 4px;
+  height: 24px;
+}
+
 /* --------------- kbd font --------------- */
 kbd {
   font-family: var(--b3-font-family-code) !important;

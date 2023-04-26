@@ -38,9 +38,9 @@
   --b3-font-color13: #47495a; /*var(--b3-theme-background)*/
 
   /* 背景颜色 */
-  --b3-font-background1: #b7edffcb; /* a9eaffcb */
-  --b3-font-background2: #67bafe93;
-  --b3-font-background3: #177afb6e; /* 437bff6b */
+  --b3-font-background1: #b7f5ffc5; /* b7edffcb  / a9eaffcb */
+  --b3-font-background2: #67c7fe93; /* 67bafe93 */
+  --b3-font-background3: #398efd6e; /* 437bff6b */
   --b3-font-background4: #6e4eff69; /*  6769ff74  */
   --b3-font-background5: #eecfff; /* c7bdff */
   --b3-font-background6: #ffa3d7a5;

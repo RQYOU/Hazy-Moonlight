@@ -32,6 +32,18 @@ em {
   font-weight: inherit;
 }
 
+.b3-typography strong,
+.b3-typography span[data-type~="text"],
+.protyle-wysiwyg strong,
+.protyle-wysiwyg span[data-type~="text"] {
+  padding: 4.5px 2px 3.5px 2px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
 /* .protyle-wysiwyg [data-type="NodeHeading"] strong {
   color: inherit;
   text-shadow: 1px 1px 1px #002636b8;

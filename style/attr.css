@@ -23,33 +23,33 @@
   --b3-theme-on-surface-light: rgba(95, 99, 104, 0.68);
 
   /* 文字颜色 */
-  --b3-font-color1: #1446a3;
-  --b3-font-color2: #005ed7;
-  --b3-font-color3: #005ed7;
-  --b3-font-color4: #5e1ca8;
-  --b3-font-color5: #04805d;
-  --b3-font-color6: #11ad81;
-  --b3-font-color7: #15ac47;
-  --b3-font-color8: #be550a;
+  --b3-font-color1: #0784e9;
+  --b3-font-color2: #004af8;
+  --b3-font-color3: #001aff; /*  */
+  --b3-font-color4: #612cff;
+  --b3-font-color5: #b93fff; /* 5e1ca8 */
+  --b3-font-color6: #f5539e;
+  --b3-font-color7: #05c299;
+  --b3-font-color8: #039f34;
   --b3-font-color9: #f5822e;
-  --b3-font-color10: #f5539e;
-  --b3-font-color11: #944194;
-  --b3-font-color12: #f35540;
+  --b3-font-color10: #e09a03;
+  --b3-font-color11: #ea5b02;
+  --b3-font-color12: #ff0000;
   --b3-font-color13: #47495a; /*var(--b3-theme-background)*/
 
   /* 背景颜色 */
-  --b3-font-background1: #cae7ffcb;
-  --b3-font-background2: #cce4ffb4;
-  --b3-font-background3: #d0ecf1cb;
-  --b3-font-background4: #bff7edc7;
-  --b3-font-background5: #d5edda;
-  --b3-font-background6: rgba(189, 201, 255, 0.5);
-  --b3-font-background7: rgba(196, 189, 255, 0.5);
-  --b3-font-background8: rgba(255, 193, 153, 0.5);
-  --b3-font-background9: rgba(253, 255, 153, 0.5); /* fff2cd */
-  --b3-font-background10: rgba(239, 218, 251, 0.5);
-  --b3-font-background11: rgba(234, 202, 220, 0.5);
-  --b3-font-background12: rgba(253, 198, 200, 0.5); /* f8d7da */
+  --b3-font-background1: #a9eaffcb; /* a9eaffcb */
+  --b3-font-background2: #67bafe93;
+  --b3-font-background3: #177afb6e; /* 437bff6b */
+  --b3-font-background4: #6e4eff69; /*  6769ff74  */
+  --b3-font-background5: #eecfff; /* c7bdff */
+  --b3-font-background6: #ffa3d7a5;
+  --b3-font-background7: #33f2bf95; /*# */
+  --b3-font-background8: #59ff4a95; /* 4aff4d95 */
+  --b3-font-background9: #fdff99; /*  f1f50f96*/
+  --b3-font-background10: #ff870782;
+  --b3-font-background11: #ff4c0593; /* fff2cd */
+  --b3-font-background12: #ff173e7e; /* f8d7da */
   --b3-font-background13: var(--b3-theme-on-background);
 
   /* layout：自定义 */
@@ -57,6 +57,23 @@
   --b3-layout-tab-bar-item-focus: #f8f9fc;
   --b3-layout-tab-bar-item-focus-after: #5a8ad8;
   --b3-wnd-active-tab-bar-item-focus-after-bg: #79a6ee;
+
+  /* toolbar */
+  --b3-toolbar-background: #2b2d30;
+  --b3-toolbar-blur-background: #373a41;
+  --b3-toolbar-color: #9aa0a6;
+  --b3-toolbar-hover: #383a42;
+  --b3-toolbar-left-mac: 69px;
+  /* toolbar：自定义 */
+  --b3-toolbar-item-1: black;
+  --b3-toolbar-item-2: #6c7075;
+  --b3-toolbar-item-3: #5f6367;
+  --b3-toolbar-item-4: #4f5255;
+  --b3-toolbar-item-background: #c6e4ee;
+  --b3-toolbar-item-hover-background: #c6e4ee;
+
+  /* dock：自定义 */
+  --dock-item-activefocus-background: #e6eef7;
 
   /* ----- 列表：自定义 ----- */
   /* 列表：选中后的背景色： */
@@ -72,23 +89,6 @@
 
   /* 滚动条：自定义 */
   --b3-scrollbar: #ddecfd;
-
-  /* dock：自定义 */
-  --dock-item-activefocus-background: #e6eef7;
-
-  /* toolbar */
-  --b3-toolbar-background: #2b2d30;
-  --b3-toolbar-blur-background: #373a41;
-  --b3-toolbar-color: #9aa0a6;
-  --b3-toolbar-hover: #383a42;
-  --b3-toolbar-left-mac: 69px;
-  /* toolbar：自定义 */
-  --b3-toolbar-item-1: black;
-  --b3-toolbar-item-2: #6c7075;
-  --b3-toolbar-item-3: #5f6367;
-  --b3-toolbar-item-4: #4f5255;
-  --b3-toolbar-item-background: #c6e4ee;
-  --b3-toolbar-item-hover-background: #c6e4ee;
 
   /* 标签页 */
   --b3-tab-bar-block-icon-more: #aaacaf;

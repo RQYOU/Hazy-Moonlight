@@ -81,6 +81,12 @@ body.body--blur .toolbar {
   width: 15px;
   height: 15px;
 }
+
+.toolbar #toolbarVIP .toolbar__item svg path {
+  fill: #25c7e0;
+  stroke: #25c7e0;
+}
+
 /* 无思源会员时，此区域显式思源笔记的图标 */
 .toolbar #toolbarVIP:empty {
   --webkit-app-region: drag;

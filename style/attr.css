@@ -22,6 +22,36 @@
   --b3-theme-on-error: #fff;
   --b3-theme-on-surface-light: rgba(95, 99, 104, 0.68);
 
+  /* 文字颜色 */
+  --b3-font-color1: #1446a3;
+  --b3-font-color2: #005ed7;
+  --b3-font-color3: #005ed7;
+  --b3-font-color4: #5e1ca8;
+  --b3-font-color5: #04805d;
+  --b3-font-color6: #11ad81;
+  --b3-font-color7: #15ac47;
+  --b3-font-color8: #be550a;
+  --b3-font-color9: #f5822e;
+  --b3-font-color10: #f5539e;
+  --b3-font-color11: #944194;
+  --b3-font-color12: #f35540;
+  --b3-font-color13: #47495a; /*var(--b3-theme-background)*/
+
+  /* 背景颜色 */
+  --b3-font-background1: #cae7ffcb;
+  --b3-font-background2: #cce4ffb4;
+  --b3-font-background3: #d0ecf1cb;
+  --b3-font-background4: #bff7edc7;
+  --b3-font-background5: #d5edda;
+  --b3-font-background6: rgba(189, 201, 255, 0.5);
+  --b3-font-background7: rgba(196, 189, 255, 0.5);
+  --b3-font-background8: rgba(255, 193, 153, 0.5);
+  --b3-font-background9: rgba(253, 255, 153, 0.5); /* fff2cd */
+  --b3-font-background10: rgba(239, 218, 251, 0.5);
+  --b3-font-background11: rgba(234, 202, 220, 0.5);
+  --b3-font-background12: rgba(253, 198, 200, 0.5); /* f8d7da */
+  --b3-font-background13: var(--b3-theme-on-background);
+
   /* layout：自定义 */
   --b3-layout-resize-lr-after-bg: #f0f2f6;
   --b3-layout-tab-bar-item-focus: #f8f9fc;
@@ -172,36 +202,6 @@
   --b3-protyle-codeblock-icon-hover-background: #b7d5e4; /* 自定义 */
   --b3-protyle-codeblock-after: #ffffff; /* 自定义 */
   --b3-protyle-codeblock-empty-hint: #9b9b9b9a; /* 自定义 */
-
-  /* 自定义文字颜色 */
-  --b3-font-color1: #1446a3;
-  --b3-font-color2: #005ed7;
-  --b3-font-color3: #005ed7;
-  --b3-font-color4: #5e1ca8;
-  --b3-font-color5: #04805d;
-  --b3-font-color6: #11ad81;
-  --b3-font-color7: #15ac47;
-  --b3-font-color8: #be550a;
-  --b3-font-color9: #f5822e;
-  --b3-font-color10: #f5539e;
-  --b3-font-color11: #944194;
-  --b3-font-color12: #f35540;
-  --b3-font-color13: #47495a; /*var(--b3-theme-background)*/
-
-  /* 自定义背景颜色 */
-  --b3-font-background1: #cae7ffcb;
-  --b3-font-background2: #cce4ffb4;
-  --b3-font-background3: #d0ecf1cb;
-  --b3-font-background4: #bff7edc7;
-  --b3-font-background5: #d5edda;
-  --b3-font-background6: rgba(189, 201, 255, 0.5);
-  --b3-font-background7: rgba(196, 189, 255, 0.5);
-  --b3-font-background8: rgba(255, 193, 153, 0.5);
-  --b3-font-background9: rgba(253, 255, 153, 0.5); /* fff2cd */
-  --b3-font-background10: rgba(239, 218, 251, 0.5);
-  --b3-font-background11: rgba(234, 202, 220, 0.5);
-  --b3-font-background12: rgba(253, 198, 200, 0.5); /* f8d7da */
-  --b3-font-background13: var(--b3-theme-on-background);
 
   /* 表格 */
   --b3-table-border-color: #cfdcec; /* e4e6e8 cfdcec  dee6ec  DBE4EB */

@@ -34,6 +34,18 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 ![1682432959720](image/README/table.png)
 
+### Background Color
+
+将字体背景色添加了边距和圆角，这样看起来好看些。
+
+最后一种背景色，可以用作将某些文字遮盖。
+
+![1682432959720](https://file+.vscode-resource.vscode-cdn.net/Users/oilo/DEV/Projects/Proj-VSCode/SiYuan-Themes/RQU-MoonLight/image/README/backgroundcolor.png)
+
+### Font Color
+
+![1682432959720](https://file+.vscode-resource.vscode-cdn.net/Users/oilo/DEV/Projects/Proj-VSCode/SiYuan-Themes/RQU-MoonLight/image/README/fontcolor.png)
+
 ### Links
 
 直观显示链接来源

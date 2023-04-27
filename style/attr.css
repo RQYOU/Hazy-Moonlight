@@ -23,33 +23,33 @@
   --b3-theme-on-surface-light: rgba(95, 99, 104, 0.68);
 
   /* 文字颜色 */
-  --b3-font-color1: #089dca; /* 017ade */
-  --b3-font-color2: #017ade; /* 004af8 */
+  --b3-font-color1: #03a3ff; /* 017ade */
+  --b3-font-color2: #056ede; /* 004af8 */
   --b3-font-color3: #001aff; /*  */
-  --b3-font-color4: #612cff;
-  --b3-font-color5: #bf52ff; /* 5e1ca8 */
-  --b3-font-color6: #f5539e;
-  --b3-font-color7: #05c2a9;
-  --b3-font-color8: #039f34;
-  --b3-font-color9: #e09a03;
-  --b3-font-color10: #f5822e;
-  --b3-font-color11: #d9085f;
-  --b3-font-color12: #ff0000;
+  --b3-font-color4: #9901ff;
+  --b3-font-color5: #f309f3; /* 5e1ca8 */
+  --b3-font-color6: #ff56d5;
+  --b3-font-color7: #e7087f; /*  d9085f */
+  --b3-font-color8: #ff0000;
+  --b3-font-color9: #03a85e; /* 0fb46c */
+  --b3-font-color10: #067318; /* 249210 */
+  --b3-font-color11: #d17103;
+  --b3-font-color12: #f96801;
   --b3-font-color13: #47495a; /*var(--b3-theme-background)*/
 
   /* 背景颜色 */
-  --b3-font-background1: #b7f5ffc5; /* b7edffcb  / a9eaffcb */
-  --b3-font-background2: #67c7fe93; /* 67bafe93 */
-  --b3-font-background3: #398efd6e; /* 437bff6b */
-  --b3-font-background4: #6e4eff69; /*  6769ff74  */
-  --b3-font-background5: #eecfff; /* c7bdff */
-  --b3-font-background6: #ffa3d7a5;
-  --b3-font-background7: #33f2bf95; /*# */
-  --b3-font-background8: #59ff4a95; /* 4aff4d95 */
-  --b3-font-background9: #fdff99; /*  f1f50f96*/
-  --b3-font-background10: #ff870782;
-  --b3-font-background11: #ff4c0593; /* fff2cd */
-  --b3-font-background12: #ff173e7e; /* f8d7da */
+  --b3-font-background1: #0ffce88a;
+  --b3-font-background2: #73ebfebb; /* b7edffcb  / a9eaffcb */
+  --b3-font-background3: #3fb4f885; /* 67bafe93 */
+  --b3-font-background4: #3c6ffd5d; /* 437bff6b */
+  --b3-font-background5: #785aff60; /*  6769ff74  */
+  --b3-font-background6: #d483ff89; /* c7bdff */
+  --b3-font-background7: #ff8fce8c; /* ffa3d7a5 */
+  --b3-font-background8: #25e9b488; /* 33f2bf95 */
+  --b3-font-background9: #58f54a88; /*  59ff4a95 ｜ 4aff4d95 */
+  --b3-font-background10: #f1f423b3; /*  f1f50f96*/
+  --b3-font-background11: #ff870782;
+  --b3-font-background12: #ff173e70; /* ff173e7e |  f8d7da */
   --b3-font-background13: var(--b3-theme-on-background);
 
   /* layout：自定义 */

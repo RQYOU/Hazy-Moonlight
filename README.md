@@ -8,6 +8,8 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 下面展示的尽量是最新代码的样式。已发布的 lastest 版本并不一定是最新代码。
 
+为了尽量在短的时间内实现所要的效果，代码有时候会比较混乱和随便，请谅解。
+
 ### Preview
 
 整体采用融为一体的、朦胧、清爽的风格。

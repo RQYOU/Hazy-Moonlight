@@ -10,6 +10,8 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 为了尽量在短的时间内实现所要的效果，代码有时候会比较混乱和随便，请谅解。
 
+2023-04-28：最新修改较多，但未经全面测试，所以很可能会有 bug 存在。
+
 ### Preview
 
 整体采用融为一体的、朦胧、清爽的风格。

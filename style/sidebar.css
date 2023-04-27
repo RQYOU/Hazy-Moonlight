@@ -1,21 +1,69 @@
 /* -------------------------------------- dock -------------------------------------- */
 
+/* .dock包括左右dock和底部不显示的dock */
 .dock,
 .dock__item {
   background-color: var(--b3-theme-surface);
 }
 
+/* 垂直 dock：即左右dock */
+.dock--vertical {
+  width: 40px;
+  /* 将编辑区标签页提到顶部遮住工具栏后，将左右dock下移 */
+  padding-top: 25px;
+  /* margin: 0 2px 0 1px;  */
+  /* z-index: 43 */
+}
+
+/* 消除2个中间的竖线 */
+.dock#dockLeft {
+  border-right-color: var(--b3-theme-surface);
+}
+.dock#dockRight {
+  border-left-color: var(--b3-theme-surface);
+}
+
+/* 左右dock的图标 */
+.dock--vertical div:first-child:not(:empty) span svg,
+.dock--vertical div:last-child:not(:empty) span svg {
+  width: 12.5px;
+  height: 12.5px;
+}
+.dock--vertical div:first-child:not(:empty) span.dock__item svg,
+.dock--vertical div:last-child:not(:empty) span.dock__item svg {
+  color: var(--dock-item-svg);
+}
+.dock--vertical div:first-child:not(:empty) span.dock__item--active svg,
+.dock--vertical div:last-child:not(:empty) span.dock__item--active svg {
+  color: var(--dock-item-active-svg);
+}
+
+/* 点击选中的按钮 */
+.dock__item--activefocus {
+  /* background-color: var(--dock-item-activefocus-background) !important; */
+  background-color: var(--b3-list-item-focus-sidebar) !important;
+}
+
+/* -------------------------------------- 左右侧边栏：即文件区、大纲区、关系图等 -------------------------------------- */
+
+/* 将编辑区标签页提到顶部后，让左右两侧边栏下降 */
+#layouts > .fn__flex > .fn__flex-column:not(.layout__center) {
+  margin-top: 26px;
+}
+
+/* ----------------- 上方的图标和文字 ---------------- */
 .block__icons {
   height: 30px;
   background-color: var(--b3-tab-background);
   min-height: 32px;
 }
 
-/* 设置当前活动的侧边栏项： */
+/* ------ 显示当前活动的侧边栏项：如文档树 ----- */
 .block__icons .block__logo {
   color: var(--b3-theme-on-surface);
+  font-size: 12.4px;
 }
-/* 隐藏这里的图标： */
+/* 隐藏显示当前活动的侧边栏项的图标：即只保留文字 */
 .block__logo svg {
   height: 0px;
   width: 0px;
@@ -25,74 +73,4 @@
 .block__icon svg {
   height: 13px;
   width: 13px;
-}
-/* 图标的宽度和高度 */
-.dock--vertical div:first-child:not(:empty) span svg,
-.dock--vertical div:last-child:not(:empty) span svg {
-  width: 12.5px;
-  height: 12.5px;
-}
-.dock--vertical div:first-child:not(:empty) span.dock__item svg,
-.dock--vertical div:last-child:not(:empty) span.dock__item svg {
-  /* color:var(--b3-theme-on-background); */
-  color: #82878d;
-}
-.dock--vertical div:first-child:not(:empty) span.dock__item--active svg,
-.dock--vertical div:last-child:not(:empty) span.dock__item--active svg {
-  /* color:var(--b3-theme-on-background);  979799   */
-  color: #a5a5a7;
-}
-/* 垂直 dock：包括左dock和右dock */
-.dock--vertical {
-  width: 40px;
-  /* margin-left: 1px;  */
-  /* margin-right: 2px;  */
-  /* z-index: 43 */
-}
-/* 点击选中的按钮 */
-.dock__item--activefocus {
-  background-color: var(--dock-item-activefocus-background) !important;
-}
-
-/* -------------------------------------- 左边的文件区/大纲区 -------------------------------------- */
-
-/* ---------- 左边栏文件列表： ---------- */
-/* 修改文件列表左边距 */
-.b3-list-item {
-  margin: 0 !important;
-}
-
-/* 鼠标放在上面的背景色 */
-.b3-list--files .b3-list-item:hover {
-  /* 覆盖base.css中的var(--b3-list-hover) */
-  background-color: var(--b3-list-item-hover) !important; /* EBF0F7 E2EFF9 */
-}
-/* 选中之后的背景色 */
-.b3-list--files .b3-list-item--focus {
-  background-color: var(--b3-list-item-focus) !important;
-}
-.b3-list--files .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
-  background-color: var(--b3-list-item-focus) !important;
-}
-
-/* 左边栏文件列表的箭头： */
-.b3-list-item__toggle--hl:hover {
-  color: var(--b3-theme-on-background);
-  /* background-color: var(--b3-theme-primary-lightest); */
-  background-color: var(--b3-list-item-toggle-hl-hover); /* daecfd */
-  border-radius: 0px;
-  /* border-radius: 4px */
-}
-
-/* 中间部分 */
-.layout__resize--lr:after {
-  background-color: var(--b3-layout-resize-lr-after-bg);
-}
-
-/* 消除2个中间的竖线 */
-.dock#dockLeft {
-  border-right-color: var(--b3-theme-surface);
-}
-.dock#dockRight {
-  border-left-color: var(--b3-theme-surface);
 }

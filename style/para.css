@@ -74,6 +74,11 @@ em {
   font-family: var(--b3-font-family) !important;
 }
 
+/* -------- 键盘 -------- */
+kbd {
+  font-family: var(--b3-font-family-code) !important;
+}
+
 /* -------- 有序列表、无序列表 -------- */
 [data-node-id].p + [data-node-id].list {
   padding: 0 0 4px 0;

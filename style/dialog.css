@@ -1,12 +1,32 @@
-/* ------------------------------ 弹出对话框 ------------------------------ */
+/* ------------------------------ 设置对话框 ------------------------------ */
 /* 弹出对话框时的背景： */
 .b3-dialog__scrim {
   background-color: var(--b3-dialog-scrim);
 }
 
+.config__panel .config__tab-container .layout-tab-bar {
+  margin-top: 17px;
+}
+
+.config__panel .config__tab-container .layout-tab-bar .item {
+  min-height: 27px;
+}
+
+.config__panel .config__tab-container .layout-tab-bar .item--focus {
+  background-color: unset;
+  font-weight: 600;
+}
+.config__panel .config__tab-container .layout-tab-bar .item--focus:after {
+  background-color: unset;
+}
+
 /* 弹出对话框左侧选项列表 */
 .config__panel > .b3-tab-bar {
-  margin: 0 10px;
+  margin: 15px 10px;
+}
+
+.config__panel > .b3-tab-bar .b3-list-item__graphic {
+  margin-left: 12px;
 }
 
 /* 弹出对话框的关闭按钮： */
@@ -19,8 +39,8 @@
   border-radius: 16px;
   padding: 3px;
   margin-left: 22px;
-  height: 23px;
-  width: 23px;
+  height: 23.5px;
+  width: 23.5px;
   transition: all 0.3s linear;
   /* top: 1px; */
   right: -39px;
@@ -40,6 +60,24 @@
   padding: 6px 0;
 }
 
+/* 账号设置：未登录时：右侧文字 */
+.config-account__center--text .b3-button--outline {
+  height: unset;
+}
+
+.b3-button#login {
+  background-color: var(--button-login-bg);
+}
+
+.config__tab-container .b3-button {
+  background-color: var(--button-dialog-bg);
+}
+
+.bazaarPanel .b3-button:not(.b3-button--outline) {
+  background-color: var(--button-dialog-bazaar-bg);
+  color: var(--field-bg-blue);
+}
+
 /* ------------------------------ 弹出确定对话框 ------------------------------ */
 .b3-dialog__action {
   border-top: none;
@@ -47,8 +85,4 @@
 
 .b3-dialog__header {
   border-bottom: none;
-}
-
-/*  */
-.b3-select:hover {
 }

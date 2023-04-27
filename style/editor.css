@@ -1,47 +1,29 @@
-/* ------------------------------- 编辑区 -------------------------------------- */
-
-/* --------------- 编辑区后侧的滑块 --------------- */
-/* .protyle-scroll { */
-/* right: -8px !important; */
-/*width: 14px; */ /* 调整上下2个箭头的左右位置 */
-/* display: block !important; */ /* 配合让滑块始终显示 */
-/* } */
-
-.protyle-scroll__bar {
-  display: inherit !important; /* 让滑块始终显示 */
+/* ------------------------------- 编辑区和左侧边栏之间的resize区域 ------------------------------- */
+.layout__resize--lr:after {
+  background-color: var(--b3-layout-resize-lr-after-bg);
 }
 
-.protyle-scroll svg {
-  /* 调整上下2个箭头的大小 */
-  height: 14px;
-  width: 14px;
+/* ------------------------------- 编辑区 ------------------------------- */
+
+/* 整个编辑区 */
+.layout-tab-container {
+  margin-top: 3px;
 }
 
-.protyle-scroll__down,
-.protyle-scroll__up {
-  color: var(--b3-nav-scroll);
-  opacity: 1;
-}
-
-/* --------------- 真正编辑的区域 --------------- */
+/* 编辑器 */
 .protyle-wysiwyg {
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
 
-/* --------------- 整个编辑区 --------------- */
-.layout-tab-container {
-  margin-top: 3px;
-}
-
-/* --------------- title font --------------- */
+/* 笔记标题 */
 .protyle-title__input {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
 }
 
-/* -------------------------------------- 标签页 -------------------------------------- */
+/* ------------------------------- 标签页 ------------------------------- */
 /* tab color */
 ul.layout-tab-bar {
   background-color: var(--b3-theme-surface);
@@ -57,7 +39,26 @@ ul.layout-tab-bar {
   font-size: 12.5px;
   min-height: 35px;
 }
-/*  */
+
+/* 标签页之间的分隔 */
+/* .layout__center .layout-tab-bar .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  right: auto;
+  top: 7px;
+  height: 20px;
+  border-left: 1px solid #7b7575;
+} */
+
+.layout__center .layout-tab-bar .item--focus::before,
+.layout__center .layout-tab-bar .item--focus:hover::before {
+  left: 12px !important;
+  clip-path: inset(50% -6px 0 50%);
+}
+
+/* -------- */
 .layout-tab-bar .item__graphic {
   margin-right: 6px;
 }
@@ -71,10 +72,13 @@ ul.layout-tab-bar {
 }
 
 /* 获得了焦点的tab */
-.layout-tab-bar .item--focus {
+.layout__center .layout-tab-bar .item--focus,
+.layout__center .layout-tab-bar .item--focus:hover,
+.layout__center .layout-tab-bar .item--focus:focus,
+.layout__center .layout-tab-bar .item--focus:active {
   background-color: var(--b3-layout-tab-bar-item-focus) !important;
-  color: var(--b3-theme-on-background);
 }
+
 /*  */
 .layout-tab-bar .item--focus:after {
   height: 1.5px;
@@ -84,24 +88,18 @@ ul.layout-tab-bar {
 /* 消除焦点tab的shadow */
 .layout__wnd--active .layout-tab-bar .item--focus {
   box-shadow: none !important;
+  border: 1px solid var(--b3-theme-surface);
+  border-radius: 9px;
 }
 .layout__wnd--active .layout-tab-bar .item--focus:after {
   background-color: var(--b3-wnd-active-tab-bar-item-focus-after-bg);
-}
-
-/* 新增加 */
-.layout__center .layout-tab-bar .item--focus,
-.layout__center .layout-tab-bar .item--focus:hover,
-.layout__center .layout-tab-bar .item--focus:focus,
-.layout__center .layout-tab-bar .item--focus:active {
-  background-color: var(--b3-theme-background);
 }
 
 .block__icon[data-type="more"] {
   color: var(--b3-tab-bar-block-icon-more);
 }
 
-/* --------------- 面包屑 --------------- */
+/* ------------------------------- 面包屑 ------------------------------- */
 .protyle-breadcrumb {
   /* padding: 0 2px 2px; */
   margin-top: 3px;
@@ -129,57 +127,22 @@ ul.layout-tab-bar {
   height: 24px;
 }
 
-/* --------------- kbd font --------------- */
-kbd {
-  font-family: var(--b3-font-family-code) !important;
-}
+/* ------------------------------- 选择 ------------------------------- */
 
-/* --------------- 光标选中文本样式 *--------------- /
+/* 光标选中文本样式 */
 .protyle-wysiwyg ::selection {
-  background-color: rgba(7, 97, 214, 0.445);
-  color: white;
+  background-color: var(--protyle-selection-bg);
+  color: var(--color-white);
 }
-/* --------------- 选中块 ---------------*/
+/* 选中块 */
 .protyle-wysiwyg--select,
 .protyle-wysiwyg--select .hljs {
   background-color: var(--b3-text-select-background) !important;
 }
-/* --------------- 鼠标划选区域 --------------- */
+/* 鼠标划选区域 */
 .protyle-select {
   /* cedef4 */
   background-color: var(--b3-text-drag-select-background);
-}
-
-/* -------------------------------------- 列表： --------------------------------------  */
-/* 包含：左侧边栏文件列表、对话框左侧列表、选择代码语言的列表等 */
-.b3-list-item {
-  margin: 0px;
-}
-/* 选中后的背景色 */
-.b3-list--background .b3-list-item--focus {
-  /* background-color: var(--b3-theme-background-light); */
-  background-color: var(--b3-list-item-focus) !important;
-}
-/* 选中之后item的文本颜色 */
-.b3-list--background .b3-list-item--focus > .b3-list-item__text {
-  opacity: 0.5;
-}
-/* 鼠标放在上面的背景色： */
-.b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
-  background-color: var(--b3-list-item-hover) !important;
-}
-/* ---- 单独设置”设置“中左侧列表： ---- */
-/* 选中后的背景色 */
-.b3-dialog .b3-list--background .b3-list-item--focus {
-  background-color: var(--b3-dialog-list-item-hover) !important;
-}
-/* 选中之后item的文本颜色 */
-.b3-dialog .b3-list--background .b3-list-item--focus > .b3-list-item__text {
-  opacity: 0.5;
-}
-/* 鼠标放在上面的背景色： */
-.b3-dialog .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
-  background-color: var(--b3-list-item-hover) !important;
 }
 
 /* ------------------------------- tag -------------------------------------- */
@@ -201,10 +164,6 @@ kbd {
 } */
 
 /* ------------------------------- 窗口其它元素 -------------------------------------- */
-
-.b3-list-item__action svg {
-  color: var(--b3-theme-on-background);
-}
 
 /*  正文  */
 .b3-typography p,
@@ -228,3 +187,52 @@ kbd {
   height: 45px;
   width: 45px;
 }
+
+/* --------------- 编辑区后侧的滑块 --------------- */
+/* .protyle-scroll { */
+/* right: -8px !important; */
+/*width: 14px; */ /* 调整上下2个箭头的左右位置 */
+/* display: block !important; */ /* 配合让滑块始终显示 */
+/* } */
+
+.protyle-scroll__bar {
+  display: inherit !important; /* 让滑块始终显示 */
+}
+
+.protyle-scroll svg {
+  /* 调整上下2个箭头的大小 */
+  height: 14px;
+  width: 14px;
+}
+
+.protyle-scroll__down,
+.protyle-scroll__up {
+  color: var(--b3-nav-scroll);
+  opacity: 1;
+}
+
+/* ------------------------------------------------------------ */
+
+/* .layout-tab-bar .item--focus,
+.layout-tab-bar .item--focus:hover,
+.layout-tab-bar .item--focus:focus,
+.layout-tab-bar .item--focus:active {
+  background-color: ;
+}
+
+.layout-tab-bar .item--focus {
+  color: ;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.layout-tab-bar .item {
+  background-color: ;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  font-size: 13px;
+  border-radius: 4px;
+  height: 28px;
+  min-height: 0;
+  width: auto;
+  padding: 0 4px;
+  flex: unset;
+  box-shadow: unset !important;
+} */

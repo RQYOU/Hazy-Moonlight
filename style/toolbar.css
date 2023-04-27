@@ -1,17 +1,4 @@
-/* -------------------------------------- 顶部工具栏 -------------------------------------- */
-#toolbar {
-  margin-bottom: -30px;
-}
-#layouts > .fn__flex > .fn__flex-column:not(.layout__center) {
-  margin-top: 26px;
-}
-.dock--vertical {
-  padding-top: 25px;
-}
-
-/* .fn__flex-1 {
-  overflow-y: hidden;
-} */
+/* ----------------------------- 顶部工具栏 ----------------------------- */
 
 .fn__flex-column,
 .card__main {
@@ -23,7 +10,11 @@
 .toolbar {
   height: 27px;
   background-color: var(--b3-theme-surface);
-  border-bottom: 0.5px solid var(--b3-border-color);
+  /* 删掉border */
+  /* border-bottom: 0.5px solid var(--b3-border-color); */
+  border-bottom: 0;
+  /* 让编辑区标签页提到顶部遮住工具栏 */
+  margin-bottom: -28px;
 }
 
 body.body--blur .toolbar {
@@ -32,8 +23,7 @@ body.body--blur .toolbar {
 
 .toolbar .toolbar__item {
   color: var(--b3-toolbar-item-3);
-  margin: 4px;
-  padding: 3px;
+  padding: 7px;
 }
 
 .toolbar .toolbar__item svg {
@@ -42,13 +32,14 @@ body.body--blur .toolbar {
   opacity: 0.7;
 }
 
-/* ----------------------- 顶部左边的 ----------------------- */
+/* -------------- 顶部工具栏左边 --------------- */
 /* SiYuan字样 */
 .toolbar__text {
   color: var(--b3-toolbar-item-1);
   font-family: Courier New;
   font-size: 12px;
   margin-top: 2.1px;
+  z-index: 0; /* 将编辑区标签页提到顶部后，加上这个SiYuan字样才能点击 */
 }
 /* 思源笔记字样后的箭头 */
 .toolbar #barWorkspace svg {
@@ -83,8 +74,8 @@ body.body--blur .toolbar {
 }
 
 .toolbar #toolbarVIP .toolbar__item svg path {
-  fill: #25c7e0;
-  stroke: #25c7e0;
+  fill: var(--toolart-vip-svg);
+  stroke: var(--toolart-vip-svg);
 }
 
 /* 无思源会员时，此区域显式思源笔记的图标 */
@@ -112,13 +103,13 @@ body.body--blur .toolbar {
 }
 /* 外观模式：明亮暗黑 */
 .toolbar .toolbar__item#barMode svg {
-  fill: black;
+  fill: var(--color-black);
 }
 
 /* ------------------------------ 底部状态栏上的 ------------------------------ */
 .toolbar .toolbar__item#barDock svg {
   stroke-width: 1px;
-  stroke: #6c7075;
+  stroke: var(--toolart-barDock-svg);
 }
 
 /* ------------------------------ toolbar上的item ------------------------------ */

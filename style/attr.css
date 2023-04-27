@@ -1,18 +1,17 @@
 /* ------------------------------- 全局属性 -------------------------------------- */
 :root {
   /* 主色 */
-  --b3-theme-primary: #3884ff;
+  --b3-theme-primary: #0052d9; /* 原3884ff*/
   --b3-theme-primary-light: rgba(66, 133, 244, 0.54);
   --b3-theme-primary-lighter: rgba(66, 133, 244, 0.38);
   --b3-theme-primary-lightest: rgba(66, 133, 244, 0.12);
   --b3-theme-secondary: #f3a92f;
   --b3-theme-background: #f3f5f9;
-  --b3-theme-surface: #f0f2f6;
-  --b3-theme-surface-light: #f5f7f9;
-  --b3-theme-error: #ff4642;
-
   --b3-theme-background-light: #dfe0e1;
+  --b3-theme-surface: #f0f2f6; /* 四周的背景：工具栏、dock、侧边栏、状态栏 */
+  --b3-theme-surface-light: #f5f7f9;
   --b3-theme-surface-lighter: rgba(0, 0, 0, 0.06);
+  --b3-theme-error: #ff4642;
 
   /* 文字颜色 */
   --b3-theme-on-primary: #fff;
@@ -21,6 +20,9 @@
   --b3-theme-on-surface: #5f6368;
   --b3-theme-on-error: #fff;
   --b3-theme-on-surface-light: rgba(95, 99, 104, 0.68);
+
+  /* hover */
+  --b3-list-hover-on-surface: ;
 
   /* 文字颜色 */
   --b3-font-color1: #03a3ff; /* 017ade */
@@ -52,11 +54,18 @@
   --b3-font-background12: #ff173e70; /* ff173e7e |  f8d7da */
   --b3-font-background13: var(--b3-theme-on-background);
 
+  /* 自定义 */
+  --color-white: white;
+  --color-black: black;
+  --field-bg-light: #e6ebf0;
+  --field-bg-blue: #2151d1;
+  --field-switch: #868b98;
+
   /* layout：自定义 */
   --b3-layout-resize-lr-after-bg: #f0f2f6;
   --b3-layout-tab-bar-item-focus: #f8f9fc;
-  --b3-layout-tab-bar-item-focus-after: #5a8ad8;
-  --b3-wnd-active-tab-bar-item-focus-after-bg: #79a6ee;
+  --b3-layout-tab-bar-item-focus-after: #c9d0dc;
+  --b3-wnd-active-tab-bar-item-focus-after-bg: #c0c9d7;
 
   /* toolbar */
   --b3-toolbar-background: #2b2d30;
@@ -74,30 +83,21 @@
 
   /* dock：自定义 */
   --dock-item-activefocus-background: #e6eef7;
-
-  /* ----- 列表：自定义 ----- */
-  /* 列表：选中后的背景色： */
-  --b3-list-item-focus: #e6eef7;
-  --b3-list-item-hover: #e0edf9;
-  --b3-list-item-toggle-hl-hover: #cde5fc;
-  /* 对话框中的列表 */
-  --b3-dialog-list-item-hover: #e5edf5;
-
-  /* 对话框的背景：自定义 */
-  --b3-dialog-close: #3078c0c4; /* 205d99 */
-  --b3-dialog-scrim: rgb(238 241 246 / 0.8);
-
-  /* 滚动条：自定义 */
-  --b3-scrollbar: #ddecfd;
+  --dock-item-svg: #82878d;
+  --dock-item-active-svg: #a5a5a7;
 
   /* 标签页 */
   --b3-tab-bar-block-icon-more: #aaacaf;
 
-  /* 线条 */
-  --b3-border-color: #e0e5ea; /*rgba(0, 0, 0, .1) , rgba(0, 0, 0, 0.3)*/
+  /* 列表：选中后的背景色：自定义  */
+  --b3-list-item-focus: #e7ebef;
+  --b3-list-item-focus-sidebar: #e2e9ee;
+  --b3-list-item-focus-dialog: #e1e9ef;
+  --b3-list-item-hover: #e5ebf0; /* dfe9f3 */
+  --b3-list-item-toggle-hl-hover: #cde5fc;
 
-  /* 滚动条 */
-  --b3-scroll-color: rgba(0, 0, 0, 0.2);
+  /* 对话框的背景：自定义 */
+  --b3-dialog-close: #a2b1bf; /* 205d99 */
 
   /* 列表：鼠标放在上面的背景色 */
   /* --b3-list-hover: #e9eaea; */
@@ -107,12 +107,46 @@
   /* 菜单 */
   --b3-menu-background: #f8f9fa;
 
-  /* 遮罩 */
-  --b3-mask-background: rgba(0, 0, 0, 0.78);
-
   /* 页签 */
   --b3-tab-background: var(--b3-theme-surface);
   --b3-tab-background-hover: #e9eaeb;
+
+  /* --------------------------------------------------------------- */
+
+  /* 遮罩 */
+  --b3-mask-background: rgb(238 241 246 / 0.8);
+
+  /* 滚动条：自定义 */
+  --b3-scrollbar: #ddecfd;
+  /* 滚动条 */
+  --b3-scroll-color: rgba(0, 0, 0, 0.2);
+
+  /* 按钮：自定义 */
+  --button-dialog-bg: #e2ecfd;
+  --button-dialog-bazaar-bg: #cddffd;
+  --button-login-bg: #3575f0;
+  --toolart-vip-svg: #25c7e0;
+  --toolart-barDock-svg: #6c7075;
+
+  /* 线条 */
+  --b3-border-color: #e0e5ea; /*rgba(0, 0, 0, .1) , rgba(0, 0, 0, 0.3)*/
+
+  /* 下拉菜单 */
+  --b3-select-hover: #ddecfd;
+  --b3-select-background: url("data:image/svg+xml;utf8,<svg fill='rgba(95, 99, 104, .68)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+    no-repeat right 2px center var(--b3-theme-background);
+
+  /* 动画效果 */
+  --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
+  --b3-width-transition: width 0.2s cubic-bezier(0, 0, 0.2, 1) 0ms;
+
+  /* 阴影 */
+  /* --b3-point-shadow: 0 3px 6px rgba(140, 149, 159, 0.15); */
+  --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  /* --b3-dialog-shadow: 0 8px 24px rgba(140, 149, 159, 0.2); */
+  --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 
   /* 提示 */
   --b3-tooltips-color: rgba(0, 0, 0, 0.54);
@@ -133,23 +167,6 @@
   --b3-diff-del: #fee8e9;
   --b3-diff-del-surface: #ffb6ba;
 
-  /* 下拉菜单 */
-  --b3-select-hover: #ddecfd;
-  --b3-select-background: url("data:image/svg+xml;utf8,<svg fill='rgba(95, 99, 104, .68)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
-    no-repeat right 2px center var(--b3-theme-background);
-
-  /* 动画效果 */
-  --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
-  --b3-width-transition: width 0.2s cubic-bezier(0, 0, 0.2, 1) 0ms;
-
-  /* 阴影 */
-  /* --b3-point-shadow: 0 3px 6px rgba(140, 149, 159, 0.15); */
-  --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  /* --b3-dialog-shadow: 0 8px 24px rgba(140, 149, 159, 0.2); */
-  --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
-    0px 9px 46px 8px rgba(0, 0, 0, 0.12);
-
   /* -------------------------------------  ------------------------------------- */
 
   /* 编辑区文字选中背景：自定义 */
@@ -159,6 +176,11 @@
   --b3-link-bottom: rgba(78, 78, 86, 0.2);
   /* 编辑器导航滑块：上下箭头：自定义 */
   --b3-nav-scroll: #88a7d9;
+
+  /* 标题h2的border */
+  --protyle-title-border: #626366;
+  /* 选中 */
+  --protyle-selection-bg: #0761d6;
 
   /* 粗体、着重、斜体颜色 */
   --b3-protyle-inline-strong-color: #202124;
@@ -171,8 +193,9 @@
   --b3-protyle-inline-mark-color: #202124;
   /* 标签 */
   --b3-protyle-inline-tag-color: #5f6368;
-
+  /* blockref */
   --b3-protyle-inline-blockref-color: var(--b3-protyle-inline-tag-color); /*  #8250df */
+  /* fileref */
   --b3-protyle-inline-fileref-color: #21862e;
 
   /* blockquote：自定义 */

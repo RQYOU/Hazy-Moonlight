@@ -37,7 +37,7 @@
   padding: 0px 0px 0px 15px;
   margin: 60px 0px 28px 0px;
   line-height: 1.55;
-  border-bottom: 1px solid #626366;
+  border-bottom: 1px solid var(--protyle-title-border);
   /*调整高度：在没输入文字时仍然保持一定的高度*/
   min-height: 38px;
   -webkit-border-radius: 0;

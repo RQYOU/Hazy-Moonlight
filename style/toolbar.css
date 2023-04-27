@@ -118,20 +118,24 @@ body.body--blur .toolbar {
   background-color: var(--b3-border-color) !important; /* EBF0F7 E2EFF9 */
 }
 
-.toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover,
-.toolbar__item--active {
-  /* ddf0fd */
+/* .toolbar__item--active, */
+/* .toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close) .b3-list-item__arrow:hover { */
+/* .toolbar .toolbar__item .b3-list-item__arrow:hover {
   background-color: var(--b3-toolbar-item-hover-background);
+} */
+
+/* 左边栏文件列表的箭头： */
+.b3-list-item__toggle--hl:hover {
+  color: var(--b3-theme-on-background);
+  /* background-color: var(--b3-list-item-toggle-hl-hover); */
+  background-color: unset;
+  /* border-radius: 0px; */
 }
 
-.toolbar .toolbar__item--action {
+/* .toolbar .toolbar__item--action {
   background-color: var(--b3-toolbar-item-background);
   border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-}
+} */
 
 .toolbar__item--disabled {
   /* 不加的话按钮不可点击时仍会显示出一个不完整的灰色框 */

@@ -51,8 +51,3 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 直观显示链接来源
 
 ![1682427118779](image/README/links.png)
-
-## Reference
-
-- [siyuan-gitbook-azure](https://github.com/yuuuxt/siyuan-gitbook-azure)
-- [siyuan-themes-tsundoku-light](https://github.com/Achuan-2/siyuan-themes-tsundoku-light)

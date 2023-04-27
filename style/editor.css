@@ -12,8 +12,8 @@
 
 /* 编辑器 */
 .protyle-wysiwyg {
-  padding-left: 30px !important;
-  padding-right: 30px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
 }
 
 /* 笔记标题 */
@@ -203,11 +203,13 @@ ul.layout-tab-bar {
   /* 调整上下2个箭头的大小 */
   height: 14px;
   width: 14px;
+  /* fill: var(--protyle-scroll-svg);
+  stroke: var(--protyle-scroll-svg); */
 }
 
 .protyle-scroll__down,
 .protyle-scroll__up {
-  color: var(--b3-nav-scroll);
+  color: var(--protyle-scroll-svg);
   opacity: 1;
 }
 

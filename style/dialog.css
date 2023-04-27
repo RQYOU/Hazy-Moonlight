@@ -60,24 +60,6 @@
   padding: 6px 0;
 }
 
-/* 账号设置：未登录时：右侧文字 */
-.config-account__center--text .b3-button--outline {
-  height: unset;
-}
-
-.b3-button#login {
-  background-color: var(--button-login-bg);
-}
-
-.config__tab-container .b3-button {
-  background-color: var(--button-dialog-bg);
-}
-
-.bazaarPanel .b3-button:not(.b3-button--outline) {
-  background-color: var(--button-dialog-bazaar-bg);
-  color: var(--field-bg-blue);
-}
-
 /* ------------------------------ 弹出确定对话框 ------------------------------ */
 .b3-dialog__action {
   border-top: none;

@@ -162,3 +162,44 @@
   flex: unset;
   box-shadow: unset !important;
 } */
+
+/* ----------------------------------------------------------- */
+.color__square[style="color:var(--b3-font-color1)"] {
+  background-color: var(--b3-font-color1);
+}
+.color__square[style="color:var(--b3-font-color2)"] {
+  background-color: var(--b3-font-color2);
+}
+.color__square[style="color:var(--b3-font-color3)"] {
+  background-color: var(--b3-font-color3);
+}
+.color__square[style="color:var(--b3-font-color4)"] {
+  background-color: var(--b3-font-color4);
+}
+.color__square[style="color:var(--b3-font-color5)"] {
+  background-color: var(--b3-font-color5);
+}
+.color__square[style="color:var(--b3-font-color6)"] {
+  background-color: var(--b3-font-color6);
+}
+.color__square[style="color:var(--b3-font-color7)"] {
+  background-color: var(--b3-font-color7);
+}
+.color__square[style="color:var(--b3-font-color8)"] {
+  background-color: var(--b3-font-color8);
+}
+.color__square[style="color:var(--b3-font-color9)"] {
+  background-color: var(--b3-font-color9);
+}
+.color__square[style="color:var(--b3-font-color10)"] {
+  background-color: var(--b3-font-color10);
+}
+.color__square[style="color:var(--b3-font-color11)"] {
+  background-color: var(--b3-font-color11);
+}
+.color__square[style="color:var(--b3-font-color12)"] {
+  background-color: var(--b3-font-color12);
+}
+.color__square[style="color:var(--b3-font-color13)"] {
+  background-color: var(--b3-font-color13);
+}

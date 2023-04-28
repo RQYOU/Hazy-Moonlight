@@ -103,7 +103,8 @@
   height: unset;
 }
 .b3-button#login {
-  background-color: var(--button-login-bg);
+  /* 3575f0 */
+  background-color: var(--b3-button-blue);
 }
 /* 集市设置中：选中class属性只有--b3-button，不选中则还有b3-button--outline， */
 /* 设置选中后的属性 */

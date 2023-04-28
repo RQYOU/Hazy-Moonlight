@@ -109,7 +109,8 @@
 }
 
 .layout__center .layout__wnd--active .layout-tab-bar .item--focus:after {
-  background-color: var(--b3-wnd-active-tab-bar-item-focus-after-bg);
+  /* 灰色：c0c9d7 */
+  background-color: var(--b3-button-blue);
 }
 
 /* ----------------------- 设置对话框中 ----------------------- */

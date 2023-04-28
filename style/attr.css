@@ -54,13 +54,6 @@
   --b3-font-background12: #ff173e70; /* ff173e7e |  f8d7da */
   --b3-font-background13: var(--b3-theme-on-background);
 
-  /* 自定义 */
-  --color-white: white;
-  --color-black: black;
-  --field-bg-light: #e6ebf0;
-  --field-bg-blue: #2151d1;
-  --field-switch: #868b98;
-
   /* layout：自定义 */
   --b3-layout-resize-lr-after-bg: #f0f2f6;
   --b3-layout-tab-bar-item-focus: #f8f9fc;
@@ -122,11 +115,28 @@
   --b3-scroll-color: rgba(0, 0, 0, 0.2);
 
   /* 按钮：自定义 */
-  --button-dialog-bg: #e2ecfd;
+  --b3-button-blue: #0052d9;
+  --b3-button-blue-light: #e0ebff;
   --button-dialog-bazaar-bg: #cddffd;
   --button-login-bg: #3575f0;
   --toolart-vip-svg: #25c7e0;
   --toolart-barDock-svg: #6c7075;
+
+  /* 阴影 */
+  --shadow-0:0 0 0 1px rgb(0 0 0 / 12%)
+  /* --b3-point-shadow: 0 3px 6px rgba(140, 149, 159, 0.15); */
+  --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  /* --b3-dialog-shadow: 0 8px 24px rgba(140, 149, 159, 0.2); */
+  --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+
+  /* 自定义 */
+  --color-white: white;
+  --color-black: black;
+  --field-bg-light: #e6ebf0;
+  --field-bg-blue: #2151d1;
+  --field-switch: #868b98;
 
   /* 线条 */
   --b3-border-color: #e0e5ea; /*rgba(0, 0, 0, .1) , rgba(0, 0, 0, 0.3)*/
@@ -139,14 +149,6 @@
   /* 动画效果 */
   --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
   --b3-width-transition: width 0.2s cubic-bezier(0, 0, 0.2, 1) 0ms;
-
-  /* 阴影 */
-  /* --b3-point-shadow: 0 3px 6px rgba(140, 149, 159, 0.15); */
-  --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  /* --b3-dialog-shadow: 0 8px 24px rgba(140, 149, 159, 0.2); */
-  --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
-    0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 
   /* 提示 */
   --b3-tooltips-color: rgba(0, 0, 0, 0.54);

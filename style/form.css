@@ -1,8 +1,10 @@
 /* -------------------------------------- form -------------------------------------- */
 .b3-form__icon-icon {
   margin: 0;
-  width: 28px;
-  height: 28px;
+  /* width: 28px; */
+  /* height: 28px; */
+  width: 10px;
+  height: 10px;
   padding: 9px 9px;
   left: 0 !important;
   top: 0;
@@ -12,14 +14,14 @@
   margin: 0 0 16px;
 }
 /* .b3-dialog__container .config__panel > .b3-tab-bar > .b3-form__icon .b3-form__icon-icon { */
-.b3-dialog__container .config__panel .b3-form__icon .b3-form__icon-icon {
+/* .b3-dialog__container .config__panel .b3-form__icon .b3-form__icon-icon {
   margin: 0;
   width: 10px;
   height: 10px;
   padding: 9px 9px;
   left: 0 !important;
   top: 0;
-}
+} */
 .b3-dialog__container .config__panel > .b3-tab-bar > .b3-form__icon .b3-text-field.b3-form__icon-input,
 .b3-dialog__container .config__panel > .b3-tab-bar > .b3-form__icon .b3-text-field.b3-form__icon-input:hover,
 .b3-dialog__container .config__panel > .b3-tab-bar > .b3-form__icon .b3-text-field.b3-form__icon-input:focus,
@@ -41,6 +43,74 @@
   border-radius: 4px;
   line-height: 1.7;
 } */
+
+/* -------------------------------------- button -------------------------------------- */
+/* 默认蓝背景白字按钮  */
+.b3-button {
+  opacity: 1;
+  transform: unset;
+  margin: 0;
+  padding: 0;
+  border: unset;
+  border-radius: unset;
+  box-shadow: unset;
+  background-color: var(--b3-button-blue);
+  color: var(--color-white);
+  outline: unset;
+  position: unset;
+  font-size: 13px;
+  border-radius: 4px;
+  height: 28px;
+  transform: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 4px 8px;
+  line-height: 20px;
+}
+
+.b3-button:disabled {
+  opacity: 0.38;
+}
+
+/* 设置对话框大多数按钮 */
+.b3-button--small,
+.b3-button--cancel,
+.b3-button--outline {
+  background-color: var(--b3-button-blue-light);
+  color: var(--b3-button-blue);
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* .protyle-util .b3-button--outline {
+  background-color: var(--button-dialog-bg);
+  color: var(--b3-theme-primary);
+}
+.config__tab-container .b3-button {
+  background-color: var(--button-dialog-bg);
+} */
+
+/* 如删除框取消按钮 */
+.b3-dialog__container[style*="50vw"] .b3-dialog__action .b3-button,
+.b3-dialog__container[style*="520px"] .b3-dialog__action .b3-button {
+  background-color: var(--color-white);
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  color: var(--b3-theme-on-background);
+  box-shadow: var(--shadow-0);
+  letter-spacing: 0.3px;
+  width: 48.5%;
+}
+
+/* 账号设置：未登录时：右侧文字 */
+.config-account__center--text .b3-button--outline {
+  height: unset;
+}
+.b3-button#login {
+  background-color: var(--button-login-bg);
+}
+/* 集市设置中：选中class属性只有--b3-button，不选中则还有b3-button--outline， */
+/* 设置选中后的属性 */
+.bazaarPanel .b3-button:not(.b3-button--outline) {
+  background-color: var(--b3-button-blue);
+  color: var(--color-white);
+}
 
 /* -------------------------------------- text-field -------------------------------------- */
 
@@ -82,66 +152,6 @@
 .b3-select:focus-visible {
   box-shadow: unset;
   background-color: var(--field-bg-light);
-}
-
-/* -------------------------------------- button -------------------------------------- */
-.b3-button {
-  opacity: 1;
-  transform: unset;
-  margin: 0;
-  padding: 0;
-  border: unset;
-  border-radius: unset;
-  box-shadow: unset;
-  background-color: var(--field-bg-blue);
-  outline: unset;
-  position: unset;
-  font-size: 13px;
-  border-radius: 4px;
-  height: 28px;
-  transform: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 4px 8px;
-  line-height: 20px;
-  -webkit-transform: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transform: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -ms-transform: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transform: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.b3-button:disabled {
-  opacity: 0.38;
-}
-
-.b3-button--small,
-.b3-button--cancel,
-.b3-button--outline {
-  background-color: var(--button-dialog-bg);
-  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  /* button上字体颜色 */
-  color: var(--b3-theme-primary);
-}
-
-.protyle-util .b3-button--outline {
-  background-color: var(--button-dialog-bg);
-  color: var(--b3-theme-primary);
-}
-
-/* 账号设置：未登录时：右侧文字 */
-.config-account__center--text .b3-button--outline {
-  height: unset;
-}
-
-.b3-button#login {
-  background-color: var(--button-login-bg);
-}
-
-.config__tab-container .b3-button {
-  background-color: var(--button-dialog-bg);
-}
-
-.bazaarPanel .b3-button:not(.b3-button--outline) {
-  background-color: var(--button-dialog-bazaar-bg);
-  color: var(--field-bg-blue);
 }
 
 /* -------------------------------------- switch -------------------------------------- */

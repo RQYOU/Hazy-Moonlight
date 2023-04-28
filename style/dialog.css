@@ -4,22 +4,6 @@
   background-color: var(--b3-dialog-scrim);
 }
 
-.config__panel .config__tab-container .layout-tab-bar {
-  margin-top: 17px;
-}
-
-.config__panel .config__tab-container .layout-tab-bar .item {
-  min-height: 27px;
-}
-
-.config__panel .config__tab-container .layout-tab-bar .item--focus {
-  background-color: unset;
-  font-weight: 600;
-}
-.config__panel .config__tab-container .layout-tab-bar .item--focus:after {
-  background-color: unset;
-}
-
 /* 弹出对话框左侧选项列表 */
 .config__panel > .b3-tab-bar {
   margin: 15px 10px;

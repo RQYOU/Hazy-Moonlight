@@ -1,0 +1,145 @@
+/* ------ 整个tab bar：div ------ */
+.layout-tab-bar {
+  list-style: none;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+  background-color: var(--b3-theme-surface);
+  /* border-bottom: 1px solid var(--color-white); */
+  border-bottom: none;
+}
+
+/* -------- tab bar 上的item：div -------- */
+.layout-tab-bar .item {
+  background-color: var(--b3-theme-surface);
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  font-size: 12.5px;
+  border-radius: 4px;
+  height: 28px;
+  min-height: 0;
+  /* min-height: 35px; */
+  width: auto;
+  padding: 0px 4px;
+  flex: unset;
+  box-shadow: unset !important;
+}
+
+/* 消除其它tab的shadow */
+.layout-tab-bar .item:not(:last-child) {
+  box-shadow: none !important;
+}
+
+.layout-tab-bar .item--focus,
+.layout-tab-bar .item--focus:hover,
+.layout-tab-bar .item--focus:focus,
+.layout-tab-bar .item--focus:active {
+  background-color: var(--b3-button-blue-light);
+}
+
+.layout-tab-bar .item--focus {
+  color: var(--b3-button-blue);
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* item底部的横线 */
+.layout-tab-bar .item--focus:after {
+  height: 1.5px;
+  bottom: 1px;
+  background-color: var(--b3-layout-tab-bar-item-focus-after);
+}
+
+/* ------ tab bar item 上的文字 ------ */
+.layout-tab-bar .item__text {
+  min-width: 64px;
+  height: 28px;
+  line-height: 28px;
+  vertical-align: middle;
+}
+
+/* ------- tag旁边的关闭按钮 -------- */
+.layout-tab-bar .item__close {
+  padding: 0;
+}
+
+/* --------  -------- */
+.layout-tab-bar .item__graphic {
+  margin-right: 6px;
+}
+
+/* ----------------------- 编辑区标签页：----------------------- */
+/* 获得了焦点的tab  */
+.layout__center .layout__wnd--active .layout-tab-bar {
+  background-color: var(--b3-theme-surface);
+  /* opacity:0.5; */
+  color: #979799;
+  height: 35px;
+  border-bottom: none;
+}
+
+/* 标签页之间的分隔 */
+/* .layout__center .layout-tab-bar .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  right: auto;
+  top: 7px;
+  height: 20px;
+  border-left: 1px solid #7b7575;
+} */
+
+.layout__center .layout__wnd--active .layout-tab-bar .item--focus,
+.layout__center .layout__wnd--active .layout-tab-bar .item--focus:hover,
+.layout__center .layout__wnd--active .layout-tab-bar .item--focus:focus,
+.layout__center .layout__wnd--active .layout-tab-bar .item--focus:active {
+  background-color: var(--b3-layout-tab-bar-item-focus) !important;
+}
+
+/* 消除焦点tab的shadow */
+.layout__center .layout__wnd--active .layout-tab-bar .item--focus {
+  box-shadow: none !important;
+  border: 1px solid var(--b3-theme-surface);
+  border-radius: 9px;
+}
+
+.layout__center .layout__wnd--active .layout-tab-bar .item--focus::before,
+.layout__center .layout__wnd--active .layout-tab-bar .item--focus:hover::before {
+  left: 12px !important;
+  clip-path: inset(50% -6px 0 50%);
+}
+
+.layout__center .layout__wnd--active .layout-tab-bar .item--focus:after {
+  background-color: var(--b3-wnd-active-tab-bar-item-focus-after-bg);
+}
+
+/* ----------------------- 设置对话框中 ----------------------- */
+.config__panel .config__tab-container .layout-tab-bar {
+  margin-top: 17px;
+}
+
+.config__panel .config__tab-container .layout-tab-bar .item {
+  min-height: 27px;
+}
+
+.config__panel .config__tab-container .layout-tab-bar .item--focus:after {
+  background-color: unset;
+}
+
+.config__panel .config__tab-container .layout-tab-bar .item--focus > .item__text {
+  color: var(--b3-button-blue) !important;
+}
+
+.block__icon[data-type="more"] {
+  color: var(--b3-tab-bar-block-icon-more);
+}
+
+.b3-dialog__container .config__panel > .config__tab-container .layout-tab-bar {
+  padding: 0 16px 8px;
+}
+.config__tab-container[data-name="bazaar"] .layout-tab-bar {
+  padding: 0 16px 8px;
+}
+
+.config__tab-container[data-name="bazaar"] .layout-tab-bar .item__text {
+  margin-left: 0;
+}

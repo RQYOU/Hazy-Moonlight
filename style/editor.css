@@ -164,6 +164,16 @@
 } */
 
 /* ----------------------------------------------------------- */
+/* 字体色方框：改小一点 */
+.color__square[data-type="color"] {
+  height: 15px;
+  width: 15px;
+}
+/* 字体背景色：改为圆角，以区分字体颜色 */
+.color__square[data-type="backgroundColor"] {
+  border-radius: 7px;
+}
+/* 将字体颜色的显示框改为显示背景色而非文字A */
 .color__square[style="color:var(--b3-font-color1)"] {
   background-color: var(--b3-font-color1);
 }

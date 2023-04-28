@@ -62,6 +62,14 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 ![1682432959720](https://file+.vscode-resource.vscode-cdn.net/Users/oilo/DEV/Projects/Proj-VSCode/SiYuan-Themes/RQU-MoonLight/image/README/fontcolor.png)
 
+### 字体颜色选择框
+
+将字体颜色方框改为显示背景色，而非带颜色的 A，因为显示为背景色各颜色的区分看起来明显一些。
+
+将字体背景色方框改为圆角的，以跟字体颜色方框相区分。
+
+![1682432959720](https://file+.vscode-resource.vscode-cdn.net/Users/oilo/DEV/Projects/Proj-VSCode/SiYuan-Themes/RQU-MoonLight/image/README/colors.png)
+
 ### Links
 
 直观显示链接来源

@@ -46,7 +46,7 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 注：随时会调整
 
-![1682432959720](https://file+.vscode-resource.vscode-cdn.net/Users/oilo/DEV/Projects/Proj-VSCode/SiYuan-Themes/RQU-MoonLight/image/README/fontcolor.png)
+![1682432959720](image/README/fontcolor.png)
 
 ### Background Color
 
@@ -56,11 +56,7 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 注：随时会调整
 
-![1682432959720](https://file+.vscode-resource.vscode-cdn.net/Users/oilo/DEV/Projects/Proj-VSCode/SiYuan-Themes/RQU-MoonLight/image/README/backgroundcolor.png)
-
-### Font Color
-
-![1682432959720](https://file+.vscode-resource.vscode-cdn.net/Users/oilo/DEV/Projects/Proj-VSCode/SiYuan-Themes/RQU-MoonLight/image/README/fontcolor.png)
+![1682432959720](image/README/backgroundcolor.png)
 
 ### 字体颜色选择框
 
@@ -68,10 +64,10 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 将字体背景色方框改为圆角的，以跟字体颜色方框相区分。
 
-![1682432959720](https://file+.vscode-resource.vscode-cdn.net/Users/oilo/DEV/Projects/Proj-VSCode/SiYuan-Themes/RQU-MoonLight/image/README/colors.png)
+![Colors](image/README/colors.png)
 
 ### Links
 
 直观显示链接来源
 
-![1682427118779](image/README/links.png)
+![Links](image/README/links.png)

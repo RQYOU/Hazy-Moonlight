@@ -92,10 +92,19 @@
 .b3-dialog__container[style*="520px"] .b3-dialog__action .b3-button {
   background-color: var(--color-white);
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* color: rgba(0, 0, 0, 90%); */
   color: var(--b3-theme-on-background);
   box-shadow: var(--shadow-0);
   letter-spacing: 0.3px;
   width: 48.5%;
+}
+
+/* 如删除框确定按钮 */
+.b3-dialog__container[style*="50vw"] .b3-dialog__action .b3-button.b3-button--text,
+.b3-dialog__container[style*="520px"] .b3-dialog__action .b3-button.b3-button--text {
+  background-color: var(--b3-button-blue);
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  color: var(--color-white);
 }
 
 /* 账号设置：未登录时：右侧文字 */

@@ -45,10 +45,27 @@
 }
 
 /* ------------------------------ 弹出确定对话框 ------------------------------ */
-.b3-dialog__action {
-  border-top: none;
+/* 整个对话框 */
+.b3-dialog__container {
+  box-shadow: 0 6px 30px 5px rgba(0, 0, 0, 5%), 0 16px 24px 2px rgba(0, 0, 0, 4%), 0 8px 10px -5px rgba(0, 0, 0, 8%);
+  border-radius: 10px;
+  /* background-color: var(--color-white); */
+}
+.b3-dialog__container[style*="520px"] {
+  width: 360px !important;
 }
 
+/* 中间的提示信息 */
+.b3-dialog__content {
+  margin: 4px 0 16px;
+}
+/* 对话框标题 */
 .b3-dialog__header {
   border-bottom: none;
+  margin-top: 8px;
+}
+/* 2个按钮 */
+.b3-dialog__action {
+  border-top: none;
+  margin-bottom: 10px;
 }

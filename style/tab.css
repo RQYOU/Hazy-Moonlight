@@ -1,4 +1,4 @@
-/* ------ 整个tab bar：div ------ */
+/* ---------------------------- 整个tab bar：div ---------------------------- */
 .layout-tab-bar {
   list-style: none;
   align-items: center;
@@ -9,7 +9,7 @@
   border-bottom: none;
 }
 
-/* -------- tab bar 上的item：div -------- */
+/* ---------------------------- tab bar 上的item：div ---------------------------- */
 .layout-tab-bar .item {
   background-color: var(--b3-theme-surface);
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -66,7 +66,7 @@
   margin-right: 6px;
 }
 
-/* ----------------------- 编辑区标签页：----------------------- */
+/* ---------------------------- 编辑区标签页：---------------------------- */
 /* 获得了焦点的tab  */
 .layout__center .layout__wnd--active .layout-tab-bar {
   background-color: var(--b3-theme-surface);
@@ -86,29 +86,38 @@
   top: 7px;
   height: 20px;
   border-left: 1px solid #7b7575;
-} */
-
-.layout__center .layout__wnd--active .layout-tab-bar .item--focus,
-.layout__center .layout__wnd--active .layout-tab-bar .item--focus:hover,
-.layout__center .layout__wnd--active .layout-tab-bar .item--focus:focus,
-.layout__center .layout__wnd--active .layout-tab-bar .item--focus:active {
-  background-color: var(--b3-layout-tab-bar-item-focus) !important;
 }
-
-/* 消除焦点tab的shadow */
-.layout__center .layout__wnd--active .layout-tab-bar .item--focus {
-  box-shadow: none !important;
-  border: 1px solid var(--b3-theme-surface);
-  border-radius: 9px;
-}
-
 .layout__center .layout__wnd--active .layout-tab-bar .item--focus::before,
 .layout__center .layout__wnd--active .layout-tab-bar .item--focus:hover::before {
   left: 12px !important;
   clip-path: inset(50% -6px 0 50%);
 }
+*/
 
-.layout__center .layout__wnd--active .layout-tab-bar .item--focus:after {
+.layout__center .layout-tab-bar .item--focus,
+.layout__center .layout-tab-bar .item--focus:hover,
+.layout__center .layout-tab-bar .item--focus:focus,
+.layout__center .layout-tab-bar .item--focus:active {
+  background-color: var(--color-white);
+  border-radius: 6px 6px 0;
+}
+
+/* .layout__center .layout__wnd--active .layout-tab-bar .item--focus,
+.layout__center .layout__wnd--active .layout-tab-bar .item--focus:hover,
+.layout__center .layout__wnd--active .layout-tab-bar .item--focus:focus,
+.layout__center .layout__wnd--active .layout-tab-bar .item--focus:active {
+  background-color: var(--b3-layout-tab-bar-item-focus) !important;
+} */
+
+/* 选中的标签页 */
+.layout__center .layout-tab-bar .item--focus {
+  /* 消除焦点 */
+  box-shadow: none !important;
+  border: 1px solid var(--b3-theme-surface);
+  border-radius: 9px;
+}
+/* 选中的标签页底部的横线 */
+.layout__center .layout-tab-bar .item--focus:after {
   /* 灰色：c0c9d7 */
   background-color: var(--b3-button-blue);
 }

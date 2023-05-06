@@ -24,6 +24,25 @@
   /* hover */
   --b3-list-hover-on-surface: ;
 
+  /* layout：自定义 */
+  --b3-layout-resize-lr-after-bg: #f0f2f6;
+  --b3-layout-tab-bar-item-focus: #f8f9fc;
+  --b3-layout-tab-bar-item-focus-after: #c9d0dc;
+
+  /* toolbar */
+  --b3-toolbar-background: #2b2d30;
+  --b3-toolbar-blur-background: #373a41;
+  --b3-toolbar-color: #9aa0a6;
+  --b3-toolbar-hover: #383a42;
+  --b3-toolbar-left-mac: 69px;
+  /* toolbar：自定义 */
+  --b3-toolbar-item-1: black;
+  --b3-toolbar-item-2: #6c7075;
+  --b3-toolbar-item-3: #5f6367;
+  --b3-toolbar-item-4: #4f5255;
+  --b3-toolbar-item-background: #c6e4ee;
+  --b3-toolbar-item-hover-background: #c6e4ee;
+
   /* 文字颜色 */
   --b3-font-color1: #0595e9; /* 03a3ff ｜  017ade */
   --b3-font-color2: #056ede; /* 004af8 */
@@ -33,7 +52,7 @@
   --b3-font-color6: #ff56d5;
   --b3-font-color7: #e7087f; /*  d9085f */
   --b3-font-color8: #ff0000;
-  --b3-font-color9: #03a85e; /* 0fb46c */
+  --b3-font-color9: #04a25b; /* 0fb46c */
   --b3-font-color10: #067318; /* 249210 */
   --b3-font-color11: #d17103;
   --b3-font-color12: #f96801;
@@ -54,25 +73,6 @@
   --b3-font-background12: #06195c4a;
   --b3-font-background13: var(--b3-theme-on-background);
 
-  /* layout：自定义 */
-  --b3-layout-resize-lr-after-bg: #f0f2f6;
-  --b3-layout-tab-bar-item-focus: #f8f9fc;
-  --b3-layout-tab-bar-item-focus-after: #c9d0dc;
-
-  /* toolbar */
-  --b3-toolbar-background: #2b2d30;
-  --b3-toolbar-blur-background: #373a41;
-  --b3-toolbar-color: #9aa0a6;
-  --b3-toolbar-hover: #383a42;
-  --b3-toolbar-left-mac: 69px;
-  /* toolbar：自定义 */
-  --b3-toolbar-item-1: black;
-  --b3-toolbar-item-2: #6c7075;
-  --b3-toolbar-item-3: #5f6367;
-  --b3-toolbar-item-4: #4f5255;
-  --b3-toolbar-item-background: #c6e4ee;
-  --b3-toolbar-item-hover-background: #c6e4ee;
-
   /* dock：自定义 */
   --dock-item-activefocus-background: #e6eef7;
   --dock-item-svg: #82878d;
@@ -80,6 +80,7 @@
 
   /* 标签页 */
   --b3-tab-bar-block-icon-more: #aaacaf;
+  --b3-tab-bar-hover-bg:#d7e2ea;
 
   /* 列表：选中后的背景色：自定义  */
   --b3-list-item-focus: #e7ebef;

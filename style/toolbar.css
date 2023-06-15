@@ -118,6 +118,11 @@ body.body--blur .toolbar {
   background-color: var(--b3-border-color) !important; /* EBF0F7 E2EFF9 */
 }
 
+.toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover,
+.toolbar__item--active {
+  background-color: var(--b3-tab-bar-hover-bg);
+}
+
 /* .toolbar__item--active, */
 /* .toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close) .b3-list-item__arrow:hover { */
 /* .toolbar .toolbar__item .b3-list-item__arrow:hover {

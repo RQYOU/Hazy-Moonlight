@@ -1,8 +1,8 @@
 /* ------------------------------ 设置对话框 ------------------------------ */
 /* 弹出对话框时的背景： */
-.b3-dialog__scrim {
-  background-color: var(--b3-dialog-scrim);
-}
+/* .b3-dialog__scrim {
+  background-color: var(--b3-mask-background);
+} */
 
 /* 弹出对话框左侧选项列表 */
 .config__panel > .b3-tab-bar {

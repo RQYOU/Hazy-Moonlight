@@ -4,18 +4,11 @@
 }
 
 /* ------------------------------- 编辑区 ------------------------------- */
-
-/* 整个编辑区 */
-.layout-tab-container {
-  margin-top: 3px;
-}
-
 /* 编辑器 */
 .protyle-wysiwyg {
   padding-left: 50px !important;
   padding-right: 50px !important;
 }
-
 /* 笔记标题 */
 .protyle-title__input {
   text-align: center;

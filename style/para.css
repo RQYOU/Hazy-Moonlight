@@ -12,13 +12,6 @@ strong:not([style]) {
   color: inherit !important;
 }
 
-.b3-typography p,
-.b3-typography [data-node-id],
-.protyle-wysiwyg p,
-.protyle-wysiwyg [data-node-id] {
-  margin: 4px 0;
-}
-
 /* ------------------------------- 行内块字体样式 -------------------------------------- */
 /* 文字背景色： */
 /* strong[style|="background"] {
@@ -30,12 +23,19 @@ strong:not([style]) {
 .b3-typography span[data-type~="mark"],
 .protyle-wysiwyg span[data-type~="text"],
 .protyle-wysiwyg span[data-type~="mark"] {
-  padding: 4.5px 2px 3.5px 2px;
+  padding: 4.5px 0px 3.5px 0px;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+}
+
+.b3-typography span[data-type~="text"][style~="background-color"],
+.b3-typography span[data-type~="mark"][style~="background-color"],
+.protyle-wysiwyg span[data-type~="text"][style~="background-color"],
+.protyle-wysiwyg span[data-type~="mark"][style~="background-color"] {
+  padding: 4.5px 2px 3.5px 2px;
 }
 
 /* .protyle-wysiwyg [data-type="NodeHeading"] strong {

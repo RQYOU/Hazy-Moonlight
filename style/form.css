@@ -54,8 +54,8 @@
   border: unset;
   border-radius: unset;
   box-shadow: unset;
-  background-color: var(--b3-button-blue);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--b3-button-blue);
   outline: unset;
   position: unset;
   font-size: 13px;
@@ -74,7 +74,9 @@
 .b3-button--small,
 .b3-button--cancel,
 .b3-button--outline {
-  background-color: var(--b3-button-blue-light);
+  /* background-color: var(--b3-button-blue-light); */
+  /* background-color: #d1e0fc; */
+  background-color: #c7dafe;
   color: var(--b3-button-blue);
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -111,9 +113,12 @@
 .config-account__center--text .b3-button--outline {
   height: unset;
 }
+
+/* 登录按钮 */
 .b3-button#login {
   /* 3575f0 */
   background-color: var(--b3-button-blue);
+  color: var(--b3-theme-on-primary);
 }
 /* 集市设置中：选中class属性只有--b3-button，不选中则还有b3-button--outline， */
 /* 设置选中后的属性 */

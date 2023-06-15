@@ -9,11 +9,6 @@
   border-bottom: none;
 }
 
-.toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover,
-.toolbar__item--active {
-  background-color: var(--b3-tab-bar-hover-bg);
-}
-
 /* ---------------------------- tab bar 上的item：div ---------------------------- */
 .layout-tab-bar .item {
   background-color: var(--b3-theme-surface);

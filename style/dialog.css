@@ -4,6 +4,11 @@
   background-color: var(--b3-mask-background);
 } */
 
+/* 遮罩上面的白色字体改为蓝色字体 */
+.b3-dialog__scrim > div:nth-child(2) {
+  color: var(--b3-button-blue);
+}
+
 /* 弹出对话框左侧选项列表 */
 .config__panel > .b3-tab-bar {
   margin: 15px 10px;

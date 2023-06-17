@@ -98,8 +98,8 @@
   --b3-dialog-close: #a2b1bf; /* 205d99 */
 
   /* 列表：鼠标放在上面的背景色 */
-  /* --b3-list-hover: #e9eaea; */
-  --b3-list-hover: #ebf0f7;
+  /* --b3-list-hover: #e9eaea;  #ebf0f7 */
+  --b3-list-hover: #e0edfc;
   --b3-list-icon-hover: rgba(33, 34, 36, 0.1);
 
   /* 菜单 */
@@ -114,8 +114,8 @@
   /* 遮罩 */
   --b3-mask-background: #eef1f6;  /*    #000000 */
 
-  /* 滚动条：自定义 */
-  --b3-scrollbar: #ddecfd;
+  /* 滚动条：自定义，#ddecfd  */
+  --b3-scrollbar: #e0edfc;
   /* 滚动条 */
   --b3-scroll-color: rgba(0, 0, 0, 0.2);
 

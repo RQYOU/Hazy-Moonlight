@@ -207,7 +207,7 @@
   /* blockquote：自定义 */
   --b3-protyle-blockquote-background: #e9edf3;
   --b3-protyle-blockquote-border: #0e68c1;
-  --b3-protyle-blockquote-para: #828d97;
+  --b3-protyle-blockquote-para: #7a8084;   /* 757c81 |  828d97 */
 
   /* 编辑器搜索颜色 */
   --b3-protyle-search-background: #ffe955;

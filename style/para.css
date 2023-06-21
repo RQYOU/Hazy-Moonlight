@@ -70,7 +70,7 @@ em {
 .protyle-wysiwyg code:not(.hljs),
 .protyle-wysiwyg span[data-type~="code"] {
   font-size: 95% !important;
-  padding: 0.3em 0.4em;
+  padding: 0.25em 0.4em;
   font-family: var(--b3-font-family) !important;
 }
 

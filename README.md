@@ -73,3 +73,7 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 直观显示链接来源
 
 ![Links](image/README/links.png)
+
+### 横线
+
+![1687583531752](image/README/1687583531752.png)

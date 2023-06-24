@@ -88,7 +88,7 @@
 .protyle-wysiwyg [data-node-id].p,
 .protyle-wysiwyg p {
   line-height: 1.7em;
-  margin: 1px 0;
+  margin: 2.5px 2.5px 1.2px 2.5px;
   padding: 2.8px;
   /* text-align: justify; */
 }

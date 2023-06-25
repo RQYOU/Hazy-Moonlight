@@ -16,12 +16,24 @@
   font-size: 12.5px;
   border-radius: 4px;
   height: 28px;
-  min-height: 0;
-  /* min-height: 35px; */
+  /* min-height: 0; */
+  min-height: 28px;
   width: auto;
   padding: 0px 4px;
   flex: unset;
   box-shadow: unset !important;
+}
+
+/* 每个 tab 的图标 */
+.layout-tab-bar .item__icon > img,
+.layout-tab-bar .item__icon > svg {
+  height: 16px;
+  width: 16px;
+}
+/* 每个 tab 的关闭按钮 */
+.layout-tab-bar .item__close svg {
+  height: 12px;
+  width: 12px;
 }
 
 /* 消除其它tab的shadow */
@@ -98,7 +110,7 @@
 .layout__center .layout-tab-bar .item--focus:hover,
 .layout__center .layout-tab-bar .item--focus:focus,
 .layout__center .layout-tab-bar .item--focus:active {
-  background-color: var(--color-white);
+  background-color: var(--b3-tag-focus);
   border-radius: 6px 6px 0;
 }
 
@@ -111,10 +123,10 @@
 
 /* 选中的标签页 */
 .layout__center .layout-tab-bar .item--focus {
-  /* 消除焦点 */
+  /*消除焦点*/
   box-shadow: none !important;
   border: 1px solid var(--b3-theme-surface);
-  border-radius: 9px;
+  border-radius: 6px;
 }
 /* 选中的标签页底部的横线 */
 .layout__center .layout-tab-bar .item--focus:after {

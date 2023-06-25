@@ -10,7 +10,7 @@
 .dock--vertical {
   width: 40px;
   /* 将编辑区标签页提到顶部遮住工具栏后，将左右dock下移 */
-  padding-top: 25px;
+  /* padding-top: 10px; */
   /* margin: 0 2px 0 1px;  */
   /* z-index: 43 */
 }
@@ -47,9 +47,9 @@
 /* -------------------------------------- 左右侧边栏：即文件区、大纲区、关系图等 -------------------------------------- */
 
 /* 将编辑区标签页提到顶部后，让左右两侧边栏下降 */
-#layouts > .fn__flex > .fn__flex-column:not(.layout__center) {
-  margin-top: 26px;
-}
+/* #layouts > .fn__flex > .fn__flex-column:not(.layout__center) {
+  margin-top: 18px;
+} */
 
 /* ----------------- 上方的图标和文字 ---------------- */
 .block__icons {

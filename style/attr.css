@@ -108,6 +108,7 @@
   /* 页签 */
   --b3-tab-background: var(--b3-theme-surface);
   --b3-tab-background-hover: #e9eaeb;
+  --b3-tag-focus:#f7fbff;
 
   /* --------------------------------------------------------------- */
 

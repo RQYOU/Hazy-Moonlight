@@ -34,12 +34,11 @@
 .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
   background-color: var(--b3-list-item-hover) !important;
 }
-/* 选中后的背景色 */
+/* sidebar选中项的背景色：单独设置，设置为跟--b3-list-hover不一样 */
 .layout__tab--active
   .b3-list--background
   .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
-  /* e1e9ef */
-  background-color: var(--b3-list-item-focus-sidebar);
+  background-color: var(--b3-list-sidebar-hover);
 }
 
 /* ------------ 单独设置”设置“中左侧列表： ------------ */

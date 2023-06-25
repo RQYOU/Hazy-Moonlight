@@ -98,8 +98,7 @@
   --b3-dialog-close: #a2b1bf; /* 205d99 */
 
   /* 列表：鼠标放在上面的背景色 */
-  /* --b3-list-hover: #e9eaea;  #ebf0f7 */
-  --b3-list-hover: #e0edfc;
+  --b3-list-hover: #e7ebef;  /*  e9eaea | e0edfc  | ebf0f7 */
   --b3-list-icon-hover: rgba(33, 34, 36, 0.1);
 
   /* 菜单 */

@@ -156,7 +156,7 @@
   border-radius: 4px;
   height: 28px;
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 4px 8px;
+  padding: 4px 24px 4px 8px;
   line-height: 20px;
   box-shadow: unset;
   background-color: var(--field-bg-light);

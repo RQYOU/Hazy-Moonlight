@@ -85,7 +85,7 @@
 
   /* 标签页 */
   --b3-tab-bar-block-icon-more: #aaacaf;
-  --b3-tab-bar-hover-bg:#dce7ef;  /* #d7e2ea */
+  --b3-tab-bar-hover-bg:#e1e9ee;  /* e0e7ec | e4eaee  | dce7ef  |  d7e2ea */
 
   /* 列表：选中后的背景色：自定义  */
   --b3-list-item-focus: #e7ebef;

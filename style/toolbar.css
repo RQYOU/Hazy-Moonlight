@@ -24,7 +24,7 @@ body.body--blur .toolbar {
 
 .toolbar .toolbar__item {
   color: var(--b3-toolbar-item-3);
-  padding: 7px;
+  padding: 5px;
 }
 
 .toolbar .toolbar__item svg {
@@ -39,12 +39,12 @@ body.body--blur .toolbar {
   color: var(--b3-toolbar-item-1);
   font-family: Courier New;
   font-size: 12px;
-  margin-top: 2.1px;
+  margin-top: 0.7px;
   z-index: 0; /* 将编辑区标签页提到顶部后，加上这个SiYuan字样才能点击 */
 }
 /* 思源笔记字样后的箭头 */
 .toolbar #barWorkspace svg {
-  margin-top: 3px;
+  margin-top: 1px;
   stroke-width: 0;
   /* opacity: 0.5; */
   height: 12px;
@@ -119,7 +119,10 @@ body.body--blur .toolbar {
   background-color: var(--b3-border-color) !important; /* EBF0F7 E2EFF9 */
 }
 
-.toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover,
+.toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover {
+  background-color: var(--b3-border-color);
+}
+
 .toolbar__item--active {
   background-color: var(--b3-tab-bar-hover-bg);
 }

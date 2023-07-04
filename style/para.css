@@ -260,7 +260,7 @@ span[data-type="block-ref"] {
   color: var(--b3-protyle-codeblock-icon);
   background-color: transparent;
   opacity: 1;
-  margin-top: -23px;
+  margin-top: -27px;
   height: 18px;
   line-height: 18px;
 }

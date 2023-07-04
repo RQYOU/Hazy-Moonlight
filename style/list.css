@@ -83,6 +83,5 @@
 }
 /* 鼠标放在上面的背景色： */
 .b3-dialog .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
-  background-color: var(--b3-link-bg-on-surface-2) !important;
-  /* background-color: var(--b3-list-item-hover) !important; */
+  background-color: var(--b3-list-item-hover) !important;
 }

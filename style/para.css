@@ -110,7 +110,8 @@ kbd {
 /* -------- 直线 -------- */
 .protyle-wysiwyg [data-node-id].hr {
   padding: 4px 0;
-  margin: 50px 0 20px 0;
+  margin: 0 0 26px 0;
+  /* margin: 50px 0 20px 0; */
 }
 
 /* .protyle-wysiwyg [data-node-id].hr > div {
@@ -124,11 +125,11 @@ kbd {
   height: 25px;
   border-style: solid;
   border-color: var(--b3-theme-on-background);
-  border-width: 1px 0 0 0;
+  border-width: 0 0 1px 0;
   border-radius: 20px;
 }
 
-.protyle-wysiwyg [data-node-id].hr > div::before {
+/* .protyle-wysiwyg [data-node-id].hr > div::before {
   display: block;
   content: "";
   height: 25px;
@@ -137,6 +138,18 @@ kbd {
   border-color: var(--b3-theme-on-background);
   border-width: 0 0 1px 0;
   border-radius: 20px;
+} */
+
+.protyle-wysiwyg [data-node-id].hr > div::after {
+  display: block;
+  content: "";
+  height: 25px;
+  margin-top: 12px;
+  border-style: solid;
+  border-color: var(--b3-theme-on-background);
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  background-color: var(--b3-theme-surface-light);
 }
 
 /* ------------------ 图片 ------------------- */

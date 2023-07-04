@@ -11,10 +11,11 @@
   --b3-theme-background: #f3f5f9;
   --b3-theme-background-light: #dfe0e1;
 
-  /* 四周的背景：工具栏、dock、侧边栏、状态栏  #f0f2f6;   ebedf3;     f0f2f7; */
-  --b3-theme-surface: #f0f2f6;
+  /* 四周的背景：工具栏、dock、侧边栏、状态栏 */
+  --b3-theme-surface: #f0f2f6; /*   #f0f2f6  |  ebedf3  | f0f2f7;  */
+  /* 编辑区的背景色 */
   --b3-theme-surface-light: #f5f7f9;
-  --b3-theme-surface-lighter: rgba(0, 0, 0, 0.06);
+  --b3-theme-surface-lighter: #efefef; /* rgba(0, 0, 0, 0.06)  */
 
   --b3-theme-error: #ff4642;
 
@@ -88,10 +89,17 @@
   /* 滚动条：自定义。已设置为--b3-link-bg-on-surface */
   /* --b3-scrollbar: #e7edf1;  */ /* e0edfc |  ddecfd  */
 
-  /* 单独设置 list 中鼠标移上去的背景色，已设置为--b3-link-bg-on-surface-2 */
+  /* 单独设置 list 中鼠标移上去的背景色 */
   --b3-list-item-hover: #E2EDFA;  /*  cde5fc| e5ebf0 |   | dfe9f3 */
   /* 单独设置“设置对话框”中list选中之后的背景色 */
   --b3-list-item-focus-dialog: #e1e9ef;
+
+  /* 假如要单独设置“sidbar”中list选中之后的背景色 */
+  /* --b3-list-sidebar-hover:#e0edfc; */
+  /* --b3-list-item-toggle-hl-hover: #cde5fc; */
+  /* 列表：鼠标放在上面的背景色 */
+  --b3-list-hover: #e9ecef; /*  e2e9ee | e7ebef | e9eaea | e0edfc  | ebf0f7 */
+  --b3-list-icon-hover: rgba(33, 34, 36, 0.1);
 
   /* dock */
   --dock-item-svg: #82878d;
@@ -99,19 +107,15 @@
   /* 标签页 */
   --b3-tab-bar-block-icon-more: #aaacaf;
 
-  /* 假如要单独设置“sidbar”中list选中之后的背景色 */
-  /* --b3-list-sidebar-hover:#e0edfc; */
-  /* --b3-list-item-toggle-hl-hover: #cde5fc; */
-  /* 列表：鼠标放在上面的背景色 */
-  --b3-list-hover: #e2e9ee; /*  e7ebef | e9eaea | e0edfc  | ebf0f7 */
-  --b3-list-icon-hover: rgba(33, 34, 36, 0.1);
+
   /* 对话框的背景：自定义 */
   --b3-dialog-close: #a2b1bf; /* 205d99 */
   /* 滚动条 */
   --b3-scroll-color: rgba(0, 0, 0, 0.2);
 
-  /* 菜单 */
+    /* 菜单 */
   --b3-menu-background: #f8f9fa;
+
 
   /* 页签 */
   --b3-tab-background: var(--b3-theme-surface);

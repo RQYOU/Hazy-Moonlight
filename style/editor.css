@@ -157,6 +157,11 @@
 } */
 
 /* ----------------------------------------------------------- */
+/* 外观颜色 */
+.color__square {
+  box-shadow: 0 0 0 1px var(--b3-theme-surface-lighter) inset;
+}
+
 /* 字体色方框：改小一点 */
 .color__square[data-type="color"] {
   height: 15px;

@@ -149,7 +149,7 @@ kbd {
   border-color: var(--b3-theme-on-background);
   border-width: 1px 0 0 0;
   border-radius: 20px;
-  background-color: var(--b3-theme-surface-light);
+  background-color: var(--b3-theme-background);
 }
 
 /* ------------------ 图片 ------------------- */

@@ -8,12 +8,14 @@
 
   --b3-theme-secondary: #f3a92f;
 
+  /* 编辑区的背景色 */
   --b3-theme-background: #f3f5f9;
+
   --b3-theme-background-light: #dfe0e1;
 
   /* 四周的背景：工具栏、dock、侧边栏、状态栏 */
   --b3-theme-surface: #f0f2f6; /*   #f0f2f6  |  ebedf3  | f0f2f7;  */
-  /* 编辑区的背景色 */
+
   --b3-theme-surface-light: #f5f7f9;
   --b3-theme-surface-lighter: #efefef; /* rgba(0, 0, 0, 0.06)  */
 

@@ -41,7 +41,8 @@
 /* 点击选中的按钮 */
 .dock__item--activefocus {
   /* background-color: var(--dock-item-activefocus-background) !important; */
-  background-color: var(--b3-list-item-focus-sidebar) !important;
+  /* background-color: var(--b3-list-item-focus-sidebar) !important; */
+  background-color: var(--b3-link-bg-on-surface) !important;
 }
 
 /* -------------------------------------- 左右侧边栏：即文件区、大纲区、关系图等 -------------------------------------- */

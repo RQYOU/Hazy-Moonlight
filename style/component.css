@@ -24,8 +24,10 @@
 } */
 /* 定义滑动轨道：背景色、圆角、透明度 */
 .layout__dockl .file-tree .fn__flex-1::-webkit-scrollbar-thumb {
-  background-color: var(--b3-scrollbar);
-  border: 6px solid var(--b3-scrollbar);
+  background-color: var(--b3-link-bg-on-surface);
+  /* background-color: var(--b3-scrollbar); */
+  border: 6px solid var(--b3-link-bg-on-surface);
+  /* border: 6px solid var(--b3-scrollbar); */
   border-radius: 0px;
   opacity: 0.2;
   -webkit-border-radius: 0px;

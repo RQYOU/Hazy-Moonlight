@@ -38,7 +38,9 @@
 .layout__tab--active
   .b3-list--background
   .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
-  background-color: var(--b3-list-sidebar-hover);
+  background-color: var(--b3-link-bg-on-surface);
+  /* background-color: var(--b3-list-item-focus); */
+  /* background-color: var(--b3-list-sidebar-hover); */
 }
 
 /* ------------ 单独设置”设置“中左侧列表： ------------ */
@@ -56,7 +58,9 @@
 
 /* .b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) { */
 .b3-dialog__container .config__panel > .b3-list--background.b3-tab-bar .b3-list-item--focus {
-  background-color: var(--b3-list-item-focus-dialog);
+  background-color: var(--b3-link-bg-on-surface);
+  /* background-color: var(--b3-list-item-focus); */
+  /* background-color: var(--b3-list-item-focus-dialog); */
   /* background-color: var(--b3-dialog-list-item-hover) !important; */
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   position: relative;
@@ -79,5 +83,6 @@
 }
 /* 鼠标放在上面的背景色： */
 .b3-dialog .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
-  background-color: var(--b3-list-item-hover) !important;
+  background-color: var(--b3-link-bg-on-surface-2) !important;
+  /* background-color: var(--b3-list-item-hover) !important; */
 }

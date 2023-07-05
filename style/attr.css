@@ -4,7 +4,7 @@
   --b3-theme-primary: #0052d9; /* 原3884ff*/
   --b3-theme-primary-light: rgba(66, 133, 244, 0.54);  /* block-ref  */
   --b3-theme-primary-lighter: rgba(66, 133, 244, 0.38);
-  --b3-theme-primary-lightest: #dfdfed;  /*  E1EDFC | rgba(66, 133, 244, 0.12)  */
+  --b3-theme-primary-lightest: #e2edfa;  /*  E1EDFC | rgba(66, 133, 244, 0.12)  */
   --b3-theme-secondary: #f3a92f;
 
   /* 编辑区的背景色 */
@@ -61,13 +61,12 @@
   --field-bg-blue: #2151d1;
   --field-switch: #868b98;
 
+  /* on surface */
   --b3-list-hover: #e4eaf0; /* e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc  | ebf0f7 */
   /* 自定义：覆盖 --b3-list-hover */
-  --b3-bg-on-surface:#e4eaf0;  /*  e7edf1  */
+  --b3-list-item-hover: #e2edfa;  /*  cde5fc| e5ebf0 | dfe9f3 | e0edfc | cde5fc */
   /* 自定义 */
   --b3-bg-on-surface-blue:#dfdfed;  /*  e2edfa | e7edf1 | e6eef7 */
-  /* 自定义 */
-  --b3-list-item-hover: #e2edfa;  /*  cde5fc| e5ebf0 | dfe9f3 | e0edfc | cde5fc */
   /* rgba(33, 34, 36, 0.1)  | e1e9ee |   e0e7ec | e4eaee  | dce7ef  |  d7e2ea */
   /*  e7ebef  | e2e9ee  | e0edfc |  ddecfd  */
 

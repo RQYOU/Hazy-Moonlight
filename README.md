@@ -4,13 +4,15 @@
 
 A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
+[SiYuan](http://github.com/siyuan-note/siyuan) 笔记的浅色主题。
+
 ### Note
 
 已发布的 lastest 版本并不一定是最新代码。
 
-为了尽量在短的时间内实现所要的效果，代码有时候会比较混乱和随便，请谅解。
+为了尽量在短的时间内实现所要的效果，代码有时候会比较混乱，请谅解。
 
-2023-04-28：最新修改较多，但未经全面测试，所以很可能会有 bug 存在。
+未经全面测试，所以很可能会有 bug 存在，欢迎提 bug。
 
 ### Preview
 
@@ -20,15 +22,15 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 布局紧凑，顶部的工具栏、左右 dock、底部状态栏均收窄，并将编辑区标签页提到顶部工具栏位置，尽量增加中间区域空间。
 
-![1682427206132](image/README/preview.png)
+![1682427206132](preview.png)
 
-### Titles
+### 标题
 
-易于区分的各级标题，一眼即可看出是哪一级标题
+易于区分的各级标题，一眼即可看出是哪一级标题。
 
 ![1682427376672](image/README/titles.png)
 
-### Code Block
+### 代码块
 
 收窄上下边距，当只有一行代码时，不至于占用太大空间，更美观。收窄后，将代码语言和复制与更多按钮挪到上方，不至于在第一行很长时遮挡到代码。
 
@@ -36,44 +38,44 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 ![1682427072462](image/README/codeblock.png)
 
-### Blockquote
+### 引用块
 
 ![1682427462008](image/README/blockquote.png)
 
-### Table
+### 表格
 
 ![1682432959720](image/README/table.png)
 
-### Font Color
+### 字体颜色
 
-注：随时会调整
+注：颜色可能随时调整
 
 ![1682432959720](image/README/fontcolor.png)
 
-### Background Color
+### 背景色
 
 将字体背景色添加了边距和圆角，这样看起来好看些。
 
 最后一种背景色，可以用作将某些文字遮盖。
 
-注：随时会调整
+注：颜色可能随时调整
 
-![1682432959720](image/README/backgroundcolor.png)
+![1682432959720](image/README/bgcolor.png)
 
-### 字体颜色选择框
+### 外观
 
-将字体颜色方框改为显示背景色，而非带颜色的 A，因为显示为背景色各颜色的区分看起来明显一些。
+将“字体颜色”方框改为显示背景色，而非带颜色的 A，因为显示为背景色各颜色的区分看起来明显一些。“颜色”选项不修改，以作区分。
 
 将字体背景色方框改为圆角的，以跟字体颜色方框相区分。
 
-![Colors](image/README/colors.png)
+![Colors](image/README/appearance.png)
 
-### Links
+### 链接
 
-直观显示链接来源
+直观显示链接来源。
 
 ![Links](image/README/links.png)
 
 ### 横线
 
-![1687583531752](image/README/1687583531752.png)
+![1687583531752](image/README/hr.png)

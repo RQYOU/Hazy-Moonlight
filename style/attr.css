@@ -78,29 +78,16 @@
   --b3-toolbar-item-background: #c6e4ee;
   /* --b3-toolbar-item-hover-background: #c6e4ee; */
 
-  /* 控制 --b3-theme-surface 上面类似于 focus、active、hover 的背景色 */
-  --b3-link-bg-on-surface:#e7edf1;
-  --b3-link-bg-on-surface-2:#dfdfed;  /* e7e7f2  | E2EDFA  */
-  /* dock：自定义。已设置为--b3-link-bg-on-surface */
-  /* --dock-item-activefocus-background: #e7edf1;  */  /*    | e6eef7   */
-  /* 标签页：已设置为--b3-link-bg-on-surface */
-  /* --b3-tab-bar-hover-bg:#e7edf1; */ /*  e1e9ee |   e0e7ec | e4eaee  | dce7ef  |  d7e2ea */
-    /* 列表：选中后的背景色：自定义。已设置为--b3-link-bg-on-surface  */
-  /* --b3-list-item-focus: #e7edf1; */  /*  | e7ebef  */
-  /* --b3-list-item-focus-sidebar: #e2e9ee; */
-  /* 滚动条：自定义。已设置为--b3-link-bg-on-surface */
-  /* --b3-scrollbar: #e7edf1;  */ /* e0edfc |  ddecfd  */
-
+  --b3-list-hover: #e4eaf0; /* e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc  | ebf0f7 */
+  /* 自定义：覆盖--b3-list-hover：控制类似于 focus、active、hover 的背景色 */
+  --b3-bg-on-surface:#e4eaf0;  /*  e7edf1  */
+  --b3-bg-on-surface-2:#dfdfed;  /* e7e7f2  | E2EDFA | e7edf1 | e6eef7 */
+  /*  e1e9ee |   e0e7ec | e4eaee  | dce7ef  |  d7e2ea */
+  /*  e7ebef  | e2e9ee  e0edfc |  ddecfd  */
   /* 单独设置 list 中鼠标移上去的背景色 */
-  --b3-list-item-hover: #E2EDFA;  /*  cde5fc| e5ebf0 |   | dfe9f3 */
+  --b3-list-item-hover: #E2EDFA;  /*  cde5fc| e5ebf0 | dfe9f3 | e0edfc | cde5fc */
   /* 单独设置“设置对话框”中list选中之后的背景色 */
   --b3-list-item-focus-dialog: #e1e9ef;
-
-  /* 假如要单独设置“sidbar”中list选中之后的背景色 */
-  /* --b3-list-sidebar-hover:#e0edfc; */
-  /* --b3-list-item-toggle-hl-hover: #cde5fc; */
-  /* 列表：鼠标放在上面的背景色 */
-  --b3-list-hover: #e9ecef; /*  e2e9ee | e7ebef | e9eaea | e0edfc  | ebf0f7 */
   --b3-list-icon-hover: rgba(33, 34, 36, 0.1);
 
   /* dock */
@@ -108,7 +95,6 @@
   --dock-item-active-svg: #a5a5a7;
   /* 标签页 */
   --b3-tab-bar-block-icon-more: #aaacaf;
-
 
   /* 对话框的背景：自定义 */
   --b3-dialog-close: #a2b1bf; /* 205d99 */
@@ -118,16 +104,13 @@
     /* 菜单 */
   --b3-menu-background: #f8f9fa;
 
-
   /* 页签 */
   --b3-tab-background: var(--b3-theme-surface);
   --b3-tab-background-hover: #e9eaeb;
   --b3-tag-focus:#f7fbff;
 
-  /* --------------------------------------------------------------- */
-
   /* 遮罩 */
-  --b3-mask-background: #eef1f6;  /*    #000000 */
+  --b3-mask-background: #c7cbd3d8;  /* eef1f6 | 000000 */
 
   /* 按钮：自定义 */
   --b3-button-blue: #0052d9;

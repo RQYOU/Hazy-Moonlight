@@ -34,13 +34,11 @@
 .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
   background-color: var(--b3-list-item-hover) !important;
 }
-/* sidebar选中项的背景色：单独设置，设置为跟--b3-list-hover不一样 */
+/* sidebar选中项的背景色： */
 .layout__tab--active
   .b3-list--background
   .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
-  background-color: var(--b3-link-bg-on-surface);
-  /* background-color: var(--b3-list-item-focus); */
-  /* background-color: var(--b3-list-sidebar-hover); */
+  background-color: var(--b3-bg-on-surface);
 }
 
 /* ------------ 单独设置”设置“中左侧列表： ------------ */
@@ -58,7 +56,7 @@
 
 /* .b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) { */
 .b3-dialog__container .config__panel > .b3-list--background.b3-tab-bar .b3-list-item--focus {
-  background-color: var(--b3-link-bg-on-surface);
+  background-color: var(--b3-bg-on-surface);
   /* background-color: var(--b3-list-item-focus); */
   /* background-color: var(--b3-list-item-focus-dialog); */
   /* background-color: var(--b3-dialog-list-item-hover) !important; */

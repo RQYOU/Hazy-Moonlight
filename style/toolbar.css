@@ -116,18 +116,15 @@ body.body--blur .toolbar {
 /* ------------------------------ toolbar上的item ------------------------------ */
 .toolbar .toolbar__item:hover {
   /* 覆盖base.css中的var(--b3-list-hover) */
-  background-color: var(--b3-link-bg-on-surface-2) !important;
-  /* background-color: var(--b3-border-color) !important; */ /* EBF0F7 E2EFF9 */
+  background-color: var(--b3-bg-on-surface-2) !important;
 }
 
 .toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover {
-  background-color: var(--b3-link-bg-on-surface-2);
-  /* background-color: var(--b3-border-color); */
+  background-color: var(--b3-bg-on-surface-2);
 }
 
 .toolbar__item--active {
-  background-color: var(--b3-link-bg-on-surface);
-  /* background-color: var(--b3-tab-bar-hover-bg); */
+  background-color: var(--b3-bg-on-surface);
 }
 
 /* .toolbar__item--active, */

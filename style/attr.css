@@ -3,22 +3,17 @@
   /* 主色 */
   --b3-theme-primary: #0052d9; /* 原3884ff*/
   --b3-theme-primary-light: rgba(66, 133, 244, 0.54);  /* block-ref  */
-  --b3-theme-primary-lighter: rgba(66, 133, 244, 0.38);  /* wu   */
-  --b3-theme-primary-lightest: rgba(66, 133, 244, 0.12);  /* wu  */
-
+  --b3-theme-primary-lighter: rgba(66, 133, 244, 0.38);
+  --b3-theme-primary-lightest: #dfdfed;  /*  E1EDFC | rgba(66, 133, 244, 0.12)  */
   --b3-theme-secondary: #f3a92f;
 
   /* 编辑区的背景色 */
   --b3-theme-background: #f3f5f9;
-
   --b3-theme-background-light: #dfe0e1;
-
-  /* 四周的背景：工具栏、dock、侧边栏、状态栏 */
+  /* 四周：工具栏、dock、侧边栏、状态栏 */
   --b3-theme-surface: #f0f2f6; /*   #f0f2f6  |  ebedf3  | f0f2f7;  */
-
   --b3-theme-surface-light: #f5f7f9;
   --b3-theme-surface-lighter: rgba(0, 0, 0, 0.06);
-
   --b3-theme-error: #ff4642;
 
   /* 文字颜色 */
@@ -59,7 +54,24 @@
   --b3-font-background12: #06195c4a;
   --b3-font-background13: var(--b3-theme-on-background);
 
-    /* layout：自定义 */
+  /* 自定义 */
+  --color-white: white;
+  --color-black: black;
+  --field-bg-light: #e6ebf0;
+  --field-bg-blue: #2151d1;
+  --field-switch: #868b98;
+
+  --b3-list-hover: #e4eaf0; /* e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc  | ebf0f7 */
+  /* 自定义：覆盖 --b3-list-hover */
+  --b3-bg-on-surface:#e4eaf0;  /*  e7edf1  */
+  /* 自定义 */
+  --b3-bg-on-surface-blue:#dfdfed;  /*  e2edfa | e7edf1 | e6eef7 */
+  /* 自定义 */
+  --b3-list-item-hover: #e2edfa;  /*  cde5fc| e5ebf0 | dfe9f3 | e0edfc | cde5fc */
+  /* rgba(33, 34, 36, 0.1)  | e1e9ee |   e0e7ec | e4eaee  | dce7ef  |  d7e2ea */
+  /*  e7ebef  | e2e9ee  | e0edfc |  ddecfd  */
+
+  /* layout：自定义 */
   --b3-layout-resize-lr-after-bg: #f0f2f6;
   --b3-layout-tab-bar-item-focus: #f8f9fc;
   --b3-layout-tab-bar-item-focus-after: #c9d0dc;
@@ -78,30 +90,20 @@
   --b3-toolbar-item-background: #c6e4ee;
   /* --b3-toolbar-item-hover-background: #c6e4ee; */
 
-  --b3-list-hover: #e4eaf0; /* e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc  | ebf0f7 */
-  /* 自定义：覆盖--b3-list-hover：控制类似于 focus、active、hover 的背景色 */
-  --b3-bg-on-surface:#e4eaf0;  /*  e7edf1  */
-  --b3-bg-on-surface-2:#dfdfed;  /* e7e7f2  | E2EDFA | e7edf1 | e6eef7 */
-  /*  e1e9ee |   e0e7ec | e4eaee  | dce7ef  |  d7e2ea */
-  /*  e7ebef  | e2e9ee  e0edfc |  ddecfd  */
-  /* 单独设置 list 中鼠标移上去的背景色 */
-  --b3-list-item-hover: #E2EDFA;  /*  cde5fc| e5ebf0 | dfe9f3 | e0edfc | cde5fc */
-  /* 单独设置“设置对话框”中list选中之后的背景色 */
-  --b3-list-item-focus-dialog: #e1e9ef;
-  --b3-list-icon-hover: rgba(33, 34, 36, 0.1);
-
   /* dock */
   --dock-item-svg: #82878d;
   --dock-item-active-svg: #a5a5a7;
+
   /* 标签页 */
   --b3-tab-bar-block-icon-more: #aaacaf;
 
   /* 对话框的背景：自定义 */
   --b3-dialog-close: #a2b1bf; /* 205d99 */
+
   /* 滚动条 */
   --b3-scroll-color: rgba(0, 0, 0, 0.2);
 
-    /* 菜单 */
+  /* 菜单 */
   --b3-menu-background: #f8f9fa;
 
   /* 页签 */
@@ -127,13 +129,6 @@
   /* --b3-dialog-shadow: 0 8px 24px rgba(140, 149, 159, 0.2); */
   --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
     0px 9px 46px 8px rgba(0, 0, 0, 0.12);
-
-  /* 自定义 */
-  --color-white: white;
-  --color-black: black;
-  --field-bg-light: #e6ebf0;
-  --field-bg-blue: #2151d1;
-  --field-switch: #868b98;
 
   /* 线条 */
   --b3-border-color: #e0e5ea; /*rgba(0, 0, 0, .1) , rgba(0, 0, 0, 0.3)*/
@@ -168,9 +163,9 @@
 
   /* -------------------------------------  ------------------------------------- */
 
-  /* 编辑区文字选中背景：自定义 */
-  --b3-text-select-background: #d7eaffb6; /* #d4ebf4鼠标划选区域 */
-  --b3-text-drag-select-background: #d1e9fb; /* #d4ebf4鼠标划选区域 */
+  /* 编辑区文字选中背景：自定义，鼠标划选区域 */
+  --b3-text-select-background: #d7eaffb6; /* d4ebf4 */
+  --b3-text-drag-select-background: #d1e9fb; /*  d1e9fb  | d4ebf4 */
   /* a标签下面的线条：自定义 */
   --b3-link-bottom: rgba(78, 78, 86, 0.2);
   /* 编辑器导航滑块：上下箭头：自定义 */

@@ -116,11 +116,11 @@ body.body--blur .toolbar {
 /* ------------------------------ toolbar上的item ------------------------------ */
 .toolbar .toolbar__item:hover {
   /* 覆盖base.css中的var(--b3-list-hover) */
-  background-color: var(--b3-bg-on-surface-2) !important;
+  background-color: var(--b3-bg-on-surface-blue) !important;
 }
 
 .toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover {
-  background-color: var(--b3-bg-on-surface-2);
+  background-color: var(--b3-bg-on-surface-blue);
 }
 
 .toolbar__item--active {

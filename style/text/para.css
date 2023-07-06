@@ -164,6 +164,10 @@ kbd {
 }
 
 /* ------------------------------- 引用块 block quote -------------------------------------- */
+
+.b3-typography blockquote,
+.b3-typography .bq,
+.protyle-wysiwyg blockquote,
 .protyle-wysiwyg .bq {
   background-color: var(--b3-protyle-blockquote-background) !important; /* e6ecf1 */
   /* border: 1px solid #e9edf3; */

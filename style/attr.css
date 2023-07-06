@@ -61,9 +61,8 @@
   --field-bg-blue: #2151d1;
   --field-switch: #868b98;
 
-  /* on surface */
+  /* on --b3-theme-surface */
   --b3-list-hover: #e4eaf0; /* e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc  | ebf0f7 */
-  /* 自定义：覆盖 --b3-list-hover */
   --b3-list-item-hover: #e2edfa;  /*  cde5fc| e5ebf0 | dfe9f3 | e0edfc | cde5fc */
   /* 自定义 */
   --b3-bg-on-surface-blue:#dfdfed;  /*  e2edfa | e7edf1 | e6eef7 */

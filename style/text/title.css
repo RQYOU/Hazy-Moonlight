@@ -2,28 +2,16 @@
 
 .protyle-wysiwyg [data-node-id].h1,
 .b3-typography h1 {
-  font-size: 1.7em !important;
-  color: var(--b3-theme-on-background); /* #04393f; */
-  page-break-before: always;
-  border-left: 4px solid var(--b3-theme-on-background);
-  border-radius: 4px;
-  padding: 0px 0px 0px 20px;
-  margin: 30px 0px 26px 0px;
-  line-height: 1.35;
-  height: 1.3em;
-}
-
-.protyle-wysiwyg [data-node-id].h1:before,
-.b3-typography h1:before {
-  content: "";
-  display: inline-block;
-  border-left: 3.8px solid var(--b3-theme-on-background);
-  border-radius: 5px;
-  height: 48px;
-  position: absolute;
-  top: 50%;
-  left: 0.3%; /* 用这个参数调整右竖线的位置，以看起来两条竖线之间的距离比较好 */
-  transform: translateY(-50%);
+  font-size: 1.5em !important;
+  color: var(--b3-theme-on-background);
+  padding: 0px 0px 0px 15px;
+  margin: 60px 0px 28px 0px;
+  line-height: 1.55;
+  /*调整高度：在没输入文字时仍然保持一定的高度*/
+  min-height: 38px;
+  border-left: 6px solid var(--b3-theme-on-background);
+  border-bottom: 1px solid var(--protyle-title-border);
+  border-radius: 0;
 }
 
 /* ------------------- 标题2 ------------------- */
@@ -31,14 +19,14 @@
 .b3-typography h2 {
   font-size: 1.5em !important;
   color: var(--b3-theme-on-background);
-  border-left: 4px solid var(--b3-theme-on-background);
-  border-radius: 0;
   padding: 0px 0px 0px 15px;
   margin: 60px 0px 28px 0px;
   line-height: 1.55;
-  border-bottom: 1px solid var(--protyle-title-border);
   /*调整高度：在没输入文字时仍然保持一定的高度*/
   min-height: 38px;
+  border-left: 4px solid var(--b3-theme-on-background);
+  border-bottom: 1px solid var(--protyle-title-border);
+  border-radius: 0;
 }
 .protyle-wysiwyg [data-node-id].h2:first-child,
 .b3-typography h2:first-child {
@@ -50,19 +38,10 @@
 .b3-typography h3 {
   font-size: 1.35em !important; /* 1.35em */
   color: var(--b3-theme-on-background); /* #CC00FF; #34495e; */
-  padding: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 12px;
   margin: 45px 0px 24px 0px;
-}
-.protyle-wysiwyg [data-node-id].h3:before,
-.b3-typography h3:before {
-  content: "";
-  display: inline-block;
   border-left: 4px solid var(--b3-theme-on-background);
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translateY(-50%);
+  border-radius: 0;
 }
 
 /* ------------------- 标题4 ------------------- */
@@ -70,20 +49,15 @@
 .b3-typography h4 {
   font-size: 1.2em !important;
   color: var(--b3-theme-on-background); /* #03a1b9cc;  #34495e; */
-  padding: 0px 0px 0px 26px;
+  padding: 0;
   margin: 20px 0px 15px 0px;
   line-height: 1.5em;
 }
-.protyle-wysiwyg [data-node-id].h4:before,
+.protyle-wysiwyg [data-node-id].h4 div:not(.protyle-attr):before,
 .b3-typography h4:before {
   content: "\27BD";
-  display: inline-block;
   color: var(--b3-theme-on-background);
-  height: 29px;
-  position: absolute;
-  top: 50%;
-  left: 0.2%;
-  transform: translateY(-50%);
+  padding-right: 6px;
 }
 
 /* ------------------- 标题5 ------------------- */
@@ -91,20 +65,15 @@
 .b3-typography h5 {
   font-size: 1.1em !important;
   color: var(--b3-theme-on-background); /* #58c6d6; #34495e; */
-  padding: 0px 0px 0px 24px;
+  padding: 0;
   margin: 15px 0px 12px 0px;
   line-height: 1.5em;
 }
-.protyle-wysiwyg [data-node-id].h5:before,
+.protyle-wysiwyg [data-node-id].h5 div:not(.protyle-attr):before,
 .b3-typography h5:before {
   content: "\27BC";
-  display: inline-block;
   color: var(--b3-theme-on-background);
-  height: 25px;
-  position: absolute;
-  top: 50%;
-  left: 0.2%;
-  transform: translateY(-50%);
+  padding-right: 6px;
 }
 
 /* ------------------- 标题6 ------------------- */
@@ -112,21 +81,16 @@
 .b3-typography h6 {
   font-size: 1em !important;
   color: var(--b3-theme-on-background);
-  padding: 0px 0px 0px 22px;
+  padding: 0;
   margin: 10px 0px 8px 0px;
   line-height: 1.75em;
 }
-.protyle-wysiwyg [data-node-id].h6:before,
+.protyle-wysiwyg [data-node-id].h6 div:not(.protyle-attr):before,
 .b3-typography h6:before {
   content: "\21AC";
-  display: inline-block;
   color: var(--b3-theme-on-background);
-  height: 31px;
   font-size: 23px;
-  position: absolute;
-  top: 50%;
-  left: 0.2%;
-  transform: translateY(-50%);
+  padding-right: 6px;
 }
 
 /* ------------------- 标题4/5/6 ------------------- */

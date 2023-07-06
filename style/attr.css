@@ -9,6 +9,8 @@
 
   /* 编辑区的背景色，设置对话框右侧背景色 */
   --b3-theme-background: #f3f5f9;
+  /* 自定义 */
+  --b3-theme-background-darker: #e9ecf4;
   --b3-theme-background-light: #dfe0e1;
   /* 四周：工具栏、dock、侧边栏、状态栏 */
   --b3-theme-surface: #f0f2f6; /*   #f0f2f6  |  ebedf3  | f0f2f7;  */

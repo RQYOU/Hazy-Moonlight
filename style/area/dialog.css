@@ -70,3 +70,35 @@
   border-top: none;
   margin-bottom: 10px;
 }
+
+.config__panel .config__tab-container .layout-tab-bar {
+  background-color: var(--b3-theme-background);
+}
+
+/* ------------ 集市详情页 ----------- */
+#configBazaarReadme {
+  background-color: var(--b3-theme-background-darker);
+  border-radius: 10px;
+  padding: 16px;
+}
+#configBazaarReadme .item__side {
+  background-color: var(--b3-theme-background);
+  border-radius: 10px;
+}
+#configBazaarReadme .item__side .block__icons {
+  margin: 5px 0;
+}
+#configBazaarReadme .item__side .block__icon {
+  padding: 3px 5px;
+  margin: 8px 0 0 0;
+}
+#configBazaarReadme .item__side::-webkit-scrollbar {
+  display: none;
+}
+#configBazaarReadme .item__main {
+  background-color: var(--b3-theme-background);
+  border-radius: 10px;
+}
+#configBazaarReadme .item__main .b3-typography {
+  padding: 0 20px;
+}

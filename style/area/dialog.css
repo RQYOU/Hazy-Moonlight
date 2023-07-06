@@ -86,10 +86,17 @@
   border-radius: 10px;
 }
 #configBazaarReadme .item__side .block__icons {
-  margin: 5px 0;
+  margin: 20px 0;
 }
 #configBazaarReadme .item__side .block__icon {
   padding: 3px 5px;
+}
+#configBazaarReadme .item__side .block__icon[data-type="goBack"] {
+  margin-top: 16px;
+  font-size: 13px;
+  border-radius: 3px;
+  /* height: 28px; */
+  width: auto;
 }
 #configBazaarReadme .item__side::-webkit-scrollbar {
   display: none;

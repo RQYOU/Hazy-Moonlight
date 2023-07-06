@@ -2,8 +2,8 @@
   "name": "siyuan-theme-hazy-moonlight",
   "author": "RQYOU",
   "url": "https://github.com/RQYOU/siyuan-theme-hazy-moonlight",
-  "version": "0.0.3",
-  "minAppVersion": "2.8.8",
+  "version": "1.0.0",
+  "minAppVersion": "",
   "displayName": {
     "default": "朦胧月光",
     "zh_CN": "朦胧月光",

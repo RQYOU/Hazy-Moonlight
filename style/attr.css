@@ -57,17 +57,18 @@
   /* 自定义 */
   --color-white: white;
   --color-black: black;
-  --field-bg-light: #e6ebf0;
+  --field-bg-light: #e4eaf0;  /* e6ebf0 */
   --field-bg-blue: #2151d1;
   --field-switch: #868b98;
 
   /* on --b3-theme-surface */
-  --b3-list-hover: #e4eaf0; /* e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc  | ebf0f7 */
+  --b3-list-hover: #e4eaf0; /*  e4eaf0 | e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc  | ebf0f7 */
   --b3-list-item-hover: #e2edfa;  /*  cde5fc| e5ebf0 | dfe9f3 | e0edfc | cde5fc */
   /* 自定义 */
   --b3-bg-on-surface-blue:#dfdfed;  /*  e2edfa | e7edf1 | e6eef7 */
   /* rgba(33, 34, 36, 0.1)  | e1e9ee |   e0e7ec | e4eaee  | dce7ef  |  d7e2ea */
   /*  e7ebef  | e2e9ee  | e0edfc |  ddecfd  */
+  --b3-list-menu-hover: #e3eaf1;
 
   /* layout：自定义 */
   --b3-layout-resize-lr-after-bg: #f0f2f6;
@@ -102,7 +103,7 @@
   --b3-scroll-color: rgba(0, 0, 0, 0.2);
 
   /* 菜单 */
-  --b3-menu-background: #f8f9fa;
+  --b3-menu-background: #f3f7fb;  /* |f8f9fa */
 
   /* 页签 */
   --b3-tab-background: var(--b3-theme-surface);
@@ -130,6 +131,7 @@
 
   /* 线条 */
   --b3-border-color: #e0e5ea; /*rgba(0, 0, 0, .1) , rgba(0, 0, 0, 0.3)*/
+  --b3-border-radius: 3px;  /* 6px */
 
   /* 下拉菜单 */
   --b3-select-hover: #ddecfd;

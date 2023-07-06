@@ -75,3 +75,15 @@
   height: 13px;
   width: 13px;
 }
+
+/* 左边栏文件列表的箭头： */
+.b3-list-item__toggle--hl:hover {
+  color: var(--b3-theme-on-background);
+  /* background-color: var(--b3-list-item-toggle-hl-hover); */
+  background-color: unset;
+  /* border-radius: 0px; */
+}
+/* 大纲区 */
+.file-tree.sy__outline {
+  padding: 0 8px;
+}

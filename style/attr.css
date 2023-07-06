@@ -164,8 +164,8 @@
   /* -------------------------------------  ------------------------------------- */
 
   /* 编辑区文字选中背景：自定义，鼠标划选区域 */
-  --b3-text-select-background: #d7eaffb6; /* d4ebf4 */
-  --b3-text-drag-select-background: #d1e9fb; /*  d1e9fb  | d4ebf4 */
+  --b3-select-background: #d7eaffb6; /* d4ebf4 */
+  --b3-drag-select-background: #d1e9fb; /*  d1e9fb  | d4ebf4 | cedef4 */
   /* a标签下面的线条：自定义 */
   --b3-link-bottom: rgba(78, 78, 86, 0.2);
   /* 编辑器导航滑块：上下箭头：自定义 */

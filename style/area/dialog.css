@@ -1,8 +1,4 @@
 /* ------------------------------ 设置对话框 ------------------------------ */
-/* 弹出对话框时的背景： */
-/* .b3-dialog__scrim {
-  background-color: var(--b3-mask-background);
-} */
 
 /* 遮罩上面的白色字体改为蓝色字体 */
 .b3-dialog__scrim > div:nth-child(2) {

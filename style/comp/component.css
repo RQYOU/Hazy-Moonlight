@@ -1,3 +1,49 @@
+/* -------------------------------------- menu -------------------------------------- */
+.b3-menu__item--show {
+  background-color: var(--b3-list-menu-hover);
+}
+
+/* -------------------------------------- 代码选择菜单 -------------------------------------- */
+/* 代码搜索框 */
+.protyle-util .b3-text-field {
+  margin: 4px 6px !important;
+  padding: 8px;
+  width: 180px;
+}
+/* 代码搜索框获取焦点时 */
+/* .pcr-app .pcr-interaction .pcr-result:not(.b3-text-field--text):focus */
+.protyle-util .b3-text-field:not(.b3-text-field--text):focus {
+  box-shadow: inset 0 0 0 1px var(--b3-theme-primary-light), 0 0 0 3px var(--b3-theme-primary-lightest);
+}
+/* 代码列表 */
+.protyle-util .b3-list {
+  margin: 6px;
+  min-width: 180px;
+}
+/* 代码列表的每个选项 */
+.protyle-util .b3-list--background .b3-list-item {
+  padding: 0 8px;
+}
+
+/* -------------------------------------- 搜索框 -------------------------------------- */
+.search__header .b3-text-field--text {
+  background-color: var(--b3-tab-background);
+}
+.search__header .b3-form__icon-icon {
+  top: 6px;
+  width: 14px;
+  height: 14px;
+}
+.search__header .block__icon {
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  padding: 5px 3px;
+}
+#searchPreview .protyle-breadcrumb {
+  margin: 6px 0 12px 0;
+}
+
 /* -------------------------------------- 滚动条 -------------------------------------- */
 
 /* ------------------- 弹框左侧的滚动条：------------------- */

@@ -54,31 +54,12 @@
 /* 选中块 */
 .protyle-wysiwyg--select,
 .protyle-wysiwyg--select .hljs {
-  background-color: var(--b3-text-select-background) !important;
+  background-color: var(--b3-select-background) !important;
 }
 /* 鼠标划选区域 */
 .protyle-select {
-  /* cedef4 */
-  background-color: var(--b3-text-drag-select-background);
+  background-color: var(--b3-drag-select-background);
 }
-
-/* ------------------------------- tag -------------------------------------- */
-/* copying code style */
-/* span[data-type="tag"]:not(.dock__item) {
-  display: inline-block;
-  padding: 0.05em 0.7em;
-  margin: 0;
-  border-radius: 15px;
-  cursor: pointer;
-  white-space: pre-wrap;
-  background-color: #808080;
-  color: #ffffff !important;
-  font-family: var(--b3-font-family-code);
-  font-size: 80%;
-  font-weight: normal;
-  text-decoration: none !important;
-  text-align: center;
-} */
 
 /* ------------------------------- 窗口其它元素 -------------------------------------- */
 
@@ -130,33 +111,7 @@
   opacity: 1;
 }
 
-/* ------------------------------------------------------------ */
-
-/* .layout-tab-bar .item--focus,
-.layout-tab-bar .item--focus:hover,
-.layout-tab-bar .item--focus:focus,
-.layout-tab-bar .item--focus:active {
-  background-color: ;
-}
-
-.layout-tab-bar .item--focus {
-  color: ;
-  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.layout-tab-bar .item {
-  background-color: ;
-  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  font-size: 13px;
-  border-radius: 4px;
-  height: 28px;
-  min-height: 0;
-  width: auto;
-  padding: 0 4px;
-  flex: unset;
-  box-shadow: unset !important;
-} */
-
-/* ----------------------------------------------------------- */
+/* ---------------------------- 外观 ------------------------------- */
 /* 外观颜色 */
 .color__square {
   box-shadow: 0 0 0 1px var(--b3-theme-surface-lighter) inset;
@@ -211,3 +166,20 @@
 .color__square[style="color:var(--b3-font-color13)"] {
   background-color: var(--b3-font-color13);
 }
+
+/* tag标签 */
+/* span[data-type="tag"]:not(.dock__item) {
+  display: inline-block;
+  padding: 0.05em 0.7em;
+  margin: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  white-space: pre-wrap;
+  background-color: #808080;
+  color: #ffffff !important;
+  font-family: var(--b3-font-family-code);
+  font-size: 80%;
+  font-weight: normal;
+  text-decoration: none !important;
+  text-align: center;
+} */

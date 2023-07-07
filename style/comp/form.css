@@ -196,7 +196,8 @@
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-color: var(--field-bg-blue);
 }
-.b3-switch:checked::after {
+.b3-switch:checked:before,
+.b3-switch:checked:after {
   background-color: var(--color-white);
   right: 15px;
   left: unset;
@@ -204,4 +205,8 @@
   bottom: unset;
   transform: translateX(12px);
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.b3-switch:hover:not(:disabled):before,
+.b3-switch:focus:not(:disabled):before {
+  display: none;
 }

@@ -8,7 +8,7 @@
 /* --------- */
 
 .toolbar {
-  height: 27px;
+  height: 30px;
   background-color: var(--b3-theme-surface);
   /* 删掉border */
   /* border-bottom: 0.5px solid var(--b3-border-color); */

@@ -103,7 +103,7 @@
   --b3-dialog-close: #a2b1bf; /* 205d99 */
 
   /* 滚动条 */
-  --b3-scroll-color: rgba(0, 0, 0, 0.2);
+  --b3-scroll-color:#e4eaf0 ;  /* d7e1e9 | rgba(0, 0, 0, 0.2); */
 
   /* 菜单 */
   --b3-menu-background: #f3f7fb;  /* |f8f9fa */

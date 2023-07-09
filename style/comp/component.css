@@ -46,6 +46,16 @@
 
 /* -------------------------------------- 滚动条 -------------------------------------- */
 
+::-webkit-scrollbar-corner {
+  background-color: var(--b3-list-hover);
+}
+::-webkit-scrollbar-thumb {
+  border-color: var(--b3-list-hover);
+}
+::selection {
+  background-color: var(--b3-scrollbar);
+}
+
 /* ------------------- 弹框左侧的滚动条：------------------- */
 .b3-dialog .b3-tab-bar::-webkit-scrollbar {
   display: none;

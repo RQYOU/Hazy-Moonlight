@@ -254,7 +254,7 @@ span[data-type="block-ref"] {
 }
 .b3-typography .code-block .protyle-action .protyle-action__language:hover,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language:hover {
-  background-color: var(--b3-protyle-codeblock-lang-background-hover); /* CEDCE6*/
+  background-color: var(--b3-bg-on-bg-hover); /* CEDCE6*/
   color: var(--b3-protyle-codeblock-lang-hover) !important;
 }
 
@@ -264,18 +264,19 @@ span[data-type="block-ref"] {
   color: var(--b3-protyle-codeblock-icon);
   background-color: transparent;
   opacity: 1;
-  margin-top: -27px;
-  height: 18px;
-  line-height: 18px;
+  margin-top: -21px;
+  height: 15px;
+  /* line-height: 18px; */
+  padding: 2px;
 }
 .b3-typography .code-block .protyle-action .protyle-icon svg,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon svg {
-  height: 18px;
+  height: 12px;
   width: 12px;
 }
 .b3-typography .code-block .protyle-action .protyle-icon:hover,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon:hover {
-  background-color: var(--b3-protyle-codeblock-icon-hover-background);
+  background-color: var(--b3-bg-on-bg-hover);
 }
 .b3-typography .code-block .protyle-action .protyle-action__copy,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__copy {

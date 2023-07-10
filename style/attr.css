@@ -73,6 +73,7 @@
   /* rgba(33, 34, 36, 0.1)  | e1e9ee |   e0e7ec | e4eaee  | dce7ef  |  d7e2ea */
   /*  e7ebef  | e2e9ee  | e0edfc |  ddecfd  */
   --b3-list-menu-hover: #e3eaf1;
+  --b3-bg-on-bg-hover:#d7e3ef;
 
   /* layout：自定义 */
   --b3-layout-resize-lr-after-bg: #f0f2f6;
@@ -218,7 +219,6 @@
   --b3-protyle-codeblock-linenumber-background: #b1c3c491; /* 自定义 */
   --b3-protyle-codeblock-lang: rgba(13, 56, 50, 0.5); /* 自定义 */
   --b3-protyle-codeblock-lang-hover: rgba(13, 56, 50, 0.5); /* 自定义 */
-  --b3-protyle-codeblock-lang-background-hover: #b7d5e4; /* 自定义 */
   --b3-protyle-codeblock-icon: rgba(13, 56, 50, 0.5); /* 自定义 */
   --b3-protyle-codeblock-icon-hover-background: #b7d5e4; /* 自定义 */
   --b3-protyle-codeblock-after: #ffffff; /* 自定义 */

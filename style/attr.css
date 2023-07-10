@@ -13,7 +13,8 @@
   --b3-theme-background-darker: #e9ecf4;
   --b3-theme-background-light: #dfe0e1;
   /* 四周：工具栏、dock、侧边栏、状态栏 */
-  --b3-theme-surface: #f0f2f6; /*  f0f2f6  |  ebeff3 | eaeff3  | e9eef2 | edf1f9 | eaeef4 |  ebedf3  | f0f2f7;  */
+  /*  f0f2f6  ,  eceff4 |  ebeff3 | eaeff3  | e9eef2 | edf1f9 | eaeef4 |  ebedf3  | f0f2f7;  */
+  --b3-theme-surface: #f0f2f6;
   --b3-theme-surface-light: #f5f7f9;
   --b3-theme-surface-lighter: rgba(0, 0, 0, 0.06);
   --b3-theme-error: #ff4642;

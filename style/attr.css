@@ -2,9 +2,9 @@
 :root {
   /* 主色 */
   --b3-theme-primary: #0052d9; /* 原3884ff*/
-  --b3-theme-primary-light: rgba(66, 133, 244, 0.54);  /* block-ref  */
+  --b3-theme-primary-light: rgba(66, 133, 244, 0.54); /* block-ref  */
   --b3-theme-primary-lighter: rgba(66, 133, 244, 0.38);
-  --b3-theme-primary-lightest: #e2edfa;  /*  E1EDFC | rgba(66, 133, 244, 0.12)  */
+  --b3-theme-primary-lightest: #e2edfa; /*  E1EDFC | rgba(66, 133, 244, 0.12)  */
   --b3-theme-secondary: #f3a92f;
 
   /* 编辑区的背景色，设置对话框右侧背景色 */
@@ -50,7 +50,7 @@
   --b3-font-background5: #25e9b488; /* 33f2bf95 */
   --b3-font-background6: #58f54a88; /*  59ff4a95 ｜ 4aff4d95 */
   --b3-font-background7: #f1f423b3; /*  f1f50f96*/
-  --b3-font-background8: #ff911b89;  /* ff952392 | ff870782 */
+  --b3-font-background8: #ff911b89; /* ff952392 | ff870782 */
   --b3-font-background9: #d483ff89; /* c7bdff */
   --b3-font-background10: #ff8fce8c; /* ffa3d7a5 */
   --b3-font-background11: #ff173e70; /* ff173e7e |  f8d7da */
@@ -60,20 +60,20 @@
   /* 自定义 */
   --color-white: white;
   --color-black: black;
-  --field-bg-light: #e4eaf0;  /* e6ebf0 */
+  --field-bg-light: #e4eaf0; /* e6ebf0 */
   --field-bg-blue: #2151d1;
   --field-switch: #868b98;
 
   /* on --b3-theme-surface */
   --b3-list-hover: #e4eaf0; /*  e4eaf0 | e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc  | ebf0f7 */
-  --b3-list-item-hover: #e2edfa;  /*  cde5fc| e5ebf0 | dfe9f3 | e0edfc | cde5fc */
+  --b3-list-item-hover: #e2edfa; /*  cde5fc| e5ebf0 | dfe9f3 | e0edfc | cde5fc */
   --b3-list-icon-hover: #eaeff5;
   /* 自定义 */
-  --b3-bg-on-surface-blue:#dfdfed;  /*  e2edfa | e7edf1 | e6eef7 */
+  --b3-bg-on-surface-blue: #dfdfed; /*  e2edfa | e7edf1 | e6eef7 */
   /* rgba(33, 34, 36, 0.1)  | e1e9ee |   e0e7ec | e4eaee  | dce7ef  |  d7e2ea */
   /*  e7ebef  | e2e9ee  | e0edfc |  ddecfd  */
   --b3-list-menu-hover: #e3eaf1;
-  --b3-bg-on-bg-hover:#d7e3ef;
+  --b3-bg-on-bg-hover: #d7e3ef;
 
   /* layout：自定义 */
   --b3-layout-resize-lr-after-bg: #f0f2f6;
@@ -105,18 +105,18 @@
   --b3-dialog-close: #a2b1bf; /* 205d99 */
 
   /* 滚动条 */
-  --b3-scroll-color:#e4eaf0 ;  /* d7e1e9 | rgba(0, 0, 0, 0.2); */
+  --b3-scroll-color: #e4eaf0; /* d7e1e9 | rgba(0, 0, 0, 0.2); */
 
   /* 菜单 */
-  --b3-menu-background: #f3f7fb;  /* |f8f9fa */
+  --b3-menu-background: #f3f7fb; /* |f8f9fa */
 
   /* 页签 */
   --b3-tab-background: var(--b3-theme-surface);
   --b3-tab-background-hover: #e9eaeb;
-  --b3-tag-focus:#f7fbff;
+  --b3-tag-focus: #f7fbff;
 
   /* 遮罩 */
-  --b3-mask-background: #c7cbd3d8;  /* eef1f6 | 000000 */
+  --b3-mask-background: #c7cbd3d8; /* eef1f6 | 000000 */
 
   /* 按钮：自定义 */
   --b3-button-blue: #0052d9;
@@ -126,17 +126,16 @@
   --toolart-barDock-svg: #6c7075;
 
   /* 阴影 */
-  --shadow-0:0 0 0 1px rgb(0 0 0 / 12%)
-  /* --b3-point-shadow: 0 3px 6px rgba(140, 149, 159, 0.15); */
-  --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  --shadow-0: 0 0 0 1px rgb(0 0 0 / 12%) /* --b3-point-shadow: 0 3px 6px rgba(140, 149, 159, 0.15); */ --b3-point-shadow:
+      0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   /* --b3-dialog-shadow: 0 8px 24px rgba(140, 149, 159, 0.2); */
   --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
     0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 
   /* 线条 */
   --b3-border-color: #e0e5ea; /*rgba(0, 0, 0, .1) , rgba(0, 0, 0, 0.3)*/
-  --b3-border-radius: 3px;  /* 6px */
+  --b3-border-radius: 3px; /* 6px */
 
   /* 下拉菜单 */
   --b3-select-hover: #ddecfd;
@@ -148,7 +147,7 @@
   --b3-width-transition: width 0.2s cubic-bezier(0, 0, 0.2, 1) 0ms;
 
   /* 提示 */
-  --b3-tooltips-color: rgba(0, 0, 0, 0.54);
+  --b3-tooltips-color: white; /* rgba(0, 0, 0, 0.54) */
 
   /* 卡片背景 */
   --b3-card-error-color: rgb(97, 26, 21);
@@ -200,7 +199,7 @@
   /* blockquote：自定义 */
   --b3-protyle-blockquote-background: #e9edf3;
   --b3-protyle-blockquote-border: #0e68c1;
-  --b3-protyle-blockquote-para: #7a8084;   /* 757c81 |  828d97 */
+  --b3-protyle-blockquote-para: #7a8084; /* 757c81 |  828d97 */
 
   /* 编辑器搜索颜色 */
   --b3-protyle-search-background: #ffe955;

@@ -13,7 +13,9 @@
 /* 代码搜索框获取焦点时 */
 /* .pcr-app .pcr-interaction .pcr-result:not(.b3-text-field--text):focus */
 .protyle-util .b3-text-field:not(.b3-text-field--text):focus {
-  box-shadow: inset 0 0 0 1px var(--b3-theme-primary-light), 0 0 0 3px var(--b3-theme-primary-lightest);
+  box-shadow:
+    inset 0 0 0 1px var(--b3-theme-primary-light),
+    0 0 0 3px var(--b3-theme-primary-lightest);
 }
 /* 代码列表 */
 .protyle-util .b3-list {
@@ -52,9 +54,9 @@
 ::-webkit-scrollbar-thumb {
   border-color: var(--b3-list-hover);
 }
-::selection {
+/* ::selection {
   background-color: var(--b3-scrollbar);
-}
+} */
 
 /* ------------------- 弹框左侧的滚动条：------------------- */
 .b3-dialog .b3-tab-bar::-webkit-scrollbar {

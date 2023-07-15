@@ -57,7 +57,7 @@
   background-color: var(--color-white);
   color: var(--b3-button-blue);
   outline: unset;
-  position: unset;
+  /* position: unset; */
   font-size: 13px;
   border-radius: 4px;
   height: 28px;

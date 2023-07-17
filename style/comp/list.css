@@ -17,6 +17,11 @@
   background-color: var(--b3-list-item-hover) !important;
 } */
 
+.b3-list-item__icon:hover {
+  background-color: var(--b3-list-icon-hover);
+  box-shadow: var(--b3-list-icon-hover-shadow);
+}
+
 /* --------------------- sidebar选中项的背景色：--------------------- */
 .layout__tab--active
   .b3-list--background

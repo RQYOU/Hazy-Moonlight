@@ -169,10 +169,12 @@ kbd {
 .b3-typography .bq,
 .protyle-wysiwyg blockquote,
 .protyle-wysiwyg .bq {
-  background-color: var(--b3-protyle-blockquote-background) !important; /* e6ecf1 */
-  /* border: 1px solid #e9edf3; */
+  background-color: var(--b3-protyle-blockquote-background) !important;
+  /*e6ecf1*/ /*border: 1px solid #e9edf3;
+  */
   border-left: 4px solid var(--b3-protyle-blockquote-border) !important;
   margin: 15px 0px !important;
+  border-radius: 0px;
 }
 .protyle-wysiwyg .bq .p {
   font-size: 15px !important;

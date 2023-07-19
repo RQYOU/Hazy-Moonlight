@@ -67,7 +67,7 @@
   /* on --b3-theme-surface */
   --b3-list-hover: #e4eaf0; /* e4eaf0 | e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc | ebf0f7 */
   --b3-list-item-hover: #e2edfa; /* cde5fc | e5ebf0 | dfe9f3 | e0edfc | cde5fc */
-  --b3-list-icon-hover: #f7faff; /* f3f7fe | eaeff5 */
+  --b3-list-icon-hover: #f1f4f9; /* eaeff7 | f7faff | f3f7fe | eaeff5 */
   --b3-list-icon-hover-shadow: 0 1px 6px rgb(176, 214, 255), 0 2px 6px rgb(176, 214, 255),
     0 2px 5px -1px rgb(176, 214, 255);
   /* 自定义 */

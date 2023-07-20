@@ -10,7 +10,7 @@
   line-height: 1.55;
   /*调整高度：在没输入文字时仍然保持一定的高度*/
   min-height: 38px;
-  border-left: 6px solid var(--b3-theme-on-background);
+  border-left: 5.4px solid var(--b3-theme-on-background);
   border-bottom: 1px solid var(--protyle-title-border);
   border-radius: 0;
 }

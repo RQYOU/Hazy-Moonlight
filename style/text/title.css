@@ -14,6 +14,10 @@
   border-bottom: 1px solid var(--protyle-title-border);
   border-radius: 0;
 }
+.protyle-wysiwyg [data-node-id].h1:first-child,
+.b3-typography h1:first-child {
+  margin-top: 0px;
+}
 
 /* ------------------- 标题2 ------------------- */
 .protyle-wysiwyg [data-node-id].h2,

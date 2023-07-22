@@ -7,7 +7,13 @@
   background-color: var(--b3-theme-surface);
   /* border-bottom: 1px solid var(--color-white); */
   border-bottom: none;
+  /* opacity:0.5; */
+  color: #979799;
+  height: 35px;
 }
+/* 编辑区获得焦点时的tab  */
+/* .layout__center .layout__wnd--active .layout-tab-bar {
+} */
 
 /* ---------------------------- tab bar 上的item：div ---------------------------- */
 .layout-tab-bar .item {
@@ -19,7 +25,7 @@
   /* min-height: 0; */
   min-height: 28px;
   width: auto;
-  /* padding: 0px 4px; */
+  padding: 0px 1px;
   flex: unset;
   box-shadow: unset !important;
 }
@@ -41,25 +47,6 @@
   box-shadow: none !important;
 }
 
-.layout-tab-bar .item--focus,
-.layout-tab-bar .item--focus:hover,
-.layout-tab-bar .item--focus:focus,
-.layout-tab-bar .item--focus:active {
-  background-color: var(--b3-button-blue-light);
-}
-
-.layout-tab-bar .item--focus {
-  color: var(--b3-button-blue);
-  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-/* item底部的横线 */
-.layout-tab-bar .item--focus:after {
-  height: 1.5px;
-  bottom: 1px;
-  background-color: var(--b3-layout-tab-bar-item-focus-after);
-}
-
 /* ------ tab bar item 上的文字 ------ */
 .layout-tab-bar .item__text {
   min-width: 64px;
@@ -78,59 +65,84 @@
   margin-right: 6px;
 }
 
-/* ---------------------------- 编辑区标签页：---------------------------- */
-/* 获得了焦点的tab  */
-.layout__center .layout__wnd--active .layout-tab-bar {
-  background-color: var(--b3-theme-surface);
-  /* opacity:0.5; */
-  color: #979799;
-  height: 35px;
-  border-bottom: none;
+/* --------------------- 选中的标签页 focus --------------------- */
+.layout__center .layout-tab-bar .item--focus {
+  box-shadow: none !important; /* 消除焦点 */
+  border: 1px solid var(--b3-theme-surface);
+  border-radius: 8px 8px 0 0;
+  color: var(--b3-button-blue);
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
-/* 标签页之间的分隔 */
-/* .layout__center .layout-tab-bar .item::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0px;
-  right: auto;
-  top: 7px;
-  height: 20px;
-  border-left: 1px solid #7b7575;
-}
-.layout__center .layout__wnd--active .layout-tab-bar .item--focus::before,
-.layout__center .layout__wnd--active .layout-tab-bar .item--focus:hover::before {
-  left: 12px !important;
-  clip-path: inset(50% -6px 0 50%);
-}
-*/
-
 .layout__center .layout-tab-bar .item--focus,
 .layout__center .layout-tab-bar .item--focus:hover,
 .layout__center .layout-tab-bar .item--focus:focus,
 .layout__center .layout-tab-bar .item--focus:active {
   background-color: var(--b3-tag-focus);
   border-radius: 6px 6px 0;
-}
-
-/* .layout__center .layout__wnd--active .layout-tab-bar .item--focus,
-.layout__center .layout__wnd--active .layout-tab-bar .item--focus:hover,
-.layout__center .layout__wnd--active .layout-tab-bar .item--focus:focus,
-.layout__center .layout__wnd--active .layout-tab-bar .item--focus:active {
-  background-color: var(--b3-layout-tab-bar-item-focus) !important;
-} */
-
-/* 选中的标签页 */
-.layout__center .layout-tab-bar .item--focus {
-  box-shadow: none !important; /* 消除焦点 */
-  border: 1px solid var(--b3-theme-surface);
-  border-radius: 8px 8px 0 0;
+  padding: 0;
 }
 /* 选中的标签页底部的横线 */
 .layout__center .layout-tab-bar .item--focus:after {
   /* 灰色：c0c9d7 */
+  /* background-color: var(--b3-layout-tab-bar-item-focus-after); */
   background-color: var(--b3-button-blue);
+  height: 1.3px;
+  bottom: 1px;
+  padding: 0;
+}
+
+/* ----- 标签页之间的分隔 ------ */
+/* tab 标签页之间的竖线分隔 */
+.layout__center .layout-tab-bar .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  right: auto;
+  top: 7px;
+  height: 16px;
+  border-left: 1px solid #dde4ef; /*  e1e7f1 | e6eaf1 */
+}
+/* 选中标签页的竖线分隔 */
+.layout__center .layout-tab-bar .item--focus::before,
+.layout__center .layout-tab-bar .item--focus:hover::before {
+  left: -12px !important;
+  clip-path: inset(50% -6px 0 50%);
+}
+.layout__center .layout-tab-bar .item--focus::before,
+.layout__center .layout-tab-bar .item--focus:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: unset !important;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  width: 12px;
+  height: 12px !important;
+  border-radius: 100%;
+  border: none !important;
+  z-index: 1;
+  /* box-shadow:
+    inset 0 0 0 1px rgba(229, 230, 235),
+    0 0 0 24px rgba(255, 255, 255); */
+}
+
+/* ----------------------- 新增、更多按钮 ----------------------- */
+/* 不要中间的竖线分隔 */
+.layout__center .layout-tab-bar--readonly .item::before {
+  content: none !important;
+}
+/* 调整图标大小 */
+.layout__center .layout-tab-bar--readonly .block__icon svg {
+  width: 14px;
+  height: 14px;
+}
+/* 调整高度：搭配图标大小 */
+.layout__center .layout-tab-bar--readonly .block__icon {
+  display: block;
+  line-height: unset;
+  height: 14px;
+  margin-left: 4px;
 }
 
 /* ----------------------- 设置对话框中 ----------------------- */

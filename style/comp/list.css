@@ -22,6 +22,11 @@
 /* box-shadow: var(--b3-list-icon-hover-shadow); */
 /* } */
 
+/* --------------------- 文档树区域的列表 --------------------- */
+.file-tree.sy__file .b3-list--background .b3-list-item {
+  border-radius: 0;
+}
+
 /* --------------------- sidebar选中项的背景色：--------------------- */
 .layout__tab--active
   .b3-list--background

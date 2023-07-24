@@ -2,6 +2,9 @@
 .b3-menu__item--show {
   background-color: var(--b3-list-menu-hover);
 }
+.b3-menu__item {
+  line-height: 27px;
+}
 
 /* -------------------------------------- 代码选择菜单 -------------------------------------- */
 /* 代码搜索框 */

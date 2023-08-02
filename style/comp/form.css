@@ -9,10 +9,7 @@
   left: 0 !important;
   top: 0;
 }
-/* .b3-dialog__container .config__panel > .b3-tab-bar > .b3-form__icon { */
-.b3-dialog__container .config__panel .b3-form__icon {
-  margin: 0 0 16px;
-}
+
 /* .b3-dialog__container .config__panel > .b3-tab-bar > .b3-form__icon .b3-form__icon-icon { */
 /* .b3-dialog__container .config__panel .b3-form__icon .b3-form__icon-icon {
   margin: 0;

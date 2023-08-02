@@ -35,14 +35,29 @@
   background-color: var(--b3-theme-background);
 }
 
-/* 弹出对话框左侧搜索框 */
-.config__panel > .b3-tab-bar .b3-form__icon {
-  margin: 15px 8px 15px;
-}
-
 /* 弹出对话框右侧区域 */
 .config__tab-container {
   padding: 6px 0;
+}
+
+/*  */
+.config__panel > .b3-tab-bar .config__tab-title {
+  padding: 0;
+}
+
+.config__panel > .b3-tab-bar .config__tab-title .b3-list-item__graphic {
+  margin-left: 2px;
+  padding: 0 10px 0 0px;
+}
+
+.config__panel > .b3-tab-bar .config__tab-title .b3-list-item__text {
+  font-weight: bold;
+  font-size: 14.5px;
+}
+
+/* 弹出对话框左侧搜索框 */
+.b3-dialog__container .config__panel .b3-form__icon {
+  margin: 0 2px 16px 2px;
 }
 
 /* ------------------------------ 弹出确定对话框 ------------------------------ */

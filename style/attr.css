@@ -102,6 +102,7 @@
 
   /* 标签页 */
   --b3-tab-bar-block-icon-more: #aaacaf;
+  --tab-bar-focus-text: #20209c;
 
   /* 对话框的背景：自定义 */
   --b3-dialog-close: #a2b1bf; /* 205d99 */

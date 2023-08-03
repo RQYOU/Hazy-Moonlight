@@ -91,6 +91,10 @@
   padding: 0;
 }
 
+.layout__wnd--active .layout-tab-bar .item--focus > .item__text {
+  color: var(--tab-bar-focus-text);
+}
+
 /* ----- 标签页之间的分隔 ------ */
 /* tab 标签页之间的竖线分隔 */
 .layout__center .layout-tab-bar .item::before {

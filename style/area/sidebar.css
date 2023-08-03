@@ -87,3 +87,17 @@
 .file-tree.sy__outline {
   padding: 0 8px;
 }
+
+/* .file-tree .dragover__top {
+  background-color: var(--b3-theme-primary-lightest);
+  box-shadow:
+    0 -2px 0 var(--b3-theme-primary-lighter),
+    inset 0 2px 0 var(--b3-theme-primary-lighter);
+}
+
+.file-tree .dragover__bottom {
+  background-color: var(--b3-theme-primary-lightest);
+  box-shadow:
+    0 2px 0 var(--b3-theme-primary-lighter),
+    inset 0px -2px 0 var(--b3-theme-primary-lighter);
+} */

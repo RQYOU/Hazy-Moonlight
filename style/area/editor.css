@@ -92,20 +92,26 @@
 
 .protyle-scroll__bar {
   display: inherit !important; /* 让滑块始终显示 */
+  right: calc(4.5px - var(--b3-dynamicscroll-width) / 2);
 }
 
 .protyle-scroll svg {
   /* 调整上下2个箭头的大小 */
   height: 14px;
   width: 14px;
-  /* fill: var(--protyle-scroll-svg);
-  stroke: var(--protyle-scroll-svg); */
+  /* fill: var(--protyle-scroll);
+  stroke: var(--protyle-scroll); */
 }
 
 .protyle-scroll__down,
 .protyle-scroll__up {
-  color: var(--protyle-scroll-svg);
+  color: var(--protyle-scroll);
   opacity: 1;
+}
+
+.protyle-scroll__down:hover,
+.protyle-scroll__up:hover {
+  color: var(--protyle-scroll-hover);
 }
 
 /* ---------------------------- 外观 ------------------------------- */

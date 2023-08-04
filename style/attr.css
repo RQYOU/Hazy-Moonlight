@@ -176,7 +176,9 @@
   /* a标签下面的线条：自定义 */
   --b3-link-bottom: rgba(78, 78, 86, 0.2);
   /* 编辑器导航滑块：上下箭头：自定义 */
-  --protyle-scroll-svg: #4876f5;
+  --protyle-scroll: #a7c8ef; /* 4876f5 */
+  /* 向上向下箭头 */
+  --protyle-scroll-hover: #2151d1; /* 2e41e7 */
 
   /* 标题h2的border */
   --protyle-title-border: #626366;

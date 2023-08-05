@@ -124,7 +124,8 @@ kbd {
   overflow: visible;
   height: 25px;
   border-style: solid;
-  border-color: var(--b3-theme-on-background);
+  /* border-color: var(--b3-theme-on-background); */
+  border-color: var(--hr-color);
   border-width: 0 0 1px 0;
   border-radius: 20px;
 }
@@ -146,7 +147,8 @@ kbd {
   height: 25px;
   margin-top: 12px;
   border-style: solid;
-  border-color: var(--b3-theme-on-background);
+  /* border-color: var(--b3-theme-on-background); */
+  border-color: var(--hr-color);
   border-width: 1px 0 0 0;
   border-radius: 20px;
   background-color: var(--b3-theme-background);

@@ -45,7 +45,7 @@
   /* 背景颜色 */
   --b3-font-background1: #3fb4f877; /*  3fb4f885 ｜  67bafe93 */
   --b3-font-background2: #aeccff; /*  BBD6FB |  0f7efc5b ｜ 0ffce88a   0059ff68    */
-  --b3-font-background3: #4747fd64; /*  4747fd6f  |  437bff6b ｜ 785aff60 ｜ 6769ff74 */
+  --b3-font-background3: #4747fd5b; /* 4747fd64 | 4747fd6f  |  437bff6b ｜ 785aff60 ｜ 6769ff74 */
   --b3-font-background4: #73ebfebb; /* b7edffcb  / a9eaffcb */
   --b3-font-background5: #25e9b488; /* 33f2bf95 */
   --b3-font-background6: #58f54a88; /*  59ff4a95 ｜ 4aff4d95 */
@@ -102,7 +102,7 @@
 
   /* 标签页 */
   --b3-tab-bar-block-icon-more: #aaacaf;
-  --tab-bar-focus-text: #20209c;
+  --tab-bar-focus-text: #20209c; /* 20209c */
 
   /* 对话框的背景：自定义 */
   --b3-dialog-close: #a2b1bf; /* 205d99 */
@@ -200,6 +200,8 @@
   --b3-protyle-inline-blockref-color: var(--b3-protyle-inline-tag-color); /*  #8250df */
   /* fileref */
   --b3-protyle-inline-fileref-color: #21862e;
+  /* hr */
+  --hr-color: #b6bbc5;
 
   /* blockquote：自定义 */
   --b3-protyle-blockquote-background: #e9edf3;

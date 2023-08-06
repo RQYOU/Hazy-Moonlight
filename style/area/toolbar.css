@@ -23,7 +23,7 @@ body.body--blur .toolbar {
 }
 
 .toolbar .toolbar__item {
-  color: var(--b3-toolbar-item-3);
+  color: var(--toolbar-item-3);
   padding: 5px;
 }
 
@@ -36,7 +36,7 @@ body.body--blur .toolbar {
 /* -------------- 顶部工具栏左边 --------------- */
 /* SiYuan字样 */
 .toolbar__text {
-  color: var(--b3-toolbar-item-1);
+  color: var(--toolbar-item-1);
   font-family: Courier New;
   font-size: 12px;
   margin-top: 0.7px;
@@ -62,7 +62,7 @@ body.body--blur .toolbar {
 .toolbar .toolbar__item#barBack svg,
 .toolbar .toolbar__item#barForward svg {
   /* stroke-width:0.3px; */
-  fill: var(--b3-toolbar-item-4);
+  fill: var(--toolbar-item-4);
   height: 12px;
   width: 12px;
 }
@@ -96,11 +96,11 @@ body.body--blur .toolbar {
 /* 搜索按钮 */
 .toolbar .toolbar__item#barSearch svg {
   stroke-width: 0.2px;
-  stroke: var(--b3-toolbar-item-2);
+  stroke: var(--toolbar-item-2);
 }
 /* 只读编辑模式 */
 .toolbar .toolbar__item#barReadonly svg {
-  fill: var(--b3-toolbar-item-2);
+  fill: var(--toolbar-item-2);
 }
 /* 外观模式：明亮暗黑 */
 .toolbar .toolbar__item#barMode svg {
@@ -130,11 +130,11 @@ body.body--blur .toolbar {
 /* .toolbar__item--active, */
 /* .toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close) .b3-list-item__arrow:hover { */
 /* .toolbar .toolbar__item .b3-list-item__arrow:hover {
-  background-color: var(--b3-toolbar-item-hover-background);
+  background-color: var(--toolbar-item-hover-bg);
 } */
 
 /* .toolbar .toolbar__item--action {
-  background-color: var(--b3-toolbar-item-background);
+  background-color: var(--toolbar-item-bg);
   border-radius: 2px;
 } */
 

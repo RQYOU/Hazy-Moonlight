@@ -1,16 +1,14 @@
-/* ------------------------------- 全局属性 -------------------------------------- */
+/*  全局属性  */
 :root {
-  /* 主色 */
+  /* ------------------ 主色 ------------------ */
   --b3-theme-primary: #0052d9; /* 原3884ff*/
   --b3-theme-primary-light: rgba(66, 133, 244, 0.54); /* block-ref  */
   --b3-theme-primary-lighter: #ccdaee; /* rgba(66, 133, 244, 0.38) */
   --b3-theme-primary-lightest: #e2ecf9; /*e3edfa | e2ecf8 | e2edfa | E1EDFC | rgba(66, 133, 244, 0.12)  */
   --b3-theme-secondary: #f3a92f;
-
   /* 编辑区的背景色，设置对话框右侧背景色 */
   --b3-theme-background: #f3f5f9;
-  /* 自定义 */
-  --b3-theme-background-darker: #e9ecf4;
+  --theme-background-darker: #e9ecf4;
   --b3-theme-background-light: #dfe0e1;
   /* 四周：工具栏、dock、侧边栏、状态栏 */
   /*  f0f2f6  ,  eceff4 |  ebeff3 | eaeff3  | e9eef2 | edf1f9 | eaeef4 |  ebedf3  | f0f2f7;  */
@@ -19,12 +17,44 @@
   --b3-theme-surface-lighter: rgba(0, 0, 0, 0.06);
   --b3-theme-error: #ff4642;
 
-  /* 自定义 */
+  /* ------------------ 文字颜色 ------------------ */
+  --b3-theme-on-primary: #fff;
+  --b3-theme-on-secondary: #fff;
+  --b3-theme-on-background: #202124; /* 编辑器文字颜色 */
+  --b3-theme-on-surface: #5f6368;
+  --b3-theme-on-error: #fff;
+  --b3-theme-on-surface-light: rgba(95, 99, 104, 0.68);
+
+  /* ------------------ 字体 ------------------ */
+  /* 删除：第1个 "quote"，在最前面增加："Noto Sans", "Noto Sans SC" */
+  --b3-font-family: "Noto Sans", "Noto Sans SC", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB",
+    "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Android Emoji", "EmojiSymbols";
+  /* 删除：第 1 个"JetBrainsMono-Regular"，在最前面增加："JetBrains Mono", "Noto Sans SC" */
+  --b3-font-family-code: "JetBrains Mono", "Noto Sans SC", mononoki, Consolas, "Liberation Mono", Menlo, Courier,
+    monospace, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Android Emoji",
+    "EmojiSymbols";
+
+  /* ------------------ 自定义 ------------------ */
   --color-white: white;
   --color-black: black;
   --field-bg-light: #e4eaf0; /* e6ebf0 */
   --field-bg-blue: #2151d1;
   --field-switch: #868b98;
+
+  /* 顶部工具栏 */
+  --b3-toolbar-background: #2b2d30;
+  --b3-toolbar-blur-background: #373a41;
+  --b3-toolbar-color: #9aa0a6;
+  --b3-toolbar-hover: #383a42;
+  --b3-toolbar-left-mac: 69px;
+  /* toolbar：自定义 */
+  --toolbar-item-1: black;
+  --toolbar-item-2: #6c7075;
+  --toolbar-item-3: #5f6367;
+  --toolbar-item-4: #4f5255;
+  --toolbar-item-bg: #c6e4ee;
+  /* --toolbar-item-hover-bg: #c6e4ee; */
 
   /* on --b3-theme-surface */
   --b3-list-hover: #e4eaf0; /* e4eaf0 | e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc | ebf0f7 */
@@ -43,20 +73,6 @@
   --b3-layout-resize-lr-after-bg: #f0f2f6;
   --b3-layout-tab-bar-item-focus: #f8f9fc;
   --b3-layout-tab-bar-item-focus-after: #c9d0dc;
-
-  /* toolbar */
-  --b3-toolbar-background: #2b2d30;
-  --b3-toolbar-blur-background: #373a41;
-  --b3-toolbar-color: #9aa0a6;
-  --b3-toolbar-hover: #383a42;
-  --b3-toolbar-left-mac: 69px;
-  /* toolbar：自定义 */
-  --b3-toolbar-item-1: black;
-  --b3-toolbar-item-2: #6c7075;
-  --b3-toolbar-item-3: #5f6367;
-  --b3-toolbar-item-4: #4f5255;
-  --b3-toolbar-item-background: #c6e4ee;
-  /* --b3-toolbar-item-hover-background: #c6e4ee; */
 
   /* dock */
   --dock-item-svg: #82878d;
@@ -198,36 +214,7 @@
   --b3-table-tr2n-color: #f0f4f7; /* f0f4f5   EAEFF3  EBF0F4 e6ecf0 DCE8F0 E3EBF1 */
   --b3-table-trn-color: #edf1f5; /* e9ecee   eff3f5  F0F2F5 E9EFF3 #EBF0F3 */
 
-  /* 字体 */
-  --b3-font-family: "Noto Sans", "Noto Sans SC", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB",
-    "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol",
-    "Android Emoji", "EmojiSymbols";
-  --b3-font-family-code: "JetBrains Mono", "Noto Sans SC", mononoki, Consolas, "Liberation Mono", Menlo, Courier,
-    monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
-    "EmojiSymbols";
-  /* todo */
-  --b3-font-family-graph: mononoki;
-
-  /* 思源笔记本来的 */
-  /* --b3-font-family: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei",
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
-    "EmojiSymbols";
-  --b3-font-family-code: "JetBrainsMono-Regular", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace,
-    "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
-  --b3-font-family-graph: mononoki;
-  --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla",
-    "Noto Color Emoji", "Android Emoji";
-  --b3-font-family-math: KaTeX_Math; */
-
-  /* 文字颜色 */
-  --b3-theme-on-primary: #fff;
-  --b3-theme-on-secondary: #fff;
-  --b3-theme-on-background: #202124; /* 编辑器文字颜色 */
-  --b3-theme-on-surface: #5f6368;
-  --b3-theme-on-error: #fff;
-  --b3-theme-on-surface-light: rgba(95, 99, 104, 0.68);
-
-  /* 文字颜色 */
+  /* 自定义文字颜色 */
   --b3-font-color1: #0595e9; /* 03a3ff ｜  017ade */
   --b3-font-color2: #056ede; /* 004af8 */
   --b3-font-color3: #001aff; /*  */
@@ -242,7 +229,7 @@
   --b3-font-color12: #f96801;
   --b3-font-color13: #47495a; /*var(--b3-theme-background)*/
 
-  /* 背景颜色 */
+  /* 自定义背景颜色 */
   --b3-font-background1: #3fb4f877; /*  3fb4f885 ｜  67bafe93 */
   --b3-font-background2: #aeccff; /*  BBD6FB |  0f7efc5b ｜ 0ffce88a   0059ff68    */
   --b3-font-background3: #4747fd5b; /* 4747fd64 | 4747fd6f  |  437bff6b ｜ 785aff60 ｜ 6769ff74 */

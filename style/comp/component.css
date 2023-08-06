@@ -1,6 +1,6 @@
 /* -------------------------------------- menu -------------------------------------- */
 .b3-menu__item--show {
-  background-color: var(--b3-list-menu-hover);
+  background-color: var(--list-menu-hover);
 }
 .b3-menu__item {
   line-height: 27px;
@@ -32,7 +32,7 @@
 
 /* -------------------------------------- 搜索框 -------------------------------------- */
 .search__header .b3-text-field--text {
-  background-color: var(--b3-tab-background);
+  background-color: var(--b3-theme-surface);
 }
 .search__header .b3-form__icon-icon {
   top: 6px;

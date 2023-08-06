@@ -2,7 +2,7 @@
 .protyle-wysiwyg [data-node-id] span[data-type="a"] {
   color: inherit;
   /* rgba(25, 25, 28, 0.2) */
-  border-bottom: 1px solid var(--b3-link-bottom);
+  border-bottom: 1px solid var(--link-bottom);
 }
 
 /* ---- 超链接的图标： ---- */

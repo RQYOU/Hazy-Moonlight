@@ -71,22 +71,21 @@
   box-shadow: none !important; /* 消除焦点 */
   border: 1px solid var(--b3-theme-surface);
   border-radius: 8px 8px 0 0;
-  color: var(--b3-button-blue);
+  color: var(--button-blue);
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .layout__center .layout-tab-bar .item--focus,
 .layout__center .layout-tab-bar .item--focus:hover,
 .layout__center .layout-tab-bar .item--focus:focus,
 .layout__center .layout-tab-bar .item--focus:active {
-  background-color: var(--b3-tag-focus);
+  background-color: var(--tag-bar-item-focus-bg);
   border-radius: 6px 6px 0;
   padding: 0;
 }
 /* 选中的标签页底部的横线 */
 .layout__center .layout-tab-bar .item--focus:after {
   /* 灰色：c0c9d7 */
-  /* background-color: var(--b3-layout-tab-bar-item-focus-after); */
-  background-color: var(--b3-button-blue);
+  background-color: var(--button-blue);
   height: 1.3px;
   bottom: 1px;
   padding: 0;
@@ -168,11 +167,11 @@
 }
 
 .config__panel .config__tab-container .layout-tab-bar .item--focus > .item__text {
-  color: var(--b3-button-blue) !important;
+  color: var(--button-blue) !important;
 }
 
 .block__icon[data-type="more"] {
-  color: var(--b3-tab-bar-block-icon-more);
+  color: var(--tab-bar-block-icon-more);
 }
 
 .b3-dialog__container .config__panel > .config__tab-container .layout-tab-bar {

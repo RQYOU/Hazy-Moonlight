@@ -3,7 +3,7 @@
 /* .protyle-wysiwyg [data-node-id]:not(.code-block) > [spellcheck="false"]:focus:empty:after { */
 /* 避免代码块也出现空行提示  */
 /* content: "Do it now"; */
-/* color: var(--b3-protyle-codeblock-empty-hint); */
+/* color: var(--protyle-codeblock-empty-hint); */
 /* } */
 
 /* 设置粗体： */
@@ -171,16 +171,16 @@ kbd {
 .b3-typography .bq,
 .protyle-wysiwyg blockquote,
 .protyle-wysiwyg .bq {
-  background-color: var(--b3-protyle-blockquote-background) !important;
+  background-color: var(--protyle-blockquote-bg) !important;
   /*e6ecf1*/ /*border: 1px solid #e9edf3;
   */
-  border-left: 4px solid var(--b3-protyle-blockquote-border) !important;
+  border-left: 4px solid var(--protyle-blockquote-border) !important;
   margin: 15px 0px !important;
   border-radius: 0px;
 }
 .protyle-wysiwyg .bq .p {
   font-size: 15px !important;
-  color: var(--b3-protyle-blockquote-para);
+  color: var(--protyle-blockquote-para);
   margin: 0px 0px !important;
 }
 
@@ -202,7 +202,7 @@ span[data-type="block-ref"] {
   background: var(--b3-protyle-code-background);
   margin: 18px 0;
   padding: 7px 0 6px 0 !important;
-  box-shadow: 0px 0px 2px 0px var(--b3-protyle-codeblock-shadow);
+  box-shadow: 0px 0px 2px 0px var(--protyle-codeblock-shadow);
 }
 /* ---------- 代码块区域（不包含代码块行数区域） ---------- */
 .protyle-wysiwyg .hljs,
@@ -215,7 +215,7 @@ span[data-type="block-ref"] {
   /* background-size: 20px 20px;
   background-image: none !important; */
   background: transparent;
-  background-color: var(--b3-protyle-codeblock-edit-background) !important;
+  background-color: var(--protyle-codeblock-edit-bg) !important;
 }
 /* ---------- 代码块行数区域 ---------- */
 .protyle-linenumber__rows {
@@ -236,7 +236,7 @@ span[data-type="block-ref"] {
   width: 1px;
   height: calc(100% - 10px);
   margin: 5px 0px 2px 33px;
-  background-color: var(--b3-protyle-codeblock-linenumber-background);
+  background-color: var(--protyle-codeblock-ln-bg);
 }
 
 /* ---------- 代码块语言：---------- */
@@ -244,7 +244,7 @@ span[data-type="block-ref"] {
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
   font-family: var(--b3-font-family-code);
   font-size: 70%;
-  color: var(--b3-protyle-codeblock-lang);
+  color: var(--protyle-codeblock-lang);
   margin-top: -23px;
   position: absolute;
   right: 47px;
@@ -258,14 +258,14 @@ span[data-type="block-ref"] {
 }
 .b3-typography .code-block .protyle-action .protyle-action__language:hover,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language:hover {
-  background-color: var(--b3-bg-on-bg-hover); /* CEDCE6*/
-  color: var(--b3-protyle-codeblock-lang-hover) !important;
+  background-color: var(--protyle-codeblock-lang-icon-hover-bg); /* CEDCE6*/
+  color: var(--protyle-codeblock-lang-hover) !important;
 }
 
 /* ---------- 代码块复制图标和设置图标：---------- */
 .b3-typography .code-block .protyle-action .protyle-icon,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon {
-  color: var(--b3-protyle-codeblock-icon);
+  color: var(--protyle-codeblock-icon);
   background-color: transparent;
   opacity: 1;
   margin-top: -21px;
@@ -280,7 +280,7 @@ span[data-type="block-ref"] {
 }
 .b3-typography .code-block .protyle-action .protyle-icon:hover,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon:hover {
-  background-color: var(--b3-bg-on-bg-hover);
+  background-color: var(--protyle-codeblock-lang-icon-hover-bg);
 }
 .b3-typography .code-block .protyle-action .protyle-action__copy,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__copy {
@@ -327,7 +327,7 @@ span[data-type="block-ref"] {
   left: 17px;
   width: 25px;
   font-size: 18px;
-  color: var(--b3-protyle-codeblock-after);
+  color: var(--protyle-codeblock-after);
   z-index: 1;
 }
 
@@ -350,20 +350,19 @@ span[data-type="block-ref"] {
 .b3-typography table tr th,
 .protyle-wysiwyg table tr th {
   font-weight: normal !important;
-  background-color: var(--b3-table-th-color);
-  /* background-color: #edf2f5; */
+  background-color: var(--table-th-bg);
   /* color: #50535c; */
   text-align: left;
 }
 
 .b3-typography table tbody tr:nth-child(2n + 1) td,
 .protyle-wysiwyg table tbody tr:nth-child(2n + 1) td {
-  background-color: var(--b3-table-tr2n-color) !important;
+  background-color: var(--table-tr2n-bg) !important;
 }
 
 .b3-typography table tbody tr:nth-child(2n) td,
 .protyle-wysiwyg table tbody tr:nth-child(2n) td {
-  background-color: var(--b3-table-trn-color) !important;
+  background-color: var(--table-trn-bg) !important;
 }
 
 /* ------------------------------- 流程图, 时序图, 甘特图 -------------------------------------- */

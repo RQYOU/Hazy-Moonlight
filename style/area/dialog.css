@@ -2,7 +2,7 @@
 
 /* 遮罩上面的白色字体改为蓝色字体 */
 .b3-dialog__scrim > div:nth-child(2) {
-  color: var(--b3-button-blue);
+  color: var(--button-blue);
 }
 
 /* 弹出对话框左侧选项列表 */
@@ -16,7 +16,7 @@
 
 /* 弹出对话框的关闭按钮： */
 .b3-dialog__close {
-  color: var(--b3-dialog-close);
+  color: var(--dialog-close);
   font-size: 50%;
   cursor: pointer;
   /* background-color: #c5e4ff; */

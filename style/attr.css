@@ -35,78 +35,18 @@
     monospace, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Android Emoji",
     "EmojiSymbols";
 
-  /* ------------------ 自定义 ------------------ */
+  /* ------------------ 颜色自定义 ------------------ */
   --color-white: white;
   --color-black: black;
   --field-bg-light: #e4eaf0; /* e6ebf0 */
   --field-bg-blue: #2151d1;
   --field-switch: #868b98;
 
-  /* 顶部工具栏 */
-  --b3-toolbar-background: #2b2d30;
-  --b3-toolbar-blur-background: #373a41;
-  --b3-toolbar-color: #9aa0a6;
-  --b3-toolbar-hover: #383a42;
-  --b3-toolbar-left-mac: 69px;
-  /* toolbar：自定义 */
-  --toolbar-item-1: black;
-  --toolbar-item-2: #6c7075;
-  --toolbar-item-3: #5f6367;
-  --toolbar-item-4: #4f5255;
-  --toolbar-item-bg: #c6e4ee;
-  /* --toolbar-item-hover-bg: #c6e4ee; */
+  /* ------------------ 动画效果 ------------------ */
+  --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
+  --b3-width-transition: width 0.2s cubic-bezier(0, 0, 0.2, 1) 0ms;
 
-  /* on --b3-theme-surface */
-  --b3-list-hover: #e4eaf0; /* e4eaf0 | e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc | ebf0f7 */
-  --b3-list-item-hover: #e2edfa; /* cde5fc | e5ebf0 | dfe9f3 | e0edfc | cde5fc */
-  --b3-list-icon-hover: #f1f4f9; /* eaeff7 | f7faff | f3f7fe | eaeff5 */
-  --b3-list-icon-hover-shadow: 0 1px 6px rgb(176, 214, 255), 0 2px 6px rgb(176, 214, 255),
-    0 2px 5px -1px rgb(176, 214, 255);
-  /* 自定义 */
-  --b3-bg-on-surface-blue: #dfdfed; /*  e2edfa | e7edf1 | e6eef7 */
-  /* rgba(33, 34, 36, 0.1)  | e1e9ee |   e0e7ec | e4eaee  | dce7ef  |  d7e2ea */
-  /*  e7ebef  | e2e9ee  | e0edfc |  ddecfd  */
-  --b3-list-menu-hover: #e3eaf1;
-  --b3-bg-on-bg-hover: #d7e3ef;
-
-  /* layout：自定义 */
-  --b3-layout-resize-lr-after-bg: #f0f2f6;
-  --b3-layout-tab-bar-item-focus: #f8f9fc;
-  --b3-layout-tab-bar-item-focus-after: #c9d0dc;
-
-  /* dock */
-  --dock-item-svg: #82878d;
-  --dock-item-active-svg: #a5a5a7;
-
-  /* 标签页 */
-  --b3-tab-bar-block-icon-more: #aaacaf;
-  --tab-bar-focus-text: #20209c; /* 20209c */
-
-  /* 对话框的背景：自定义 */
-  --b3-dialog-close: #a2b1bf; /* 205d99 */
-
-  /* 滚动条 */
-  --b3-scroll-color: #e4eaf0; /* d7e1e9 | rgba(0, 0, 0, 0.2); */
-
-  /* 菜单 */
-  --b3-menu-background: #f3f7fb; /* |f8f9fa */
-
-  /* 页签 */
-  --b3-tab-background: var(--b3-theme-surface);
-  --b3-tab-background-hover: #e9eaeb;
-  --b3-tag-focus: #f7fbff;
-
-  /* 遮罩 */
-  --b3-mask-background: #c7cbd3d8; /* eef1f6 | 000000 */
-
-  /* 按钮：自定义 */
-  --b3-button-blue: #0052d9;
-  /* --b3-button-blue-light: #e0ebff; */
-  --button-dialog-bazaar-bg: #cddffd;
-  --toolart-vip-svg: #25c7e0;
-  --toolart-barDock-svg: #6c7075;
-
-  /* 阴影 */
+  /* ------------------ 阴影 ------------------ */
   --shadow-0: 0 0 0 1px rgb(0 0 0 / 12%) /* --b3-point-shadow: 0 3px 6px rgba(140, 149, 159, 0.15); */ --b3-point-shadow:
       0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
@@ -114,23 +54,149 @@
   --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
     0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 
-  /* 线条 */
+  /* ------------------ 顶部工具栏 ------------------ */
+  --b3-toolbar-background: #2b2d30;
+  --b3-toolbar-blur-background: #373a41;
+  --b3-toolbar-color: #9aa0a6;
+  --b3-toolbar-hover: #383a42;
+  --b3-toolbar-left-mac: 69px;
+  /* 自定义： */
+  --toolbar-item-color: #5f6367;
+  --toolbar-item-svg1: #4f5255;
+  --toolbar-item-svg2: #6c7075;
+  --toolbar-svg-vip: #25c7e0;
+  --toolbar-svg-barDock: #6c7075;
+  --toolbar-item-bg: #c6e4ee;
+  /* --toolbar-item-hover-bg: #c6e4ee; */
+
+  /* ------------------ dock ------------------ */
+  --dock-item-svg: #82878d;
+  --dock-item-active-svg: #a5a5a7;
+
+  /* ------------------ resize ------------------ */
+  --layout-resize-lr-after-bg: #f0f2f6;
+
+  /* ------------------ 标签页 ------------------ */
+  --tab-bar-block-icon-more: #aaacaf;
+  --tab-bar-focus-text: #20209c; /* 20209c */
+  --tag-bar-item-focus-bg: #f7fbff;
+
+  /* ------------------ 对话框 ------------------ */
+  --dialog-close: #a2b1bf; /* 205d99 */
+
+  /* ------------------ diff ------------------ */
+  /* --b3-diff-add: #dfd;
+  --b3-diff-add-surface: #97f295;
+  --b3-diff-del: #fee8e9;
+  --b3-diff-del-surface: #ffb6ba; */
+
+  /* ------------------ 列表 ------------------ */
+  /* on --b3-theme-surface */
+  --b3-list-hover: #e4eaf0; /* e4eaf0 | e9ecef | e2e9ee | e7ebef | e9eaea | e0edfc | ebf0f7 */
+  --list-item-hover: #e2edfa; /* cde5fc | e5ebf0 | dfe9f3 | e0edfc | cde5fc */
+  --b3-list-icon-hover: #f1f4f9; /* eaeff7 | f7faff | f3f7fe | eaeff5 */
+  /* --list-icon-hover-shadow: 0 1px 6px rgb(176, 214, 255), 0 2px 6px rgb(176, 214, 255),
+    0 2px 5px -1px rgb(176, 214, 255); */
+  --list-menu-hover: #e3eaf1;
+  --protyle-codeblock-lang-icon-hover-bg: #d7e3ef;
+
+  /* ------------------ 菜单 ------------------ */
+  --b3-menu-background: #f3f7fb; /* |f8f9fa */
+
+  /* ------------------ 提示 ------------------ */
+  --b3-tooltips-color: white; /* rgba(0, 0, 0, 0.54) */
+
+  /* ------------------ 按钮 ------------------ */
+  --button-blue: #0052d9;
+  /* --button-blue-light: #e0ebff; */
+  --button-dialog-bazaar-bg: #cddffd;
+
+  /* ------------------ 线条 ------------------ */
   --b3-border-color: #e0e5ea; /*rgba(0, 0, 0, .1) , rgba(0, 0, 0, 0.3)*/
   --b3-border-radius: 3px; /* 6px */
 
-  /* 下拉菜单 */
+  /* ------------------ 遮罩 ------------------ */
+  --b3-mask-background: #c7cbd3d8; /* eef1f6 | 000000 */
+
+  /* ------------------ 滚动条 ------------------ */
+  --b3-scroll-color: #e4eaf0; /* d7e1e9 | rgba(0, 0, 0, 0.2); */
+
+  /* ------------------ 下拉菜单 ------------------ */
   --b3-select-hover: #ddecfd;
   --b3-select-background: url("data:image/svg+xml;utf8,<svg fill='rgba(95, 99, 104, .68)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
     no-repeat right 2px center var(--b3-theme-background);
 
-  /* 动画效果 */
-  --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
-  --b3-width-transition: width 0.2s cubic-bezier(0, 0, 0.2, 1) 0ms;
+  /* ------------------ 编辑区自定义样式 ------------------ */
+  /* 标题h2的border */
+  --protyle-title-border: #626366;
 
-  /* 提示 */
-  --b3-tooltips-color: white; /* rgba(0, 0, 0, 0.54) */
+  /* 选中 */
+  --protyle-selection-bg: #0761d6;
 
-  /* 卡片背景 */
+  /* hr */
+  --hr-color: #b6bbc5;
+
+  /* blockquote */
+  --protyle-blockquote-bg: #e9edf3;
+  --protyle-blockquote-border: #0e68c1;
+  --protyle-blockquote-para: #7a8084; /* 757c81 |  828d97 */
+
+  /* 表格 */
+  --table-th-bg: #edf1f5; /* e6ecf0   e9ecee   EAEFF3  EBF0F4  e6ecf0 DCE8F0 E3EBF1 | edf2f5 */
+  --table-tr2n-bg: #f0f4f7; /* f0f4f5   EAEFF3  EBF0F4 e6ecf0 DCE8F0 E3EBF1 */
+  --table-trn-bg: #edf1f5; /* e9ecee   eff3f5  F0F2F5 E9EFF3 #EBF0F3 */
+  /* --b3-table-border-color: #cfdcec; */ /* e4e6e8 cfdcec  dee6ec  DBE4EB */
+
+  /* 编辑区文字选中背景：自定义，鼠标划选区域 */
+  --select-bg: #d7eaffb6; /* d4ebf4 */
+  --drag-select-bg: #d1e9fb; /*  d1e9fb  | d4ebf4 | cedef4 */
+
+  /* a标签下面的线条：自定义 */
+  --b3-link-bottom: rgba(78, 78, 86, 0.2);
+
+  /* 编辑器导航滑块：上下箭头：自定义 */
+  --protyle-scroll: #a7c8ef; /* 4876f5 */
+  /* 向上向下箭头 */
+  --protyle-scroll-hover: #2151d1; /* 2e41e7 */
+
+  /* 代码 */
+  --b3-protyle-code-background: rgba(230, 236, 241, 1); /* rgba(27, 31, 35, 0.05) */
+  --b3-protyle-code-linenumber-hl: #b9d1f4;
+  --protyle-codeblock-shadow: #041b1538;
+  --protyle-codeblock-edit-bg: #e6ecf0;
+  --protyle-codeblock-ln-bg: #b1c3c491;
+  --protyle-codeblock-lang: rgba(13, 56, 50, 0.5);
+  --protyle-codeblock-lang-hover: rgba(13, 56, 50, 0.5);
+  --protyle-codeblock-icon: rgba(13, 56, 50, 0.5);
+  /* --protyle-codeblock-icon-hover-background: #b7d5e4;  */
+  --protyle-codeblock-after: #ffffff;
+  --protyle-codeblock-empty-hint: #9b9b9b9a;
+
+  /* ---- 所见即所得行内元素颜色 ---- */
+  /* 粗体 */
+  --b3-protyle-inline-strong-color: #202124;
+  /* 着重 */
+  --b3-protyle-inline-em-color: #202124;
+  /* 斜体 */
+  --b3-protyle-inline-s-color: #202124;
+  /* 超链接 */
+  --b3-protyle-inline-link-color: #191c27; /* 以前是#4285f4  #164a9e #1b1c1f  */
+  /* 高亮 */
+  --b3-protyle-inline-mark-background: #ffe955; /* rgb(252, 212, 126) */
+  --b3-protyle-inline-mark-color: #202124;
+  /* 标签 */
+  --b3-protyle-inline-tag-color: #5f6368;
+  /* blockref */
+  --b3-protyle-inline-blockref-color: var(--b3-protyle-inline-tag-color); /*  #8250df */
+  /* fileref */
+  --b3-protyle-inline-fileref-color: #21862e;
+
+  /* ------------------ 编辑器搜索颜色 ------------------ */
+  --b3-protyle-search-background: #ffe955;
+  --b3-protyle-search-border-color: #f2e680;
+  --b3-protyle-search-current-background: #a5d3fe;
+
+  /* ------------------ 卡片背景 ------------------ */
   --b3-card-error-color: rgb(97, 26, 21);
   --b3-card-error-background: rgb(253, 236, 234);
   --b3-card-warning-color: rgb(102, 60, 0);
@@ -140,81 +206,7 @@
   --b3-card-success-color: rgb(30, 70, 32);
   --b3-card-success-background: rgb(237, 247, 237);
 
-  /* diff */
-  --b3-diff-add: #dfd;
-  --b3-diff-add-surface: #97f295;
-  --b3-diff-del: #fee8e9;
-  --b3-diff-del-surface: #ffb6ba;
-
-  /* -------------------------------------  ------------------------------------- */
-
-  /* 编辑区文字选中背景：自定义，鼠标划选区域 */
-  --b3-select-background: #d7eaffb6; /* d4ebf4 */
-  --b3-drag-select-background: #d1e9fb; /*  d1e9fb  | d4ebf4 | cedef4 */
-  /* a标签下面的线条：自定义 */
-  --b3-link-bottom: rgba(78, 78, 86, 0.2);
-  /* 编辑器导航滑块：上下箭头：自定义 */
-  --protyle-scroll: #a7c8ef; /* 4876f5 */
-  /* 向上向下箭头 */
-  --protyle-scroll-hover: #2151d1; /* 2e41e7 */
-
-  /* 标题h2的border */
-  --protyle-title-border: #626366;
-  /* 选中 */
-  --protyle-selection-bg: #0761d6;
-
-  /* 粗体、着重、斜体颜色 */
-  --b3-protyle-inline-strong-color: #202124;
-  --b3-protyle-inline-em-color: #202124;
-  --b3-protyle-inline-s-color: #202124;
-  /* a链接/超链接颜色 */
-  --b3-protyle-inline-link-color: #191c27; /* 以前是#4285f4  #164a9e #1b1c1f  */
-  /* 高亮颜色 */
-  --b3-protyle-inline-mark-background: #ffe955; /* rgb(252, 212, 126) */
-  --b3-protyle-inline-mark-color: #202124;
-  /* 标签 */
-  --b3-protyle-inline-tag-color: #5f6368;
-  /* blockref */
-  --b3-protyle-inline-blockref-color: var(--b3-protyle-inline-tag-color); /*  #8250df */
-  /* fileref */
-  --b3-protyle-inline-fileref-color: #21862e;
-  /* hr */
-  --hr-color: #b6bbc5;
-
-  /* blockquote：自定义 */
-  --b3-protyle-blockquote-background: #e9edf3;
-  --b3-protyle-blockquote-border: #0e68c1;
-  --b3-protyle-blockquote-para: #7a8084; /* 757c81 |  828d97 */
-
-  /* 编辑器搜索颜色 */
-  --b3-protyle-search-background: #ffe955;
-  --b3-protyle-search-border-color: #f2e680;
-  --b3-protyle-search-current-background: #a5d3fe;
-
-  /* 编辑器工具栏高度 */
-  --b3-protyle-toolbar-height-space: 3px;
-
-  /* 代码片段背景 */
-  /* --b3-protyle-code-background: rgba(27, 31, 35, 0.05); */
-  --b3-protyle-code-background: rgba(230, 236, 241, 1);
-  --b3-protyle-code-linenumber-hl: #b9d1f4;
-  --b3-protyle-codeblock-shadow: #041b1538; /* 自定义 */
-  --b3-protyle-codeblock-edit-background: #e6ecf0; /* 自定义 */
-  --b3-protyle-codeblock-linenumber-background: #b1c3c491; /* 自定义 */
-  --b3-protyle-codeblock-lang: rgba(13, 56, 50, 0.5); /* 自定义 */
-  --b3-protyle-codeblock-lang-hover: rgba(13, 56, 50, 0.5); /* 自定义 */
-  --b3-protyle-codeblock-icon: rgba(13, 56, 50, 0.5); /* 自定义 */
-  --b3-protyle-codeblock-icon-hover-background: #b7d5e4; /* 自定义 */
-  --b3-protyle-codeblock-after: #ffffff; /* 自定义 */
-  --b3-protyle-codeblock-empty-hint: #9b9b9b9a; /* 自定义 */
-
-  /* 表格 */
-  --b3-table-border-color: #cfdcec; /* e4e6e8 cfdcec  dee6ec  DBE4EB */
-  --b3-table-th-color: #edf1f5; /* e6ecf0   e9ecee   EAEFF3  EBF0F4  e6ecf0 DCE8F0 E3EBF1 */
-  --b3-table-tr2n-color: #f0f4f7; /* f0f4f5   EAEFF3  EBF0F4 e6ecf0 DCE8F0 E3EBF1 */
-  --b3-table-trn-color: #edf1f5; /* e9ecee   eff3f5  F0F2F5 E9EFF3 #EBF0F3 */
-
-  /* 自定义文字颜色 */
+  /* ------------------ 自定义文字颜色 ------------------ */
   --b3-font-color1: #0595e9; /* 03a3ff ｜  017ade */
   --b3-font-color2: #056ede; /* 004af8 */
   --b3-font-color3: #001aff; /*  */
@@ -229,7 +221,7 @@
   --b3-font-color12: #f96801;
   --b3-font-color13: #47495a; /*var(--b3-theme-background)*/
 
-  /* 自定义背景颜色 */
+  /* ------------------ 自定义背景颜色 ------------------ */
   --b3-font-background1: #3fb4f877; /*  3fb4f885 ｜  67bafe93 */
   --b3-font-background2: #aeccff; /*  BBD6FB |  0f7efc5b ｜ 0ffce88a   0059ff68    */
   --b3-font-background3: #4747fd5b; /* 4747fd64 | 4747fd6f  |  437bff6b ｜ 785aff60 ｜ 6769ff74 */
@@ -244,7 +236,7 @@
   --b3-font-background12: #06195c4a;
   --b3-font-background13: var(--b3-theme-on-background);
 
-  /* 图表颜色 */
+  /* ------------------ 图表颜色 ------------------ */
   --b3-graph-p-point: #076f7e;
   --b3-graph-heading-point: #660e7a; /* #8250df; */
   --b3-graph-math-point: #80ffa5;
@@ -267,7 +259,7 @@
   --b3-graph-hl-point: #f3a92f;
   --b3-graph-hl-line: #4285f4;
 
-  /* PDF */
+  /* ------------------ PDF ------------------ */
   --b3-pdf-selection: #d0e9c8;
   --b3-pdf-sidebar-width: 200px;
   --b3-pdf-offset: 0;

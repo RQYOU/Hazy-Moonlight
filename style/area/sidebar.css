@@ -55,7 +55,7 @@
 /* ----------------- 上方的图标和文字 ---------------- */
 .block__icons {
   height: 30px;
-  background-color: var(--b3-tab-background);
+  background-color: var(--b3-theme-surface);
   min-height: 32px;
 }
 

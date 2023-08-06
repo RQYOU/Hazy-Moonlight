@@ -1,6 +1,6 @@
 /* ------------------------------- 编辑区和左侧边栏之间的resize区域 ------------------------------- */
 .layout__resize--lr:after {
-  background-color: var(--b3-layout-resize-lr-after-bg);
+  background-color: var(--layout-resize-lr-after-bg);
 }
 
 /* ------------------------------- 编辑区 ------------------------------- */
@@ -54,11 +54,11 @@
 /* 选中块 */
 .protyle-wysiwyg--select,
 .protyle-wysiwyg--select .hljs {
-  background-color: var(--b3-select-background) !important;
+  background-color: var(--select-bg) !important;
 }
 /* 鼠标划选区域 */
 .protyle-select {
-  background-color: var(--b3-drag-select-background);
+  background-color: var(--drag-select-bg);
 }
 
 /* ------------------------------- 窗口其它元素 -------------------------------------- */

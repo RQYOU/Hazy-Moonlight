@@ -52,7 +52,7 @@
   border-radius: unset;
   box-shadow: unset;
   background-color: var(--color-white);
-  color: var(--b3-button-blue);
+  color: var(--button-blue);
   outline: unset;
   /* position: unset; */
   font-size: 13px;
@@ -71,10 +71,10 @@
 .b3-button--small,
 .b3-button--cancel,
 .b3-button--outline {
-  /* background-color: var(--b3-button-blue-light); */
+  /* background-color: var(--button-blue-light); */
   /* background-color: #d1e0fc; */
   background-color: #c7dafe;
-  color: var(--b3-button-blue);
+  color: var(--button-blue);
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -101,7 +101,7 @@
 /* 如删除框确定按钮 */
 .b3-dialog__container[style*="50vw"] .b3-dialog__action .b3-button.b3-button--text,
 .b3-dialog__container[style*="520px"] .b3-dialog__action .b3-button.b3-button--text {
-  background-color: var(--b3-button-blue);
+  background-color: var(--button-blue);
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   color: var(--color-white);
 }
@@ -114,13 +114,13 @@
 /* 登录按钮 */
 .b3-button#login {
   /* 3575f0 */
-  background-color: var(--b3-button-blue);
+  background-color: var(--button-blue);
   color: var(--b3-theme-on-primary);
 }
 /* 集市设置中：选中class属性只有--b3-button，不选中则还有b3-button--outline， */
 /* 设置选中后的属性 */
 .bazaarPanel .b3-button:not(.b3-button--outline) {
-  background-color: var(--b3-button-blue);
+  background-color: var(--button-blue);
   color: var(--color-white);
 }
 

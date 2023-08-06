@@ -14,12 +14,12 @@
 
 /* hover而非focus的背景色：选中上级菜单，再选择其某个下级菜单时 */
 /* .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
-  background-color: var(--b3-list-item-hover) !important;
+  background-color: var(--list-item-hover) !important;
 } */
 
 /* .b3-list-item__icon:hover { */
 /* background-color: var(--b3-list-icon-hover); */
-/* box-shadow: var(--b3-list-icon-hover-shadow); */
+/* box-shadow: var(--list-icon-hover-shadow); */
 /* } */
 
 /* --------------------- 文档树区域的列表 --------------------- */
@@ -72,5 +72,5 @@
 }
 /* hover背景色： */
 .b3-dialog .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
-  background-color: var(--b3-list-item-hover) !important;
+  background-color: var(--list-item-hover) !important;
 }

@@ -19,44 +19,6 @@
   --b3-theme-surface-lighter: rgba(0, 0, 0, 0.06);
   --b3-theme-error: #ff4642;
 
-  /* 文字颜色 */
-  --b3-theme-on-primary: #fff;
-  --b3-theme-on-secondary: #fff;
-  --b3-theme-on-background: #202124; /* 编辑器文字颜色 */
-  --b3-theme-on-surface: #5f6368;
-  --b3-theme-on-error: #fff;
-  --b3-theme-on-surface-light: rgba(95, 99, 104, 0.68);
-
-  /* 文字颜色 */
-  --b3-font-color1: #0595e9; /* 03a3ff ｜  017ade */
-  --b3-font-color2: #056ede; /* 004af8 */
-  --b3-font-color3: #001aff; /*  */
-  --b3-font-color4: #9901ff;
-  --b3-font-color5: #f309f3; /* 5e1ca8 */
-  --b3-font-color6: #ff56d5;
-  --b3-font-color7: #e7087f; /*  d9085f */
-  --b3-font-color8: #ff0000;
-  --b3-font-color9: #04a25b; /* 0fb46c */
-  --b3-font-color10: #067318; /* 249210 */
-  --b3-font-color11: #d17103;
-  --b3-font-color12: #f96801;
-  --b3-font-color13: #47495a; /*var(--b3-theme-background)*/
-
-  /* 背景颜色 */
-  --b3-font-background1: #3fb4f877; /*  3fb4f885 ｜  67bafe93 */
-  --b3-font-background2: #aeccff; /*  BBD6FB |  0f7efc5b ｜ 0ffce88a   0059ff68    */
-  --b3-font-background3: #4747fd5b; /* 4747fd64 | 4747fd6f  |  437bff6b ｜ 785aff60 ｜ 6769ff74 */
-  --b3-font-background4: #73ebfebb; /* b7edffcb  / a9eaffcb */
-  --b3-font-background5: #25e9b488; /* 33f2bf95 */
-  --b3-font-background6: #58f54a88; /*  59ff4a95 ｜ 4aff4d95 */
-  --b3-font-background7: #f1f423b3; /*  f1f50f96*/
-  --b3-font-background8: #ff911b89; /* ff952392 | ff870782 */
-  --b3-font-background9: #d483ff89; /* c7bdff */
-  --b3-font-background10: #ff8fce8c; /* ffa3d7a5 */
-  --b3-font-background11: #ff173e70; /* ff173e7e |  f8d7da */
-  --b3-font-background12: #06195c4a;
-  --b3-font-background13: var(--b3-theme-on-background);
-
   /* 自定义 */
   --color-white: white;
   --color-black: black;
@@ -256,6 +218,44 @@
   --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla",
     "Noto Color Emoji", "Android Emoji";
   --b3-font-family-math: KaTeX_Math; */
+
+  /* 文字颜色 */
+  --b3-theme-on-primary: #fff;
+  --b3-theme-on-secondary: #fff;
+  --b3-theme-on-background: #202124; /* 编辑器文字颜色 */
+  --b3-theme-on-surface: #5f6368;
+  --b3-theme-on-error: #fff;
+  --b3-theme-on-surface-light: rgba(95, 99, 104, 0.68);
+
+  /* 文字颜色 */
+  --b3-font-color1: #0595e9; /* 03a3ff ｜  017ade */
+  --b3-font-color2: #056ede; /* 004af8 */
+  --b3-font-color3: #001aff; /*  */
+  --b3-font-color4: #9901ff;
+  --b3-font-color5: #f309f3; /* 5e1ca8 */
+  --b3-font-color6: #ff56d5;
+  --b3-font-color7: #e7087f; /*  d9085f */
+  --b3-font-color8: #ff0000;
+  --b3-font-color9: #04a25b; /* 0fb46c */
+  --b3-font-color10: #067318; /* 249210 */
+  --b3-font-color11: #d17103;
+  --b3-font-color12: #f96801;
+  --b3-font-color13: #47495a; /*var(--b3-theme-background)*/
+
+  /* 背景颜色 */
+  --b3-font-background1: #3fb4f877; /*  3fb4f885 ｜  67bafe93 */
+  --b3-font-background2: #aeccff; /*  BBD6FB |  0f7efc5b ｜ 0ffce88a   0059ff68    */
+  --b3-font-background3: #4747fd5b; /* 4747fd64 | 4747fd6f  |  437bff6b ｜ 785aff60 ｜ 6769ff74 */
+  --b3-font-background4: #73ebfebb; /* b7edffcb  / a9eaffcb */
+  --b3-font-background5: #25e9b488; /* 33f2bf95 */
+  --b3-font-background6: #58f54a88; /*  59ff4a95 ｜ 4aff4d95 */
+  --b3-font-background7: #f1f423b3; /*  f1f50f96*/
+  --b3-font-background8: #ff911b89; /* ff952392 | ff870782 */
+  --b3-font-background9: #d483ff89; /* c7bdff */
+  --b3-font-background10: #ff8fce8c; /* ffa3d7a5 */
+  --b3-font-background11: #ff173e70; /* ff173e7e |  f8d7da */
+  --b3-font-background12: #06195c4a;
+  --b3-font-background13: var(--b3-theme-on-background);
 
   /* 图表颜色 */
   --b3-graph-p-point: #076f7e;

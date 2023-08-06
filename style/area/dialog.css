@@ -95,7 +95,7 @@
 
 /* ------------ 集市详情页 ----------- */
 #configBazaarReadme {
-  background-color: var(--b3-theme-background-darker);
+  background-color: var(--theme-background-darker);
   border-radius: 10px;
   padding: 16px;
 }

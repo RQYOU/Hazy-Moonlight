@@ -73,9 +73,16 @@
 .b3-button--outline {
   /* background-color: var(--button-blue-light); */
   /* background-color: #d1e0fc; */
-  background-color: #c7dafe;
+  background-color: var(--button-cancel-bg);
   color: var(--button-blue);
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* .b3-button--text:hover,
+.b3-button--text:focus, */
+.b3-button--cancel:hover,
+.b3-button--cancel:focus {
+  background-color: var(--button-cancel-bg);
 }
 
 /* .protyle-util .b3-button--outline {

@@ -82,7 +82,7 @@ kbd {
 
 /* -------- 有序列表、无序列表 -------- */
 [data-node-id].p + [data-node-id].list {
-  padding: 0 0 4px 0;
+  padding: 0;
   margin: 4px 0 4px 0; /* 如果列表上方需要紧凑，就把这一个值改为-2 */
 }
 .protyle-wysiwyg [data-node-id].li {

@@ -10,9 +10,7 @@ A light theme for [SiYuan](http://github.com/siyuan-note/siyuan).
 
 已发布的 lastest 版本并不一定是最新代码。
 
-为了尽量在短的时间内实现所要的效果，代码有时候会比较混乱，请谅解。
-
-未经全面测试，所以很可能会有 bug 存在，欢迎提 bug。
+欢迎提 bug~~~
 
 ### Preview
 

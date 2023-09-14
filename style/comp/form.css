@@ -102,7 +102,7 @@
   color: var(--b3-theme-on-background);
   box-shadow: var(--shadow-0);
   letter-spacing: 0.3px;
-  width: 18.5%;
+  /* width: 18.5%; */
 }
 
 /* 如删除框确定按钮 */

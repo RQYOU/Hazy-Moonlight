@@ -47,18 +47,22 @@
   box-shadow: none !important;
 }
 
+.layout-tab-bar .item__icon {
+  padding: 4px 8px 4px 8px;
+}
+
 /* ------ tab bar item 上的文字 ------ */
 .layout-tab-bar .item__text {
-  min-width: 64px;
+  /* min-width: 64px; */
   height: 28px;
   line-height: 28px;
   vertical-align: middle;
-  padding: 0 0 0 8px;
+  padding: 0;
 }
 
 /* ------- tag旁边的关闭按钮 -------- */
 .layout-tab-bar .item__close {
-  padding: 0 4px 0 0;
+  padding: 0;
 }
 
 /* --------  -------- */

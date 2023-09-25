@@ -187,4 +187,5 @@
 
 .config__tab-container[data-name="bazaar"] .layout-tab-bar .item__text {
   margin-left: 0;
+  padding: 0 16px;
 }

@@ -48,7 +48,7 @@
 }
 
 .layout-tab-bar .item__icon {
-  padding: 4px 8px 4px 8px;
+  padding: 4px 0px 4px 4px;
 }
 
 /* ------ tab bar item 上的文字 ------ */
@@ -57,12 +57,12 @@
   height: 28px;
   line-height: 28px;
   vertical-align: middle;
-  padding: 0 8px 0 0;
+  padding: 0 4px 0 4px;
 }
 
 /* ------- tag旁边的关闭按钮 -------- */
 .layout-tab-bar .item__close {
-  padding: 0;
+  padding: 0 0 0 4px;
 }
 
 /* --------  -------- */

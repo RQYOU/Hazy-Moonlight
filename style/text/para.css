@@ -241,7 +241,7 @@ span[data-type="block-ref"] {
   font-family: var(--b3-font-family-code);
   font-size: 70%;
   color: var(--protyle-codeblock-lang);
-  margin-top: -23px;
+  margin-top: -24px;
   position: absolute;
   right: 47px;
   opacity: 1;

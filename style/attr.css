@@ -4,7 +4,7 @@
   --b3-theme-primary: #0052d9; /* 原3884ff*/
   --b3-theme-primary-light: rgba(66, 133, 244, 0.54); /* block-ref  */
   --b3-theme-primary-lighter: #ccdaee; /* rgba(66, 133, 244, 0.38) */
-  --b3-theme-primary-lightest: #e2ecf9; /*e3edfa | e2ecf8 | e2edfa | E1EDFC | rgba(66, 133, 244, 0.12)  */
+  --b3-theme-primary-lightest: #e2ecf9; /* e2ecf9  | e3edfa | e2ecf8 | e2edfa | E1EDFC | rgba(66, 133, 244, 0.12)  */
   --b3-theme-secondary: #f3a92f;
   /* 编辑区的背景色，设置对话框右侧背景色 */
   --b3-theme-background: #f3f5f9;
@@ -149,8 +149,8 @@
   /* --b3-table-border-color: #cfdcec; */ /* e4e6e8 cfdcec  dee6ec  DBE4EB */
 
   /* 编辑区文字选中背景：自定义，鼠标划选区域 */
-  --select-bg: #d7eaffb6; /* d4ebf4 */
-  --drag-select-bg: #d1e9fb; /*  d1e9fb  | d4ebf4 | cedef4 */
+  --select-bg: #d7eaffb6; /* d7eaffb6 | d4ebf4 */
+  --drag-select-bg: rgba(198, 243, 251, 0.7); /*  d1e9fb  | d4ebf4 | cedef4 */
 
   /* a标签下面的线条：自定义 */
   --b3-link-bottom: rgba(78, 78, 86, 0.2);

@@ -153,7 +153,7 @@
   --drag-select-bg: rgba(198, 243, 251, 0.7); /*  d1e9fb  | d4ebf4 | cedef4 */
 
   /* a标签下面的线条：自定义 */
-  --b3-link-bottom: rgba(78, 78, 86, 0.2);
+  --link-bottom: rgba(78, 78, 86, 0.2);
 
   /* 编辑器导航滑块：上下箭头：自定义 */
   --protyle-scroll: #a7c8ef; /* 4876f5 */

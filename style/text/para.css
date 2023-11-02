@@ -193,11 +193,10 @@ span[data-type="block-ref"] {
 .b3-typography .code-block,
 .protyle-wysiwyg .code-block {
   position: relative;
-  display: block;
   border-radius: 4px;
   background: var(--b3-protyle-code-background);
   margin: 18px 0;
-  padding: 7px 0 6px 0 !important;
+  padding: 7px 0 7px 0 !important;
   box-shadow: 0px 0px 2px 0px var(--protyle-codeblock-shadow);
 }
 /* ---------- 代码块区域（不包含代码块行数区域） ---------- */
@@ -218,7 +217,7 @@ span[data-type="block-ref"] {
   font-size: 13px;
   line-height: 1.625 !important;
   width: 39px;
-  margin: 7px 0 6px 0 !important;
+  margin: 5px 0 5px 0 !important;
   padding: 0px 10px 0px 4px;
   background-color: transparent !important;
   top: 4px;
@@ -230,8 +229,8 @@ span[data-type="block-ref"] {
   display: block;
   position: absolute;
   width: 1px;
-  height: calc(100% - 10px);
-  margin: 5px 0px 2px 33px;
+  height: calc(100% - 24px);
+  margin: 2px 0px 2px 33px;
   background-color: var(--protyle-codeblock-ln-bg);
 }
 

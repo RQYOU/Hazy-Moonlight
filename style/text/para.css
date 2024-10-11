@@ -103,7 +103,7 @@ kbd {
   margin-bottom: 6px;
 }
 
-/* -------- 直线 -------- */
+/* ------------------------------- 直线 ------------------------------- */
 .protyle-wysiwyg [data-node-id].hr {
   padding: 4px 0;
   margin: 0 0 26px 0;

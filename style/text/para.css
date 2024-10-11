@@ -190,8 +190,8 @@ span[data-type="block-ref"] {
 
 /* ------------------------------- 代码块样式 -------------------------------------- */
 /* ---------- 整个代码区域 ----------*/
-.b3-typography .code-block,
-.protyle-wysiwyg .code-block {
+.b3-typography .code-block:not(pre),
+.protyle-wysiwyg .code-block:not(pre) {
   position: relative;
   border-radius: 4px;
   background: var(--b3-protyle-code-background);
@@ -216,11 +216,11 @@ span[data-type="block-ref"] {
 .protyle-linenumber__rows {
   font-size: 13px;
   line-height: 1.625 !important;
-  width: 39px;
+  width: 29px;
   margin: 5px 0 5px 0 !important;
   padding: 0px 10px 0px 4px;
   background-color: transparent !important;
-  top: 4px;
+  top: 0px;
   bottom: 4px;
 }
 /* 代码块行数的数字 */
@@ -229,37 +229,40 @@ span[data-type="block-ref"] {
   display: block;
   position: absolute;
   width: 1px;
-  height: calc(100% - 24px);
+  /* height: calc(100% - 24px); */
+  height: calc(100%);
   margin: 2px 0px 2px 33px;
   background-color: var(--protyle-codeblock-ln-bg);
 }
 
 /* ---------- 代码块语言：---------- */
-.b3-typography .code-block .protyle-action .protyle-action__language,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
+/* .b3-typography .code-block .protyle-action .protyle-action__language,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language { */
+.b3-typography .code-block:not(pre) .protyle-action .protyle-action__language,
+.protyle-wysiwyg .code-block:not(pre) .protyle-action .protyle-action__language {
   font-family: var(--b3-font-family-code);
-  font-size: 70%;
+  font-size: 75% !important;
   color: var(--protyle-codeblock-lang);
-  margin-top: -24px;
+  margin-top: -24px !important;
   position: absolute;
   right: 47px;
   opacity: 1;
   border-radius: 4px;
 }
 /* 处于列表下面的代码库语言 */
-.b3-typography [data-node-id].li > [data-node-id].code-block .protyle-action .protyle-action__language,
-.protyle-wysiwyg [data-node-id].li > [data-node-id].code-block .protyle-action .protyle-action__language {
+.b3-typography [data-node-id].li > [data-node-id].code-block:not(pre) .protyle-action .protyle-action__language,
+.protyle-wysiwyg [data-node-id].li > [data-node-id].code-block:not(pre) .protyle-action .protyle-action__language {
   margin-top: -29px !important;
 }
-.b3-typography .code-block .protyle-action .protyle-action__language:hover,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language:hover {
+.b3-typography .code-block:not(pre) .protyle-action .protyle-action__language:hover,
+.protyle-wysiwyg .code-block:not(pre) .protyle-action .protyle-action__language:hover {
   background-color: var(--protyle-codeblock-lang-icon-hover-bg); /* CEDCE6*/
   color: var(--protyle-codeblock-lang-hover) !important;
 }
 
 /* ---------- 代码块复制图标和设置图标：---------- */
-.b3-typography .code-block .protyle-action .protyle-icon,
-.protyle-wysiwyg .code-block .protyle-action .protyle-icon {
+.b3-typography .code-block:not(pre) .protyle-action .protyle-icon,
+.protyle-wysiwyg .code-block:not(pre) .protyle-action .protyle-icon {
   color: var(--protyle-codeblock-icon);
   background-color: transparent;
   opacity: 1;
@@ -268,23 +271,23 @@ span[data-type="block-ref"] {
   /* line-height: 18px; */
   padding: 2px;
 }
-.b3-typography .code-block .protyle-action .protyle-icon svg,
-.protyle-wysiwyg .code-block .protyle-action .protyle-icon svg {
+.b3-typography .code-block:not(pre) .protyle-action .protyle-icon svg,
+.protyle-wysiwyg .code-block:not(pre) .protyle-action .protyle-icon svg {
   height: 12px;
   width: 12px;
 }
-.b3-typography .code-block .protyle-action .protyle-icon:hover,
-.protyle-wysiwyg .code-block .protyle-action .protyle-icon:hover {
+.b3-typography .code-block:not(pre) .protyle-action .protyle-icon:hover,
+.protyle-wysiwyg .code-block:not(pre) .protyle-action .protyle-icon:hover {
   background-color: var(--protyle-codeblock-lang-icon-hover-bg);
 }
-.b3-typography .code-block .protyle-action .protyle-action__copy,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__copy {
+.b3-typography .code-block:not(pre) .protyle-action .protyle-action__copy,
+.protyle-wysiwyg .code-block:not(pre) .protyle-action .protyle-action__copy {
   border-radius: 4px;
   position: absolute;
   right: 25px;
 }
-.b3-typography .code-block .protyle-action .protyle-action__menu,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__menu {
+.b3-typography .code-block:not(pre) .protyle-action .protyle-action__menu,
+.protyle-wysiwyg .code-block:not(pre) .protyle-action .protyle-action__menu {
   border-radius: 4px;
   position: absolute;
   right: 3px;
@@ -294,27 +297,27 @@ span[data-type="block-ref"] {
   display: none;
 }
 /* ---------- 代码块编辑时不闪 ---------- */
-.code-block .protyle-icons {
+.code-block:not(pre) .protyle-icons {
   opacity: 1;
 }
-.code-block .protyle-icons .protyle-action__copy {
+.code-block:not(pre) .protyle-icons .protyle-action__copy {
   opacity: 1;
 }
-.code-block:hover .protyle-icons .protyle-action__copy {
+.code-block:not(pre):hover .protyle-icons .protyle-action__copy {
   opacity: 1;
 }
-.code-block:focus-within .protyle-icons .protyle-action__copy {
+.code-block:not(pre):focus-within .protyle-icons .protyle-action__copy {
   opacity: 1;
 }
-.code-block .protyle-icons .protyle-action__copy:hover {
+.code-block:not(pre) .protyle-icons .protyle-action__copy:hover {
   opacity: 1;
 }
-.code-block:hover .protyle-icons {
+.code-block:not(pre):hover .protyle-icons {
   opacity: 1 !important;
 }
 
 /* ---------- ---------- */
-.protyle-wysiwyg [data-node-id][fold="1"]:not(.li).code-block:after {
+.protyle-wysiwyg [data-node-id][fold="1"]:not(.li).code-block:not(pre):after {
   content: "-";
   position: absolute;
   display: block;

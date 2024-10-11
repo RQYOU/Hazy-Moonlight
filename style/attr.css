@@ -136,7 +136,8 @@
   --protyle-selection-bg: #0761d6;
 
   /* hr */
-  --hr-color: #b6bbc5;
+  /* --hr-color: #b6bbc5; */
+  --hr-color: #202124;
 
   /* blockquote */
   --protyle-blockquote-bg: #e9edf3;
@@ -184,7 +185,7 @@
   /* 超链接 */
   --b3-protyle-inline-link-color: #191c27; /* 以前是#4285f4  #164a9e #1b1c1f  */
   /* 高亮 */
-  --b3-protyle-inline-mark-background: #ffe955; /* rgb(252, 212, 126) */
+  --b3-protyle-inline-mark-background: #b0e6fdcc; /* rgb(252, 212, 126)  #ffe955*/
   --b3-protyle-inline-mark-color: #202124;
   /* 标签 */
   --b3-protyle-inline-tag-color: #5f6368;

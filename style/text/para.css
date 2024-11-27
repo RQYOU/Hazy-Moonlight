@@ -163,17 +163,16 @@ kbd {
 
 /* ------------------------------- 引用块 block quote -------------------------------------- */
 
-.b3-typography blockquote,
-.b3-typography .bq,
-.protyle-wysiwyg blockquote,
-.protyle-wysiwyg .bq {
-  background-color: var(--protyle-blockquote-bg) !important;
-  /*e6ecf1*/ /*border: 1px solid #e9edf3;
-  */
-  border-left: 4px solid var(--protyle-blockquote-border) !important;
-  margin: 15px 0px !important;
-  border-radius: 0px;
-}
+/* .b3-typography blockquote, */
+/* .b3-typography .bq, */
+/* .protyle-wysiwyg blockquote, */
+/* .protyle-wysiwyg .bq { */
+/* background-color: var(--protyle-blockquote-bg) !important; */
+/*e6ecf1*/ /*border: 1px solid #e9edf3;*/
+/* border-left: 4px solid var(--protyle-blockquote-border) !important; */
+/* margin: 15px 0px !important; */
+/* border-radius: 0px; */
+/* } */
 .protyle-wysiwyg .bq .p {
   font-size: 15px !important;
   color: var(--protyle-blockquote-para);

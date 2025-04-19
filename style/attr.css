@@ -139,6 +139,9 @@
   /* --hr-color: #b6bbc5; */
   --hr-color: #202124;
 
+  /* 标注了下划线的字体颜色 */
+  --u-color: #0040ff;
+
   /* blockquote */
   --protyle-blockquote-bg: #e9edf3;
   --protyle-blockquote-border: #0e68c1;

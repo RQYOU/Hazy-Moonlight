@@ -54,6 +54,11 @@ em {
   font-weight: inherit;
 }
 
+.b3-typography span[data-type~="u"],
+.protyle-wysiwyg span[data-type~="u"] {
+  color: var(--u-color);
+}
+
 /* -------- 行内代码：--------- */
 /* .b3-typography code:not(.hljs),
 .protyle-wysiwyg code:not(.hljs) {

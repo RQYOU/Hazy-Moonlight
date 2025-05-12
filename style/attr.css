@@ -144,7 +144,7 @@
 
   /* blockquote */
   --protyle-blockquote-bg: #e9edf3;
-  --protyle-blockquote-border: #0e68c1;
+  --protyle-blockquote-border: #2d61c2; /* 265bbe, c5c9d0, #0e68c1 */
   --protyle-blockquote-para: #7a8084; /* 757c81 |  828d97 */
 
   /* 表格 */
